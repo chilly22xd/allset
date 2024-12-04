@@ -10,10 +10,10 @@
     </div>
     <div class="menu">
       <ul>
-        <li><router-link class="links-class" exact-active-class="links" to="/allset/">Home</router-link></li>
-        <li><router-link class="links-class" exact-active-class="links" to="/allset/about">About Us</router-link></li>
-        <li><router-link class="links-class" exact-active-class="links" to="/allset/services">Services</router-link></li>
-        <li><router-link class="links-class" exact-active-class="links" to="/allset/blog">Blog</router-link></li>
+        <li><router-link class="links-class" exact-active-class="links" to="/">Home</router-link></li>
+        <li><router-link class="links-class" exact-active-class="links" to="/about">About Us</router-link></li>
+        <li><router-link class="links-class" exact-active-class="links" to="/services">Services</router-link></li>
+        <li><router-link class="links-class" exact-active-class="links" to="/blog">Blog</router-link></li>
       </ul>
     </div>
     <div class="opciones">

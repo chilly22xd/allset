@@ -5,7 +5,7 @@ import Services from "../components/services.vue";
 import Blog from "../components/blog.vue";
 
 const routes = [
-    {path: '/', component: Home},
+    {path: '/allset/', component: Home},
     {path: '/about',component: AboutUs},
     {path: '/services',component: Services},
     {path: '/blog',component: Blog}
