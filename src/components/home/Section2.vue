@@ -3,14 +3,14 @@ import { RouterLink } from 'vue-router';
 
 const arrayCards = [
   {
-    img: '/allset/icono-team.png',
+    img: '/allset/services/icono-team.png',
     titulo: 'Expert Team',
     descripcion: 'Our highly trained professionals\n' +
         'bring a wealth of experience'
 
   },
   {
-    img: '/allset/icono-aspiradora.png',
+    img: '/allset/services/icono-aspiradora.png',
     titulo: 'Quality Service',
     descripcion: 'We guarantee a spotless finish that\n' +
         'exceeds your expectations.'
