@@ -22,7 +22,7 @@ const arrayPoint = [
         <div class="container">
             <div class="container-grid">
                 <p class="secundary">General Cleaning</p>
-                <h1>Move In/Move Out</h1>
+                <h1>Move-In/Move-Out</h1>
                 <p>Moving has never been easier. Our Move-In/Move-Out Cleaning
                     service is tailored for those transitioning into or out of a property.
                     We cover all essential areas, ensuring your new home or the
