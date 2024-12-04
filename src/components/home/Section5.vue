@@ -62,7 +62,7 @@ const arrayPlans = [
                         <img src="/src/assets/checklist.png" alt="">
                         <p>{{ opciones }}</p>
                     </div>
-                    <router-link class="btn-plan">Hire</router-link>
+                    <router-link to="" class="btn-plan">Hire</router-link>
                 </div>
             </div>
         </div>
