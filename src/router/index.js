@@ -6,9 +6,9 @@ import Blog from "../components/blog.vue";
 
 const routes = [
     {path: '/allset/', component: Home},
-    {path: '/about',component: AboutUs},
-    {path: '/services',component: Services},
-    {path: '/blog',component: Blog}
+    {path: '/allset/about',component: AboutUs},
+    {path: '/allset/services',component: Services},
+    {path: '/allset/blog',component: Blog}
 ];
 
 const router = createRouter({
