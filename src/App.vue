@@ -3,7 +3,7 @@ import navBar from './components/navBar.vue'
 </script>
 
 <template>
-  <navBar/>
+  <navBar />
   <div>
     <router-view></router-view>
   </div>
@@ -14,13 +14,14 @@ import navBar from './components/navBar.vue'
 </template>
 
 <style scoped>
-.floating{
+.floating {
   visibility: collapse;
   position: fixed;
   display: flex;
   bottom: 1em;
   right: 1em;
 }
+
 .floating-button {
   position: relative;
   background-color: #0044F1;
@@ -34,7 +35,7 @@ import navBar from './components/navBar.vue'
   z-index: 1;
 }
 
-.floating-button::before{
+.floating-button::before {
   content: "";
   width: 0;
   height: 3em;
@@ -47,11 +48,13 @@ import navBar from './components/navBar.vue'
   display: block;
   z-index: -1;
 }
-.floating-button:hover::before{
+
+.floating-button:hover::before {
   width: 9em;
 }
-@media screen and (max-width: 480px){
-  .floating{
+
+@media screen and (max-width: 480px) {
+  .floating {
     visibility: visible;
   }
 }
