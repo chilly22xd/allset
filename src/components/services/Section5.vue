@@ -87,7 +87,6 @@ const arrayPoint = [
     display: flex;
     gap: 15px;
     justify-content: left;
-    align-items: top;
 }
 
 .list p {
