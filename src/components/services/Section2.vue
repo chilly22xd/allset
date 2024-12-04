@@ -1,12 +1,12 @@
 <script setup>
 const arraySolutions = [
     {
-        icon: "/allset/src/assets/casa.png",
+        icon: "/allset/casa.png",
         titulo: "General Cleaning",
         desc: "Perfect for keeping your home clean and organized, with options for standard or deep cleaning based on your needs."
     },
     {
-        icon: "/allset/src/assets/mudanza.png",
+        icon: "/allset/mudanza.png",
         titulo: "General Cleaning",
         desc: "Perfect for keeping your home clean and organized, with options for standard or deep cleaning based on your needs."
     }
