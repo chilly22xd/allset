@@ -3,21 +3,21 @@ import { RouterLink } from 'vue-router';
 
 const arrayCards = [
   {
-    img: '/icono-team.png',
+    img: '/allset/icono-team.png',
     titulo: 'Expert Team',
     descripcion: 'Our highly trained professionals\n' +
         'bring a wealth of experience'
 
   },
   {
-    img: '/icono-aspiradora.png',
+    img: '/allset/icono-aspiradora.png',
     titulo: 'Quality Service',
     descripcion: 'We guarantee a spotless finish that\n' +
         'exceeds your expectations.'
 
   },
   {
-    img: '/icono-sticker.png',
+    img: '/allset/icono-sticker.png',
     titulo: 'Affordable Price',
     descripcion: 'We offer exceptional services at\n' +
         'prices that are affordable for\n' +
