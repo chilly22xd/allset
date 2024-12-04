@@ -29,7 +29,7 @@ const arrayCheck = [
                         hygiene.
                     </p>
                 </div>
-                <router-link class="primary">Find Out More</router-link>
+                <router-link class="primary" to="">Find Out More</router-link>
             </div>
             <div class="container-imgyears">
                 <img class="img-years" src="/src/assets/years2.png" alt="">
