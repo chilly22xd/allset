@@ -3,7 +3,7 @@
 const planBasic = [
     "Cleaning bathrooms",
     "Mopping floors",
-    "Vacuuminf carpets and rugs",
+    "Vacuuming carpets and rugs",
     "Dusting and wiping surfacest"
 ];
 
