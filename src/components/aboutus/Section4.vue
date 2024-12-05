@@ -29,7 +29,7 @@
 <style scoped>
 .main {
     background-color: whitesmoke;
-    padding: 3% 6% 3% 6%;
+    padding: 3% 11% 0% 11%;
 }
 
 .container {

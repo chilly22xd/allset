@@ -39,16 +39,13 @@ const arrayCheck = [
 </template>
 <style scoped>
 .main {
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding: 3% 11% 3% 11%;
     background-color: whitesmoke;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-left: 6%;
-    padding-right: 5%;
 }
 
 .container-grid {
@@ -88,7 +85,7 @@ const arrayCheck = [
     padding: 10px;
     color: #3C394E;
     font-size: 16px !important;
-    background-color: #cbc9e6;
+    background-color: #DCE6ff;
     border-radius: 10px;
     justify-content: center;
 }

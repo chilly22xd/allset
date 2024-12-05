@@ -14,37 +14,44 @@
     </div>
 </template>
 <style scoped>
-.main{
+.main {
     background-color: transparent;
 }
-.container{
+
+.container {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(2,1fr);
-    padding-left: 6%;
-    padding-right: 6%;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 11%;
+    padding-right: 11%;
 }
-.container-grid{
+
+.container-grid {
     display: grid;
 }
-.container-grid h1{
+
+.container-grid h1 {
     font-size: 3em;
-    font-family: 'Arial Black',serif;
+    font-family: 'Arial Black', serif;
     color: #3C394E;
     margin: 0;
 }
-.container-grid p{
+
+.container-grid p {
     font-size: 22px;
 }
-.container-img{
-    display: grid;
+
+.container-img {
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
 }
-.container-img img{
-    width: 100%;
+
+.container-img img {
+    width: 55%;
 }
-.secundary{
+
+.secundary {
     background-color: #669FF3;
     width: 8em;
     height: 2em;
@@ -53,5 +60,4 @@
     text-align: center;
     align-content: center;
 }
-
 </style>

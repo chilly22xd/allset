@@ -39,25 +39,24 @@ const arraySolutions = [
 </template>
 <style scoped>
 .main {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    background-color: rgb(212, 229, 252, 0.6);
+    padding: 2% 11% 2% 11%;
+    background-color: rgb(212, 229, 252);
 }
 
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    padding-left: 6%;
-    padding-right: 6%;
 }
 
 .container-img {
-    display: grid;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 .container-img img {
-    width: 100%;
+    width: 90%;
 }
 
 .container-grid {
@@ -115,7 +114,7 @@ const arraySolutions = [
     padding: 10px;
     color: #3C394E;
     font-size: 16px !important;
-    background-color: #cbc9e6;
+    background-color: #669FF3;
     border-radius: 10px;
 }
 </style>

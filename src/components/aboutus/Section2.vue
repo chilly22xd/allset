@@ -8,9 +8,9 @@
             <div class="container-grid">
                 <h1>Professional Cleaning, Guaranteed Results.</h1>
                 <p>At AllSet!, we believe every home deserves a special touch.
-                Founded with the mission of making your life easier, we
-                specialize in delivering exceptional cleaning services with
-                meticulous attention to detail.</p>
+                    Founded with the mission of making your life easier, we
+                    specialize in delivering exceptional cleaning services with
+                    meticulous attention to detail.</p>
                 <p class="quest">What makes us different?</p>
                 <ul>
                     <li><span>Trusted Team:</span>All our professionals are carefully selected and
@@ -25,48 +25,58 @@
     </div>
 </template>
 <style scoped>
-.main{
+.main {
     padding-top: 2%;
+    padding-bottom: 2%;
     background-color: whitesmoke;
+    padding-left: 11%;
+    padding-right: 11%;
 }
-.container{
+
+.container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    padding-left: 6%;
-    padding-right: 6%;
 }
-.container-grid{
+
+.container-grid {
     display: grid;
     align-items: centar;
 }
-.container-grid h1{
+
+.container-grid h1 {
     margin: 0;
     color: #3C394E;
     font-size: 3em;
-    font-family: 'Arial Black',serif;
+    font-family: 'Arial Black', serif;
 }
-.container-grid .quest{
+
+.container-grid .quest {
     margin: 0;
     color: #669FF3;
     font-weight: bold;
     font-size: 20px !important;
 }
-.container-grid p{
+
+.container-grid p {
     font-size: 22px;
 }
-.container-grid ul{
+
+.container-grid ul {
     font-size: 18px;
 }
-.container-grid ul span{
+
+.container-grid ul span {
     font-weight: bold;
 }
-.container-img{
-    display: grid;
+
+.container-img {
+    display: flex;
+    justify-content: left;
     align-items: center;
-    justify-content: center;
 }
-.container-img img{
-    width: 100%;
+
+.container-img img {
+    width: 95%;
 }
 </style>

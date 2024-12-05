@@ -71,13 +71,11 @@ const arrayPlans = [
 <style scoped>
 .main {
     background-color: transparent;
-    padding-top: 5%;
+    padding: 5% 11% 0 11%;
 }
 
 .container {
     display: grid;
-    padding-left: 6%;
-    padding-right: 6%;
 }
 
 .container h1 {
@@ -129,9 +127,10 @@ const arrayPlans = [
 }
 
 .card-plan {
-    width: 25vmax;
+    width: 18vmax;
     height: 30vmax;
     display: grid;
+    padding: 3% 5% 3% 5%;
     padding-top: 3%;
     padding-bottom: 3%;
     justify-content: center;

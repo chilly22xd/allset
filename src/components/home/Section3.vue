@@ -17,8 +17,8 @@
     flex-wrap: wrap;height: 10em;
 }
 .container img{
-    width: 50%;
+    width: 45%;
     float: left;
-    translate: 0 -65%;
+    translate: 10% -65%;
 }
 </style>

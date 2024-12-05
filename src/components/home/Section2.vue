@@ -2,28 +2,28 @@
 import { RouterLink } from 'vue-router';
 
 const arrayCards = [
-  {
-    img: '../allset/icono-team.png',
-    titulo: 'Expert Team',
-    descripcion: 'Our highly trained professionals\n' +
-        'bring a wealth of experience'
+    {
+        img: '../allset/icono-team.png',
+        titulo: 'Expert Team',
+        descripcion: 'Our highly trained professionals\n' +
+            'bring a wealth of experience'
 
-  },
-  {
-    img: '../allset/icono-aspiradora.png',
-    titulo: 'Quality Service',
-    descripcion: 'We guarantee a spotless finish that\n' +
-        'exceeds your expectations.'
+    },
+    {
+        img: '../allset/icono-aspiradora.png',
+        titulo: 'Quality Service',
+        descripcion: 'We guarantee a spotless finish that\n' +
+            'exceeds your expectations.'
 
-  },
-  {
-    img: '/allset/icono-sticker.png',
-    titulo: 'Affordable Price',
-    descripcion: 'We offer exceptional services at\n' +
-        'prices that are affordable for\n' +
-        'everyone.'
+    },
+    {
+        img: '/allset/icono-sticker.png',
+        titulo: 'Affordable Price',
+        descripcion: 'We offer exceptional services at\n' +
+            'prices that are affordable for\n' +
+            'everyone.'
 
-  }
+    }
 ];
 const arrayCardsTransparent = [
     {
@@ -61,77 +61,89 @@ const arrayCardsTransparent = [
                     experience and a passion for cleanliness, we strive to
                     exceed your expectations every time.</p>
 
-            <div class="container-cards-transparentes">
-                <div v-for="card in arrayCardsTransparent">
-                    <h3>{{ card.cant }}+</h3>
-                    <span>{{ card.subtitule }}</span>
+                <div class="container-cards-transparentes">
+                    <div v-for="card in arrayCardsTransparent">
+                        <h3>{{ card.cant }}+</h3>
+                        <span>{{ card.subtitule }}</span>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </div>
 </template>
 <style scoped>
-.main{
+.main {
     background-color: whitesmoke;
     padding-bottom: 12%;
+    padding-left: 11%;
+    padding-right: 11%;
 }
-.container-flotante{
-    display: flex;
-    flex-wrap: wrap;
+
+.container-flotante {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     gap: 20px;
 }
-.cards{
+
+.cards {
     background-color: white;
     opacity: 0.8;
     border-radius: 20px;
-    width: 20%;
-    padding: 3em;
+    padding: 10%;
     position: relative;
-    translate: 0 -50%;
+    translate: 0 -45%;
 }
-.cards img{
+
+.cards img {
     width: 50px;
 }
-.cards h2{
+
+.cards h2 {
     margin: 0;
 }
-.container{
+
+.container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding-right: 5%;
 }
-.container-grid{
+
+.container-grid {
     display: grid;
 }
-.container-grid h1{
+
+.container-grid h1 {
     font-size: 3em;
-    font-family: 'Arial Black',serif;
+    font-family: 'Arial Black', serif;
     color: #3C394E;
     margin: 0;
 }
-.container-grid p{
+
+.container-grid p {
     font-size: 22px;
 }
-.container-cards-transparentes{
+
+.container-cards-transparentes {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
 }
-.container-cards-transparentes div{
+
+.container-cards-transparentes div {
     padding: 5%;
 }
-.container-cards-transparentes h3{
+
+.container-cards-transparentes h3 {
     font-size: 2em;
     margin: 0;
-    font-family: 'Arial Black',serif;
+    font-family: 'Arial Black', serif;
     color: #669FF3;
 }
-.secundary{
+
+.secundary {
     display: flex;
     text-decoration: none;
     width: 8em;
@@ -139,18 +151,20 @@ const arrayCardsTransparent = [
     padding: 10px;
     color: #3C394E;
     font-size: 16px !important;
-    background-color: #cbc9e6;
+    background-color: #DCE6ff;
     border-radius: 10px;
     justify-content: center;
 }
-.container-flex{
+
+.container-flex {
     display: flex;
     width: 100%;
     position: relative;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
-.img-year{
+
+.img-year {
     width: 75%;
 }
 </style>

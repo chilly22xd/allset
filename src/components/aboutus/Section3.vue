@@ -60,7 +60,7 @@ const arrayTexts = [
 </template>
 <style scoped>
 .main {
-    padding: 5% 6% 5% 6%;
+    padding: 5% 15% 5% 15%;
     background-color: rgb(212, 229, 252);
 }
 
@@ -91,7 +91,7 @@ const arrayTexts = [
 }
 
 .cards {
-    margin-top: 2vmax;
+    margin-top: 5vmax;
 }
 
 .cards div {
@@ -116,6 +116,6 @@ const arrayTexts = [
 }
 
 .arrows {
-    width: 12vmax;
+    width: 10vmax;
 }
 </style>

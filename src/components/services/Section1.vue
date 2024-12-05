@@ -17,14 +17,14 @@
 .main {
     background-color: transparent;
     padding-bottom: 2%;
+    padding-left: 11%;
+    padding-right: 11%;
 }
 
 .container {
     display: grid;
     align-items: center;
     grid-template-columns: 50% 50%;
-    padding-left: 6%;
-    padding-right: 6%;
 }
 
 .container-grid {
@@ -43,13 +43,13 @@
 }
 
 .container-img {
-    display: grid;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
 }
 
 .container-img img {
-    width: 100%;
+    width: 85%;
 }
 
 .secundary {

@@ -45,7 +45,7 @@ const arrayPoint = [
 <style scoped>
 .main {
     background-color: whitesmoke;
-    padding: 2% 6% 2% 6%;
+    padding: 2% 15% 2% 15%;
 }
 
 .container {
@@ -71,17 +71,19 @@ const arrayPoint = [
 
 .container-img {
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    align-items: center;
 }
 
 .container-img img {
-    width: 90%;
+    margin: 0;
+    width: 85%;
     border-radius: 30em;
 }
 
 .list {
     display: grid;
-    gap: 10px;
+    gap: 25px;
 }
 
 .list div {
@@ -116,7 +118,7 @@ const arrayPoint = [
     color: white;
     font-weight: bold;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 3vmax;
 }
 
 .secundary {
@@ -126,7 +128,7 @@ const arrayPoint = [
     padding: 10px;
     color: #3C394E;
     font-size: 16px !important;
-    background-color: #cbc9e6;
+    background-color: #DCE6ff;
     border-radius: 10px;
 }
 </style>
