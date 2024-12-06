@@ -22,6 +22,9 @@
                     </div>
                 </div>
             </div>
+            <div class="container-va">
+                <img data-aos="fade-down-left" src="/src/assets/VAQUERO.png" alt="">
+            </div>
         </div>
     </div>
 </template>
@@ -52,11 +55,6 @@
     color: #669FF3;
     font-weight: bold;
 
-}
-
-.container-va img {
-    width: 22vmax;
-    height: 22vmax;
 }
 
 .container-flex {
@@ -117,5 +115,18 @@
     z-index: 2;
     background-color: #669FF3;
     translate: -45vmax -2vmax;
+}
+
+.container-va {
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    translate: 55vmax 27vmax;
+    z-index: 2;
+}
+
+.container-va img {
+    width: 20vmax;
+    height: 20vmax;
 }
 </style>
