@@ -59,14 +59,14 @@ const arrayCheck = [
 
 .container-grid h1 {
     line-height: 1;
-    font-size: 3em;
+    font-size: 3vmax;
     font-family: 'Arial Black', serif;
     color: #3C394E;
     margin: 0;
 }
 
 .container-grid p {
-    font-size: 22px;
+    font-size: 1.5vmax;
 }
 
 .secundary {
@@ -101,7 +101,7 @@ const arrayCheck = [
 }
 
 .list p {
-    font-size: 18px;
+    font-size: 1.2vmax;
 }
 
 .container-flex {
@@ -117,7 +117,7 @@ const arrayCheck = [
 }
 
 .container-flex p {
-    font-size: 18px;
+    font-size: 1.2vmax;
 }
 
 .container-imgyears {

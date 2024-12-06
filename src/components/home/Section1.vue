@@ -59,14 +59,14 @@ const cantidades = [
 
 .container h1 {
     line-height: 1;
-    font-size: 3em;
+    font-size: 3vmax;
     font-family: 'Arial Black', serif;
     color: #3C394E;
     margin: 0;
 }
 
 .container p {
-    font-size: 22px;
+    font-size: 1.5vmax;
     margin: 1vmax 0 0 0;
 }
 
@@ -76,7 +76,7 @@ const cantidades = [
 }
 
 .container-img img {
-    width: 90%;
+    width: 100%;
 }
 
 .container-grid {
@@ -86,9 +86,9 @@ const cantidades = [
 }
 
 .btn-escoba {
-    width: 13em;
-    height: 4em;
-    margin-top: 20px;
+    width: 15vmax;
+    height: 4.2vmax;
+    margin-top: 2vmax;
     display: flex;
     gap: 10px;
     background-color: #669FF3;
@@ -98,10 +98,11 @@ const cantidades = [
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1vmax;
 }
 
 .btn-escoba img {
-    width: 60px;
+    width: 4.5vmax;
 }
 
 .container-cards {

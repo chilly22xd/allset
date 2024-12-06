@@ -90,7 +90,7 @@ const arrayPlans = [
 }
 
 .container p {
-    font-size: 18px;
+    font-size: 1.2vmax;
     margin: 0;
 }
 

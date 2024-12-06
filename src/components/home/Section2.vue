@@ -120,14 +120,14 @@ const arrayCardsTransparent = [
 
 .container-grid h1 {
     line-height: 1;
-    font-size: 3em;
+    font-size: 3vmax;
     font-family: 'Arial Black', serif;
     color: #3C394E;
     margin: 0;
 }
 
 .container-grid p {
-    font-size: 22px;
+    font-size: 1.5vmax;
 }
 
 .container-cards-transparentes {
@@ -143,10 +143,14 @@ const arrayCardsTransparent = [
 }
 
 .container-cards-transparentes h3 {
-    font-size: 2em;
+    font-size: 2.2vmax;
     margin: 0;
     font-family: 'Arial Black', serif;
     color: #669FF3;
+}
+
+.container-cards-transparentes span {
+    font-size: 1.1vmax;
 }
 
 .secundary {
