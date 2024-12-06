@@ -78,7 +78,7 @@ const arrayTexts = [
 }
 
 .container .subtitulo {
-  font-size: 2vmax;
+    font-size: 2vmax;
     font-family: 'Arial Black', serif;
     color: #3C394E;
     text-align: center;
@@ -117,7 +117,7 @@ const arrayTexts = [
 
 .cards p {
     margin: 0;
-  font-size: 1.1vmax;
+    font-size: 1.1vmax;
     text-align: center;
 }
 

@@ -3,93 +3,45 @@
     <div class="main">
         <div class="container">
             <h1>What Clients Say</h1>
-            <div class="container columns">
+            <div class="display-flex">
                 <div class="container-img">
-                    <img src="/src/assets/about.jpg" alt="">
+                    <img data-aos="fade-right" src="/src/assets/about.jpg" alt="">
                 </div>
-                <div>
-                    <div>
-                        <p class="comillas">"</p>
+                <div class="container-elements">
+                    <div data-aos="fade-down" class="container-comillas">
+                        "
                     </div>
-                    <div class="container-dialog">
+                    <div data-aos="fade-left" class="container-text">
                         <p>"AllSet! did an amazing job. My home has never been this
                             clean. The team was punctual, professional, and the products
                             they use give me peace of mind. I highly recommend their
                             services!"</p>
-                        <span>Laura M.</span>
+                        <div>
+                            <span>Laura M.</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container-va">
-            <img src="/src/assets/VAQUERO.png" alt="">
         </div>
     </div>
 </template>
 <style scoped>
 .main {
     background-color: whitesmoke;
-    padding: 3% 11% 0% 11%;
+    padding: 3% 11% 2% 11%;
 }
 
 .container {
     display: grid;
-}
-
-.columns {
-    grid-template-columns: repeat(2, 1fr);
+    gap: 2vmax;
 }
 
 .container h1 {
     text-align: center;
-    font-size: 3em;
+    font-size: 3vmax;
     font-family: 'Arial Black', serif;
     color: #3C394E;
     margin: 0;
-}
-
-.container-grid {
-    display: grid;
-    justify-content: center;
-}
-
-.container-img {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-img img {
-    width: 80%;
-    border-top-right-radius: 30em;
-    border-bottom-left-radius: 30em;
-    border-bottom-right-radius: 30em;
-}
-
-.comillas {
-    position: relative;
-    font-family: 'Arial Black', serif;
-    width: 40px;
-    height: 70px;
-    color: white;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    text-align: center;
-    font-size: 3em;
-    z-index: 5;
-    background-color: #669FF3;
-    translate: -10vmax 4vmax;
-}
-
-.container-dialog {
-    position: relative;
-    padding: 2% 10% 2% 10%;
-    background-color: rgb(212, 229, 252);
-    border-top-left-radius: 5em;
-    border-top-right-radius: 5em;
-    border-bottom-left-radius: 5em;
-    translate: -30% 0;
 }
 
 .container-dialog p {
@@ -102,17 +54,68 @@
 
 }
 
-.container-va {
-    width: 100%;
-    height: 60px;
-    position: relative;
-    display: flex;
-    justify-content: right;
-    translate: -10vmax -16vmax;
+.container-va img {
+    width: 22vmax;
+    height: 22vmax;
 }
 
-.container-va img {
-    width: 350px;
-    height: 350px;
+.container-flex {
+    display: flex;
+}
+
+.container-img {
+    display: flex;
+    justify-content: left;
+}
+
+.container-img img {
+    width: 50%;
+    border-top-right-radius: 30em;
+    border-bottom-left-radius: 30em;
+    border-bottom-right-radius: 30em;
+}
+
+.container-elements {
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    translate: 25vmax -25vmax;
+}
+
+.container-text {
+    width: 45vmax;
+    padding: 3vmax;
+    background-color: #cde1ff;
+    border-top-left-radius: 30vmax;
+    border-bottom-left-radius: 30vmax;
+    border-top-right-radius: 30vmax;
+}
+
+.container-text p {
+    font-size: 1.2vmax;
+}
+
+.container-text span {
+    position: relative;
+    font-size: 1.2vmax;
+    color: #669FF3;
+    font-weight: bold;
+}
+
+.container-comillas {
+    font-size: 3.5vmax;
+    font-family: 'Arial Black', serif;
+    color: white;
+    border-top-left-radius: 1vmax;
+    border-top-right-radius: 1vmax;
+    border-bottom-right-radius: 1vmax;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 3vmax;
+    height: 5vmax;
+    z-index: 2;
+    background-color: #669FF3;
+    translate: -45vmax -2vmax;
 }
 </style>
