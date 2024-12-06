@@ -3,7 +3,7 @@
     <div class="main">
         <div class="container">
             <h1>What Clients Say</h1>
-            <div class="display-flex">
+            <div>
                 <div class="container-img">
                     <img data-aos="fade-right" src="/src/assets/about.jpg" alt="">
                 </div>
@@ -55,10 +55,6 @@
     color: #669FF3;
     font-weight: bold;
 
-}
-
-.container-flex {
-    display: flex;
 }
 
 .container-img {
