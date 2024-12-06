@@ -1,7 +1,4 @@
 <script setup>
-import { RouterLink } from 'vue-router';
-import { ref, reactive, onMounted } from 'vue';
-
 const arrayCards = [
     {
         img: '../allset/icono-team.png',

@@ -29,7 +29,12 @@ const arrayCheck = [
                         hygiene.
                     </p>
                 </div>
-                <router-link class="primary" to="">Find Out More</router-link>
+                <router-link class="learn-more" to="">
+                    <span class="circle">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">FIND OUT MORE</span>
+                </router-link>
             </div>
             <div data-aos="fade-left" class="container-imgyears">
                 <img class="img-years" src="/src/assets/years2.png" alt="">
@@ -62,20 +67,6 @@ const arrayCheck = [
 
 .container-grid p {
     font-size: 22px;
-}
-
-.primary {
-    width: 12em;
-    height: 3em;
-    font-size: 1.2em;
-    text-decoration: none;
-    text-align: center;
-    align-content: center;
-    background-color: #0044F1;
-    color: white;
-    font-weight: bold;
-    border-radius: 10px;
-    margin-top: 20px;
 }
 
 .secundary {
@@ -140,8 +131,8 @@ const arrayCheck = [
     width: 100%;
 }
 
-.btn-more {
-    margin-top: 2vmax;
+a {
+    margin-top: 1vmax;
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -152,25 +143,26 @@ const arrayCheck = [
     background: transparent;
     padding: 0;
     font-size: inherit;
+    font-family: inherit;
 }
 
-.btn-more.learn-more {
-    width: 12em;
-    height: 3em;
+a.learn-more {
+    width: 15vmax;
+    height: 3vmax;
 }
 
-.btn-more.learn-more .circle {
+a.learn-more .circle {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
     display: block;
     margin: 0;
     width: 3rem;
     height: 3rem;
-    background: #282936;
-    border-radius: 1.625rem;
+    background: #0044F1;
+    border-radius: 10px;
 }
 
-.btn-more.learn-more .circle .icon {
+a.learn-more .circle .icon {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
@@ -179,7 +171,7 @@ const arrayCheck = [
     background: #fff;
 }
 
-.btn-more.learn-more .circle .icon.arrow {
+a.learn-more .circle .icon.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     left: 0.625rem;
     width: 1.125rem;
@@ -187,7 +179,7 @@ const arrayCheck = [
     background: none;
 }
 
-.btn-more.learn-more .circle .icon.arrow::before {
+a.learn-more .circle .icon.arrow::before {
     position: absolute;
     content: "";
     top: -0.29rem;
@@ -199,7 +191,7 @@ const arrayCheck = [
     transform: rotate(45deg);
 }
 
-.btn-more.learn-more .btn-text {
+a.learn-more .button-text {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
@@ -215,16 +207,16 @@ const arrayCheck = [
     text-transform: uppercase;
 }
 
-.btn-more:hover .circle {
+a:hover .circle {
     width: 100%;
 }
 
-.btn-more:hover .circle .icon.arrow {
+a:hover .circle .icon.arrow {
     background: #fff;
     transform: translate(1rem, 0);
 }
 
-.btn-more:hover .btn-text {
+a:hover .button-text {
     color: #fff;
 }
 </style>
