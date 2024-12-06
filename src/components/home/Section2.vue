@@ -92,7 +92,7 @@ const arrayCardsTransparent = [
     border-radius: 20px;
     padding: 10%;
     position: relative;
-    translate: 0 -45%;
+    translate: 0 -6vmax;
 }
 
 .cards img {

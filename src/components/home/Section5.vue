@@ -45,13 +45,16 @@ const arrayPlans = [
             <p data-aos="fade-up" class="primary">Price Package</p>
             <div class="container-grid">
                 <h1 data-aos="fade-up">Choose Your Perfect Clean</h1>
-                <img data-aos="fade-down" src="/src/assets/REGALO.png" alt="">
+                <div class="container-img">
+                    <img data-aos="fade-down" src="/src/assets/REGALO.png" alt="">
+                </div>
                 <p data-aos="fade-up">Explore our range of meticulously curated cleaning
                     packages designed to meet your unique needs.
                 </p>
             </div>
             <div class="container-plans">
-                <div data-aos="fade-up" v-for="plan in arrayPlans" :class="['card-plan', { 'borde-azul': plan.plan === 'Standard Plan' }]">
+                <div data-aos="fade-up" v-for="plan in arrayPlans"
+                    :class="['card-plan', { 'borde-azul': plan.plan === 'Standard Plan' }]">
                     <p>{{ plan.plan }}</p>
                     <div class="costo-plan">
                         <h2>$</h2>
@@ -71,7 +74,7 @@ const arrayPlans = [
 <style scoped>
 .main {
     background-color: transparent;
-    padding: 5% 11% 0 11%;
+    padding: 3vmax 11% 0 11%;
 }
 
 .container {
@@ -100,11 +103,17 @@ const arrayPlans = [
     grid-template-columns: repeat(3, 1fr);
 }
 
-.container img {
-    width: 100%;
-    position: relative;
-    translate: 0 -15%;
+.container-img {
+    display: flex;
+    justify-content: center;
+    align-items: top;
 }
+
+.container-img img {
+    width: 22vmax;
+}
+
+
 
 .primary {
     background-color: #0044F1;
@@ -118,21 +127,19 @@ const arrayPlans = [
 }
 
 .container-plans {
+    margin: 0;
     position: relative;
     display: flex;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
     z-index: 2;
-    translate: 0 -14vmax;
+    translate: 0 -8vmax;
 }
 
 .card-plan {
-    width: 18vmax;
-    height: 30vmax;
+    width: 15vmax;
     display: grid;
-    padding: 3% 5% 3% 5%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding: 1vmax 5% 1vmax 5%;
     justify-content: center;
     background-color: white;
     border-radius: 20px;
@@ -161,7 +168,7 @@ const arrayPlans = [
 }
 
 .costo-plan h1 {
-    font-size: 4em;
+    font-size: 3.5em;
     color: #669FF3;
 }
 
@@ -174,6 +181,10 @@ const arrayPlans = [
     justify-content: left;
     margin-top: 20px;
     gap: 5px;
+}
+
+.opciones-plan p {
+    text-align: left;
 }
 
 .opciones-plan img {

@@ -54,6 +54,7 @@ const cantidades = [
     display: grid;
     grid-template-columns: 40% 60%;
     align-items: center;
+    margin-bottom: 1vmax;
 }
 
 .container h1 {
@@ -104,59 +105,33 @@ const cantidades = [
 
 .container-cards {
     display: grid;
-    gap: 10px;
     padding: 0;
-    grid-template-columns: 40% 40% 20%;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: left;
     margin-top: 2.5vmax;
 }
 
 .cards {
+    width: 14vmax;
     background-color: white;
     opacity: 0.8;
     border-radius: 20px;
-    padding: 1.5vmax;
+    padding: 1vmax;
 }
 
 .cant-front {
-    position: relative;
-    font-size: 3em;
+    position: absolute;
+    font-size: 4vmax;
     font-weight: bold;
     color: #669FF3;
+    translate: 0.5vmax 2vmax;
 }
 
 .cant-back {
-    position: absolute;
-    font-size: 5em;
+    position: relative;
+    font-size: 6vmax;
     font-weight: bold;
     color: #669FF3;
     opacity: 0.2;
-    translate: -110px -30px;
-}
-
-@media screen and (max-width: 480px) {
-    .container h1 {
-        font-size: 1em;
-    }
-
-    .container p {
-        font-size: 14px;
-    }
-
-    .container-grid {
-        margin: 0;
-        grid-template-rows: 1fr;
-        gap: 5px;
-    }
-
-    .btn-escoba {
-        width: 10em;
-        font-size: 1em;
-        margin-top: 10px;
-    }
-
-    .btn-escoba img {
-        width: 40px;
-    }
 }
 </style>
