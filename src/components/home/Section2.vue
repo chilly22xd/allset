@@ -61,7 +61,7 @@ const arrayCardsTransparent = [
                     experience and a passion for cleanliness, we strive to
                     exceed your expectations every time.</p>
 
-                <div class="container-cards-transparentes">
+                <div data-aos="fade-up" class="container-cards-transparentes">
                     <div v-for="card in arrayCardsTransparent">
                         <h3>{{ card.cant }}+</h3>
                         <span>{{ card.subtitule }}</span>

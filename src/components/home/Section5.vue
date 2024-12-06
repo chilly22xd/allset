@@ -42,16 +42,16 @@ const arrayPlans = [
 <template>
     <div class="main">
         <div class="container">
-            <p class="primary">Price Package</p>
+            <p data-aos="fade-up" class="primary">Price Package</p>
             <div class="container-grid">
-                <h1>Choose Your Perfect Clean</h1>
-                <img src="/src/assets/REGALO.png" alt="">
-                <p>Explore our range of meticulously curated cleaning
+                <h1 data-aos="fade-up">Choose Your Perfect Clean</h1>
+                <img data-aos="fade-down" src="/src/assets/REGALO.png" alt="">
+                <p data-aos="fade-up">Explore our range of meticulously curated cleaning
                     packages designed to meet your unique needs.
                 </p>
             </div>
             <div class="container-plans">
-                <div v-for="plan in arrayPlans" :class="['card-plan', { 'borde-azul': plan.plan === 'Standard Plan' }]">
+                <div data-aos="fade-up" v-for="plan in arrayPlans" :class="['card-plan', { 'borde-azul': plan.plan === 'Standard Plan' }]">
                     <p>{{ plan.plan }}</p>
                     <div class="costo-plan">
                         <h2>$</h2>
@@ -103,7 +103,7 @@ const arrayPlans = [
 .container img {
     width: 100%;
     position: relative;
-    translate: 0 -10%;
+    translate: 0 -15%;
 }
 
 .primary {
