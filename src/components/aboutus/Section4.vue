@@ -2,16 +2,16 @@
 <template>
     <div class="main">
         <div class="container">
-            <h1>What Clients Say</h1>
+            <h1 data-aos="fade-down">What Clients Say</h1>
             <div>
                 <div class="container-img">
                     <img data-aos="fade-right" src="/src/assets/about.jpg" alt="">
                 </div>
                 <div class="container-elements">
-                    <div data-aos="fade-down" class="container-comillas">
+                    <div class="container-comillas">
                         "
                     </div>
-                    <div data-aos="fade-left" class="container-text">
+                    <div class="container-text">
                         <p>"AllSet! did an amazing job. My home has never been this
                             clean. The team was punctual, professional, and the products
                             they use give me peace of mind. I highly recommend their
@@ -70,14 +70,17 @@
 }
 
 .container-elements {
-    position: absolute;
+    height: 0vmax;
+    position: relative;
     display: flex;
+    z-index: 1;
     justify-content: right;
-    translate: 25vmax -25vmax;
+    translate: 0 -25vmax;
 }
 
 .container-text {
     width: 45vmax;
+    height: 8vmax;
     padding: 3vmax;
     background-color: #cde1ff;
     border-top-left-radius: 30vmax;
