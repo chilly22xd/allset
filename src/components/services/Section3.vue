@@ -21,23 +21,23 @@ const arrayPoint = [
     <div class="main">
         <div class="container">
             <div class="container-grid">
-                <p class="secundary">General Cleaning</p>
-                <h1>20-Point Service</h1>
-                <p>Perfect for regular maintenance or light to moderate cleaning
+                <p data-aos="fade-right" class="secundary">General Cleaning</p>
+                <h1 data-aos="fade-right">20-Point Service</h1>
+                <p data-aos="fade-right">Perfect for regular maintenance or light to moderate cleaning
                     needs. Our team will handle essential tasks to keep your home
                     clean and organized. With an approximate duration of 3.5 hours,
                     we cover your home's most important areas, ensuring everything is
                     spotless.</p>
                 <div class="list">
                     <div v-for="list in arrayPoint">
-                        <img src="/src/assets/checklist.png" alt="">
-                        <p><span>{{ list.titulo }}</span> {{ list.descripcion }}</p>
+                        <img data-aos="fade-right" src="/src/assets/checklist.png" alt="">
+                        <p data-aos="fade-left"><span>{{ list.titulo }}</span> {{ list.descripcion }}</p>
                     </div>
                 </div>
-                <router-link class="primary" to="">Hire</router-link>
+                <router-link data-aos="fade-up-right" class="primary" to="">Hire</router-link>
             </div>
             <div class="container-img">
-                <img src="/src/assets/services1.jpg" alt="">
+                <img data-aos="fade-left" src="/src/assets/services1.jpg" alt="">
             </div>
         </div>
     </div>
@@ -45,7 +45,7 @@ const arrayPoint = [
 <style scoped>
 .main {
     background-color: whitesmoke;
-    padding: 2% 15% 2% 15%;
+    padding: 2% 11% 2% 11%;
 }
 
 .container {
@@ -59,14 +59,15 @@ const arrayPoint = [
 }
 
 .container-grid p {
-    font-size: 22px;
+    font-size: 1.5vmax;
 }
 
 .container-grid h1 {
+    line-height: 1;
     margin: 0;
     color: #3C394E;
     font-family: 'Arial Black', serif;
-    font-size: 3em;
+    font-size: 3vmax;
 }
 
 .container-img {
@@ -95,7 +96,7 @@ const arrayPoint = [
 
 .list p {
     margin: 0;
-    font-size: 20px;
+    font-size: 1.3vmax;
 }
 
 .list span {

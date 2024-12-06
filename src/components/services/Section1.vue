@@ -3,12 +3,12 @@
 <template>
     <div class="main">
         <div class="container">
-            <div class="container-grid">
+            <div data-aos="fade-right" class="container-grid">
                 <p class="secundary">Services</p>
                 <h1>We Transform Your Space, Simplifying Your Life.</h1>
             </div>
             <div class="container-img">
-                <img src="/src/assets/aspirar-der.png" alt="">
+                <img data-aos="fade-up-left" src="/src/assets/aspirar-der.png" alt="">
             </div>
         </div>
     </div>
@@ -32,12 +32,13 @@
 }
 
 .container-grid p {
-    font-size: 22px;
+    font-size: 1.2vmax;
 }
 
 .container-grid h1 {
+    line-height: 1;
     margin: 0;
-    font-size: 3em;
+    font-size: 3vmax;
     font-family: 'Arial Black';
     color: #3C394E;
 }

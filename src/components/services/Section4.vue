@@ -22,21 +22,21 @@ const arrayDeep = [
     <div class="main">
         <div class="container">
             <div class="container-img">
-                <img src="/src/assets/services2.jpg" alt="">
+                <img data-aos="fade-right" src="/src/assets/services2.jpg" alt="">
             </div>
             <div class="container-grid">
-                <p class="secundary">General Cleaning</p>
-                <h1>Deep Cleaning</h1>
-                <p>For homes requiring more detailed attention, our Deep Cleaning
+                <p data-aos="fade-left" class="secundary">General Cleaning</p>
+                <h1 data-aos="fade-left">Deep Cleaning</h1>
+                <p data-aos="fade-left">For homes requiring more detailed attention, our Deep Cleaning
                     service covers all essential areas, along with additional tasks to
                     ensure your home is thoroughly cleaned and sanitized.</p>
                 <div class="list">
                     <div v-for="list in arrayDeep">
-                        <img src="/src/assets/checklist.png" alt="">
-                        <p><span>{{ list.titulo }}</span> {{ list.descripcion }}</p>
+                        <img data-aos="fade-right" src="/src/assets/checklist.png" alt="">
+                        <p data-aos="fade-left"><span>{{ list.titulo }}</span> {{ list.descripcion }}</p>
                     </div>
                 </div>
-                <router-link class="primary" to="">Hire</router-link>
+                <router-link data-aos="fade-up-left" class="primary" to="">Hire</router-link>
             </div>
         </div>
     </div>
@@ -59,14 +59,15 @@ const arrayDeep = [
 }
 
 .container-grid p {
-    font-size: 22px;
+    font-size: 1.5vmax;
 }
 
 .container-grid h1 {
+    line-height: 1;
     margin: 0;
     color: #3C394E;
     font-family: 'Arial Black', serif;
-    font-size: 3em;
+    font-size: 3vmax;
 }
 
 .container-img {
@@ -94,7 +95,7 @@ const arrayDeep = [
 
 .list p {
     margin: 0;
-    font-size: 20px;
+    font-size: 1.3vmax;
 }
 
 .list span {

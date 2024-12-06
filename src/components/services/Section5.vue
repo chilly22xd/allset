@@ -21,22 +21,22 @@ const arrayPoint = [
     <div class="main">
         <div class="container">
             <div class="container-grid">
-                <p class="secundary">General Cleaning</p>
-                <h1>Move-In/Move-Out</h1>
-                <p>Moving has never been easier. Our Move-In/Move-Out Cleaning
+                <p data-aos="fade-right" class="secundary">General Cleaning</p>
+                <h1 data-aos="fade-right">Move-In/Move-Out</h1>
+                <p data-aos="fade-right">Moving has never been easier. Our Move-In/Move-Out Cleaning
                     service is tailored for those transitioning into or out of a property.
                     We cover all essential areas, ensuring your new home or the
                     property you leave behind is spotless.</p>
                 <div class="list">
                     <div v-for="list in arrayPoint">
-                        <img src="/src/assets/checklist.png" alt="">
-                        <p><span>{{ list.titulo }}</span> {{ list.descripcion }}</p>
+                        <img data-aos="fade-right" src="/src/assets/checklist.png" alt="">
+                        <p data-aos="fade-left"><span>{{ list.titulo }}</span> {{ list.descripcion }}</p>
                     </div>
                 </div>
-                <router-link class="primary" to="">Hire</router-link>
+                <router-link data-aos="fade-up-right" class="primary" to="">Hire</router-link>
             </div>
             <div class="container-img">
-                <img src="/src/assets/services3.jpg" alt="">
+                <img data-aos="fade-left" src="/src/assets/services3.jpg" alt="">
             </div>
         </div>
     </div>
@@ -58,14 +58,15 @@ const arrayPoint = [
 }
 
 .container-grid p {
-    font-size: 22px;
+    font-size: 1.3vmax;
 }
 
 .container-grid h1 {
+    line-height: 1;
     margin: 0;
     color: #3C394E;
     font-family: 'Arial Black', serif;
-    font-size: 3em;
+    font-size: 3vmax;
 }
 
 .container-img {
@@ -92,7 +93,7 @@ const arrayPoint = [
 
 .list p {
     margin: 0;
-    font-size: 20px;
+    font-size: 1.3vmax;
 }
 
 .list span {

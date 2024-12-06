@@ -16,9 +16,9 @@ const arraySolutions = [
     <div class="main">
         <div class="container">
             <div class="container-img">
-                <img src="/src/assets/years4.png" alt="">
+                <img data-aos="fade-right" src="/src/assets/years4.png" alt="">
             </div>
-            <div class="container-grid">
+            <div data-aos="fade-left" class="container-grid">
                 <p class="secundary">Services</p>
                 <h1>The Cleaning Your Home Deserves</h1>
                 <p>At AllSet!, we specialize in giving you a spotless home
@@ -27,7 +27,7 @@ const arraySolutions = [
                     your best choice for all your cleaning needs.</p>
                 <span> Our Solutions:</span>
                 <div class="container-flex">
-                    <div class="cards" v-for="card in arraySolutions">
+                    <div data-aos="fade-up" class="cards" v-for="card in arraySolutions">
                         <img :src="card.icon" alt="">
                         <h2>{{ card.titulo }}</h2>
                         <p>{{ card.desc }}</p>
@@ -64,31 +64,32 @@ const arraySolutions = [
 }
 
 .container-grid p {
-    font-size: 22px;
+    font-size: 1.5vmax;
 }
 
 .container-grid h1 {
+    line-height: 1;
     margin: 0;
-    font-size: 3em;
+    font-size: 3vmax;
     font-family: 'Arial Black';
     color: #3C394E;
 }
 
 .container-grid span {
-    font-size: 20px;
+    font-size: 1.4vmax;
     font-weight: bold;
     color: #669FF3;
 }
 
 .container-flex {
-    margin-top: 40px;
+    margin-top: 4vmax;
     display: flex;
     gap: 10px;
 }
 
 .cards {
-    width: 40%;
-    padding: 20px;
+    width: 16vmax;
+    padding: 1.5vmax;
     background-color: white;
     border-radius: 20px;
 }
@@ -99,12 +100,12 @@ const arraySolutions = [
 
 .cards h2 {
     margin: 0;
-    font-size: 20px;
+    font-size: 1.3vmax;
 }
 
 .cards p {
     margin: 0;
-    font-size: 14px;
+    font-size: 1vmax;
 }
 
 .secundary {
