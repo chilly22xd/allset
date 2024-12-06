@@ -2,13 +2,13 @@
 <template>
     <div class="main">
         <div class="container">
-            <div class="container-grid">
+            <div data-aos="fade-right" class="container-grid">
                 <p class="secundary">About Us</p>
                 <h1>Making Your house Clean For Looks As a New</h1>
                 <p>Fresh,spotless, and ready to impress</p>
             </div>
             <div class="container-img">
-                <img src="/src/assets/TRAPEAR.png" alt="">
+                <img data-aos="fade-up-left" src="/src/assets/TRAPEAR.png" alt="">
             </div>
         </div>
     </div>
@@ -31,14 +31,15 @@
 }
 
 .container-grid h1 {
-    font-size: 3em;
+    line-height: 1;
+    font-size: 3vmax;
     font-family: 'Arial Black', serif;
     color: #3C394E;
     margin: 0;
 }
 
 .container-grid p {
-    font-size: 22px;
+    font-size: 1.5vmax;
 }
 
 .container-img {

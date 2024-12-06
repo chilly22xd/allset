@@ -3,21 +3,21 @@
     <div class="main">
         <div class="container">
             <div class="container-img">
-                <img src="/src/assets/years3.png" alt="">
+                <img data-aos="fade-right" src="/src/assets/years3.png" alt="">
             </div>
-            <div class="container-grid">
+            <div data-aos="fade-left" class="container-grid">
                 <h1>Professional Cleaning, Guaranteed Results.</h1>
                 <p>At AllSet!, we believe every home deserves a special touch.
                     Founded with the mission of making your life easier, we
                     specialize in delivering exceptional cleaning services with
                     meticulous attention to detail.</p>
-                <p class="quest">What makes us different?</p>
+                <p data-aos="fade-up-left" class="quest">What makes us different?</p>
                 <ul>
-                    <li><span>Trusted Team:</span>All our professionals are carefully selected and
+                    <li data-aos="fade-up"><span>Trusted Team:</span>All our professionals are carefully selected and
                         trained to ensure flawless results.</li>
-                    <li><span>Eco-Friednly Care:</span>We use products that are safe for your
+                    <li data-aos="fade-up"><span>Eco-Friednly Care:</span>We use products that are safe for your
                         family, pets, and the planet.</li>
-                    <li><span>Commitment to Quality:</span>Every service is reviewed to ensure
+                    <li data-aos="fade-up"><span>Commitment to Quality:</span>Every service is reviewed to ensure
                         your complete satisfaction.</li>
                 </ul>
             </div>
@@ -26,11 +26,8 @@
 </template>
 <style scoped>
 .main {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    background-color: whitesmoke;
-    padding-left: 11%;
-    padding-right: 11%;
+  background-color: whitesmoke;
+  padding: 2% 11%;
 }
 
 .container {
@@ -41,13 +38,14 @@
 
 .container-grid {
     display: grid;
-    align-items: centar;
+    align-items: center;
 }
 
 .container-grid h1 {
+  line-height: 1;
     margin: 0;
     color: #3C394E;
-    font-size: 3em;
+    font-size: 3vmax;
     font-family: 'Arial Black', serif;
 }
 
@@ -59,11 +57,11 @@
 }
 
 .container-grid p {
-    font-size: 22px;
+    font-size: 1.5vmax;
 }
 
 .container-grid ul {
-    font-size: 18px;
+    font-size: 1.2vmax;
 }
 
 .container-grid ul span {

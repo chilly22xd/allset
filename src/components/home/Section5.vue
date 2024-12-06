@@ -58,7 +58,7 @@ const arrayPlans = [
                     <p>{{ plan.plan }}</p>
                     <div class="costo-plan">
                         <h2>$</h2>
-                        <h1 data-aos="fade-right">{{ plan.costo }}</h1>
+                        <h1>{{ plan.costo }}</h1>
                         <p>monthly</p>
                     </div>
                     <div v-for="opciones in plan.opciones" class="opciones-plan">
@@ -74,7 +74,7 @@ const arrayPlans = [
 <style scoped>
 .main {
     background-color: transparent;
-    padding: 2vmax 11% 0 11%;
+    padding: 3vmax 11% 0 11%;
 }
 
 .container {
@@ -82,7 +82,8 @@ const arrayPlans = [
 }
 
 .container h1 {
-    font-size: 2.2em;
+    line-height: 1;
+    font-size: 2.2vmax;
     font-family: 'Arial Black', serif;
     color: #3C394E;
     margin: 0;
@@ -157,27 +158,28 @@ const arrayPlans = [
     display: flex;
     justify-content: center;
     align-items: baseline;
-    margin-top: 20px;
+    margin-top: 1vmax;
 }
 
 .costo-plan h2 {
-    font-size: 2em;
+    font-size: 2vmax;
     color: #669FF3;
 }
 
 .costo-plan h1 {
-    font-size: 3.5em;
+    font-size: 3.5vmax;
     color: #669FF3;
 }
 
 .costo-plan p {
+    font-size: 1vmax;
     margin-left: 5px;
 }
 
 .opciones-plan {
     display: flex;
     justify-content: left;
-    margin-top: 0.7vmax;
+    margin-top: 0.6vmax;
     gap: 10px;
 }
 
