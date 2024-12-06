@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink } from 'vue-router';
+import { ref, reactive, onMounted } from 'vue';
 
 const arrayCards = [
     {
@@ -39,6 +40,8 @@ const arrayCardsTransparent = [
         subtitule: 'Repeat Clients'
     }
 ];
+
+
 </script>
 <template>
     <div class="main"><!-- main -->
@@ -62,7 +65,7 @@ const arrayCardsTransparent = [
                     exceed your expectations every time.</p>
 
                 <div data-aos="fade-up" class="container-cards-transparentes">
-                    <div v-for="card in arrayCardsTransparent">
+                    <div v-for="(card, index) in arrayCardsTransparent" :key="index">
                         <h3>{{ card.cant }}+</h3>
                         <span>{{ card.subtitule }}</span>
                     </div>
@@ -172,5 +175,19 @@ const arrayCardsTransparent = [
 
 .img-year {
     width: 75%;
+}
+
+.card-transparente {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Transparencia */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-transparente:hover {
+    transform: translateY(-5px);
 }
 </style>
