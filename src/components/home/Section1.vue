@@ -33,7 +33,7 @@ const cantidades = [
                             <span class="cant-front">{{ card.cant }}+</span>
                             <span class="cant-back">{{ card.cant }}+</span>
                         </div>
-                        <span>{{ card.descripcion }}</span>
+                        <span class="text">{{ card.descripcion }}</span>
                     </div>
                 </div>
             </div>
@@ -58,6 +58,7 @@ const cantidades = [
 }
 
 .container h1 {
+    line-height: 1;
     font-size: 3em;
     font-family: 'Arial Black', serif;
     color: #3C394E;
@@ -66,7 +67,7 @@ const cantidades = [
 
 .container p {
     font-size: 22px;
-    margin: 0;
+    margin: 1vmax 0 0 0;
 }
 
 .container-img {
@@ -133,5 +134,9 @@ const cantidades = [
     font-weight: bold;
     color: #669FF3;
     opacity: 0.2;
+}
+
+.cards .text {
+    font-size: 1.2vmax;
 }
 </style>

@@ -58,7 +58,7 @@ const arrayPlans = [
                     <p>{{ plan.plan }}</p>
                     <div class="costo-plan">
                         <h2>$</h2>
-                        <h1>{{ plan.costo }}</h1>
+                        <h1 data-aos="fade-right">{{ plan.costo }}</h1>
                         <p>monthly</p>
                     </div>
                     <div v-for="opciones in plan.opciones" class="opciones-plan">
@@ -74,7 +74,7 @@ const arrayPlans = [
 <style scoped>
 .main {
     background-color: transparent;
-    padding: 3vmax 11% 0 11%;
+    padding: 2vmax 11% 0 11%;
 }
 
 .container {
@@ -98,7 +98,6 @@ const arrayPlans = [
     margin-bottom: 0;
     width: 100%;
     display: grid;
-    align-items: top;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -106,7 +105,6 @@ const arrayPlans = [
 .container-img {
     display: flex;
     justify-content: center;
-    align-items: top;
 }
 
 .container-img img {
@@ -179,12 +177,13 @@ const arrayPlans = [
 .opciones-plan {
     display: flex;
     justify-content: left;
-    margin-top: 20px;
-    gap: 5px;
+    margin-top: 0.7vmax;
+    gap: 10px;
 }
 
 .opciones-plan p {
     text-align: left;
+    font-size: 1vmax;
 }
 
 .opciones-plan img {

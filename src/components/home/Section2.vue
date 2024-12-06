@@ -100,7 +100,12 @@ const arrayCardsTransparent = [
 }
 
 .cards h2 {
+    font-size: 1.6vmax;
     margin: 0;
+}
+
+.cards p {
+    font-size: 1.1vmax;
 }
 
 .container {
@@ -114,6 +119,7 @@ const arrayCardsTransparent = [
 }
 
 .container-grid h1 {
+    line-height: 1;
     font-size: 3em;
     font-family: 'Arial Black', serif;
     color: #3C394E;

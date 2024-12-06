@@ -53,6 +53,7 @@ const arrayCheck = [
 }
 
 .container-grid h1 {
+    line-height: 1;
     font-size: 3em;
     font-family: 'Arial Black', serif;
     color: #3C394E;
