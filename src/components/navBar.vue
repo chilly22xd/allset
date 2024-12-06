@@ -27,7 +27,7 @@
 <style scoped>
 .navbar {
   display: flex;
-  margin: 10px 10% 0px 10%;
+  margin: 10px 10% 0% 10%;
   align-items: center;
 }
 

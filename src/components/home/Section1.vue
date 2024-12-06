@@ -19,7 +19,7 @@ const cantidades = [
     <div class="main"><!-- main -->
         <div class="container">
             <div class="container-grid">
-                <h1>Feel Your Way For Freshness</h1>
+                <h1 data-aos="fade-right">Feel Your Way For Freshness</h1>
                 <p>Experience the epitome of cleanliness with Allset.
                     We provide top-notch cleaning services tailored to
                     your needs, ensuring your spaces shine with perfection</p>
@@ -37,7 +37,7 @@ const cantidades = [
                     </div>
                 </div>
             </div>
-            <div class="container-img">
+            <div data-aos="fade-left" class="container-img">
                 <img src="/header.png" alt="allClean">
             </div>
         </div>
