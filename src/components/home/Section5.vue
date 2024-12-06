@@ -58,7 +58,7 @@ const arrayPlans = [
                     <p>{{ plan.plan }}</p>
                     <div class="costo-plan">
                         <h2>$</h2>
-                        <h1>{{ plan.costo }}</h1>
+                        <h1 data-aos="fade-right">{{ plan.costo }}</h1>
                         <p>monthly</p>
                     </div>
                     <div v-for="opciones in plan.opciones" class="opciones-plan">
@@ -83,7 +83,7 @@ const arrayPlans = [
 
 .container h1 {
     line-height: 1;
-    font-size: 2.2vmax;
+    font-size: 2.5vmax;
     font-family: 'Arial Black', serif;
     color: #3C394E;
     margin: 0;
