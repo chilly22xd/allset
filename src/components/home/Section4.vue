@@ -142,7 +142,7 @@ a {
     text-decoration: none;
     background: transparent;
     padding: 0;
-    font-size: inherit;
+    font-size: 1vmax;
     font-family: inherit;
 }
 
@@ -156,8 +156,8 @@ a.learn-more .circle {
     position: relative;
     display: block;
     margin: 0;
-    width: 3rem;
-    height: 3rem;
+    width: 3vmax;
+    height: 3vmax;
     background: #0044F1;
     border-radius: 10px;
 }
@@ -173,21 +173,21 @@ a.learn-more .circle .icon {
 
 a.learn-more .circle .icon.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    left: 0.625rem;
-    width: 1.125rem;
-    height: 0.125rem;
+    left: 0.625vmax;
+    width: 1.125vmax;
+    height: 0.125vmax;
     background: none;
 }
 
 a.learn-more .circle .icon.arrow::before {
     position: absolute;
     content: "";
-    top: -0.29rem;
-    right: 0.0625rem;
-    width: 0.625rem;
-    height: 0.625rem;
-    border-top: 0.125rem solid #fff;
-    border-right: 0.125rem solid #fff;
+    top: -0.29vmax;
+    right: 0.0625vmax;
+    width: 0.625vmax;
+    height: 0.625vmax;
+    border-top: 0.125vmax solid #fff;
+    border-right: 0.125vmax solid #fff;
     transform: rotate(45deg);
 }
 
@@ -198,8 +198,8 @@ a.learn-more .button-text {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
+    padding: 0.75vmax 0;
+    margin: 0 0 0 1.85vmax;
     color: #0044F1;
     font-weight: 700;
     line-height: 1.6;
@@ -213,7 +213,7 @@ a:hover .circle {
 
 a:hover .circle .icon.arrow {
     background: #fff;
-    transform: translate(1rem, 0);
+    transform: translate(1vmax, 0);
 }
 
 a:hover .button-text {
