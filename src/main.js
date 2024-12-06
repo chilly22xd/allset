@@ -2,13 +2,13 @@ import { createApp } from 'vue'
 import './style.css'
 import router from './router/index.js'
 import App from './App.vue'
-import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Aos from 'aos'
 
 Aos.init({
     duration: 900,
-    once:false
-});
+    once: false
+})
 
 const app = createApp(App)
 app.use(router)

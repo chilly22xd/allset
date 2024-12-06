@@ -13,22 +13,22 @@ const arrayCards = [
     img: '/icono-team.png',
     titulo: 'Expert Team',
     descripcion: 'Our highly trained professionals\n' +
-        'bring a wealth of experience'
+      'bring a wealth of experience'
 
   },
   {
     img: '/icono-aspiradora.png',
     titulo: 'Quality Service',
     descripcion: 'We guarantee a spotless finish that\n' +
-        'exceeds your expectations.'
+      'exceeds your expectations.'
 
   },
   {
     img: '/icono-sticker.png',
     titulo: 'Affordable Price',
     descripcion: 'We offer exceptional services at\n' +
-        'prices that are affordable for\n' +
-        'everyone.'
+      'prices that are affordable for\n' +
+      'everyone.'
 
   }
 ]
@@ -37,7 +37,7 @@ const arrayCards = [
 
 <template>
   <section1 />
-  <section2 /> 
+  <section2 />
   <section3 />
   <section4 />
   <section5 />
@@ -45,5 +45,4 @@ const arrayCards = [
 
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

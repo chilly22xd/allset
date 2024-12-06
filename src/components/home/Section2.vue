@@ -43,17 +43,17 @@ const arrayCardsTransparent = [
 <template>
     <div class="main"><!-- main -->
         <div class="container-flotante"><!-- cards flotantes -->
-            <div class="cards" v-for="card in arrayCards">
+            <div data-aos="flip-up" class="cards" v-for="card in arrayCards">
                 <img :src="card.img" alt="">
                 <h2>{{ card.titulo }}</h2>
                 <p>{{ card.descripcion }}</p>
             </div>
         </div>
         <div class="container">
-            <div class="container-flex">
+            <div data-aos="fade-right" class="container-flex">
                 <img class="img-year" src="/src/assets/years.png" alt="">
             </div>
-            <div class="container-grid">
+            <div data-aos="fade-left" class="container-grid">
                 <p class="secundary">About Us</p>
                 <h1>We Wake Places Clean & Bright</h1>
                 <p>At Allset, we’re dedicated to transforming your living and

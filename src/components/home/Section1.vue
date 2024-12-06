@@ -20,15 +20,15 @@ const cantidades = [
         <div class="container">
             <div class="container-grid">
                 <h1 data-aos="fade-right">Feel Your Way For Freshness</h1>
-                <p>Experience the epitome of cleanliness with Allset.
+                <p data-aos="fade-right">Experience the epitome of cleanliness with Allset.
                     We provide top-notch cleaning services tailored to
                     your needs, ensuring your spaces shine with perfection</p>
-                <router-link to="" class="btn-escoba">
+                <router-link data-aos="fade-right" to="/allset/services" class="btn-escoba">
                     <span>{{ masServicios.toUpperCase() }}</span>
                     <img src="/escoba.png" alt="">
                 </router-link>
                 <div class="container-cards">
-                    <div class="cards" v-for="card in cantidades">
+                    <div data-aos="fade-up" class="cards" v-for="card in cantidades">
                         <div>
                             <span class="cant-front">{{ card.cant }}+</span>
                             <span class="cant-back">{{ card.cant }}+</span>
@@ -37,7 +37,7 @@ const cantidades = [
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-left" class="container-img">
+            <div data-aos="fade-up-left" class="container-img">
                 <img src="/header.png" alt="allClean">
             </div>
         </div>
