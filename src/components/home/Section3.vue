@@ -22,7 +22,7 @@
 .container img {
     width: 45%;
     float: left;
-    translate: 3vmax -10vmax;
+    translate: 3vmax -20vmax;
 }
 
 @media (max-width: 768px) {
