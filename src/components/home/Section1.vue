@@ -212,9 +212,13 @@ const cantidades = [
 
     .btn-escoba {
         width: 20vmax;
-        height: 5vmax;
-        gap: 2vmax;
+        height: 6vmax;
+        gap: 1.5vmax;
         font-size: 1.5vmax;
+    }
+    .btn-escoba img {
+      width: 6vmax;
+      height: 6vmax;
     }
 
     .container-cards {
