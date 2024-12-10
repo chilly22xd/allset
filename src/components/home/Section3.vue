@@ -31,7 +31,7 @@
     }
 
     .container img {
-        translate: 2vmax -10vmax;
+        translate: 2vmax -9vmax;
     }
 }
 </style>
