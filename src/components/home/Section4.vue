@@ -29,12 +29,14 @@ const arrayCheck = [
                         hygiene.
                     </p>
                 </div>
-                <router-link class="learn-more" to="">
-                    <span class="circle">
-                        <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text">FIND OUT MORE</span>
-                </router-link>
+                <div class="btn-flex">
+                    <router-link class="learn-more" to="">
+                        <span class="circle">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">FIND OUT MORE</span>
+                    </router-link>
+                </div>
             </div>
             <div data-aos="fade-left" class="container-imgyears">
                 <img class="img-years" src="/src/assets/years2.png" alt="">
@@ -131,6 +133,10 @@ const arrayCheck = [
     width: 100%;
 }
 
+.btn-flex {
+    display: flex;
+}
+
 a {
     margin-top: 1vmax;
     position: relative;
@@ -218,5 +224,57 @@ a:hover .circle .icon.arrow {
 
 a:hover .button-text {
     color: #fff;
+}
+
+@media (max-width: 728px) {
+    .main {
+        padding: 5%;
+    }
+
+    .container {
+        grid-template-columns: none;
+    }
+
+    .container-grid {
+        text-align: center;
+    }
+
+    .container-grid h1 {
+        font-size: 3vmax;
+    }
+
+    .container-grid p {
+        font-size: 2vmax;
+    }
+
+    .list div {
+        align-items: center;
+    }
+
+    .list img {
+        width: 2vmax;
+        height: 2vmax;
+    }
+
+    .list p {
+        text-align: left;
+    }
+
+    .container-flex {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .container-flex img {
+        width: 20vmax;
+    }
+
+    .container-imgyears {
+        display: none;
+    }
+
+    .btn-flex {
+        justify-content: center;
+    }
 }
 </style>
