@@ -287,7 +287,7 @@ a:hover .button-text {
     }
 
     a.learn-more .circle {
-        width: 5vmax;
+        width: 4vmax;
         height: 5vmax;
     }
 
