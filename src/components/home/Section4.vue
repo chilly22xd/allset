@@ -276,5 +276,41 @@ a:hover .button-text {
     .btn-flex {
         justify-content: center;
     }
+
+    a {
+        font-size: 1.6vmax;
+    }
+
+    a.learn-more {
+        width: 20vmax;
+        height: 4vmax;
+    }
+
+    a.learn-more .circle {
+        width: 5vmax;
+        height: 5vmax;
+    }
+
+    a.learn-more .circle .icon.arrow {
+        left: 1vmax;
+        width: 1.3vmax;
+    }
+
+    a.learn-more .circle .icon.arrow::before {
+
+        transform: rotate(50deg);
+    }
+
+    a.learn-more .button-text {
+        padding: 1.2vmax 0;
+        margin: 0 0 0 2.5vmax;
+    }
+
+    a:hover .circle {
+        width: 20vmax;
+    }
+
+
+
 }
 </style>
