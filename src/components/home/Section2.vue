@@ -218,6 +218,7 @@ const arrayCardsTransparent = [
 
     .container-cards-transparentes span {
         font-size: 1.5vmax;
+        line-height: 0.5vmax;
     }
 
     .cards {
