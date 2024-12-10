@@ -5,21 +5,19 @@ const planBasic = [
     "Mopping floors",
     "Vacuuming carpets and rugs",
     "Dusting and wiping surfacest"
-];
-
+]
 const planStandard = [
     "All services from the basic",
     "Washing baseboeards, molding",
     "Cleaning inside cabinets",
     "cleaning inside drawers"
-];
+]
 const planPremium = [
     "All services from standard",
     "Cleaning inside closets",
     "Emptying trash bins",
     "High-touch surface"
-];
-
+]
 const arrayPlans = [
     {
         plan: "Basic Plan",
@@ -91,7 +89,6 @@ const arrayPlans = [
 
 .container p {
     font-size: 1.2vmax;
-    margin: 0;
 }
 
 .container-grid {
@@ -203,5 +200,37 @@ const arrayPlans = [
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 5%;
+    }
+    .container h1{
+        font-size: 3vmax;
+        text-align: center;
+    }
+    .container p {
+        font-size: 2vmax;
+        text-align: center;
+    }
+    .container-grid {
+        grid-template-columns: none;
+    }
+    .container-img {
+        display: none;
+    }
+    .container-plans {
+        align-items: center;
+        flex-direction: column;
+        margin-top: 1vmax;
+        translate: 0 0;
+    }
+    .card-plan {
+        width: 40vmax;
+    }
+    .btn-plan {
+        margin-bottom: 1vmax;
+    }
 }
 </style>
