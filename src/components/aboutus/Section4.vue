@@ -128,4 +128,39 @@
     width: 20vmax;
     height: 20vmax;
 }
+
+@media (max-width: 768px) {
+    .main {
+        padding: 3% 5% 15% 5%;
+    }
+    .container-elements {
+        translate: 0 -15vmax;
+    }
+    .container-comillas {
+        translate: -40vmax -3vmax;
+    }
+    .container-text{
+        width: 40vmax;
+        height: 10vmax;
+        padding: 2.5vmax;
+        border-top-left-radius: 5vmax;
+        border-bottom-left-radius: 5vmax;
+        border-top-right-radius: 5vmax;
+    }
+    .container-text p {
+        font-size: 1.5vmax;
+        margin: 0;
+    }
+    .container-text span {
+        font-size: 1.5vmax;
+        margin: 0;
+    }
+    .container-va {
+        translate: 35vmax 25vmax;
+    }
+    .container-va img {
+        width: 15vmax;
+        height: 15vmax;
+    }
+}
 </style>
