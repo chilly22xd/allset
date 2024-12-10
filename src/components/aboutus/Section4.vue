@@ -156,7 +156,7 @@
         margin: 0;
     }
     .container-va {
-        translate: 35vmax 25vmax;
+       display: none;
     }
     .container-va img {
         width: 15vmax;
