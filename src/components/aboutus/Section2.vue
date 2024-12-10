@@ -53,7 +53,7 @@
     margin: 0;
     color: #669FF3;
     font-weight: bold;
-    font-size: 20px !important;
+    font-size: 20px;
 }
 
 .container-grid p {
@@ -76,5 +76,35 @@
 
 .container-img img {
     width: 95%;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 2% 5%;
+    }
+    .container {
+        grid-template-columns: none;
+    }
+    .container-img {
+        justify-content: center;
+    }
+    .container-img img{
+        width: 25vmax;
+    }
+    .container-grid h1 {
+        margin-top: 1vmax;
+        font-size: 3vmax;
+        text-align: center;
+    }
+    .container-grid p {
+        text-align: center;
+        font-size: 2vmax;
+    }
+    .container-grid .quest {
+        font-size: 2vmax;
+    }
+    .container-grid ul {
+        font-size: 1.8vmax;
+    }
 }
 </style>

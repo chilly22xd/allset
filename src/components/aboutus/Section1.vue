@@ -61,4 +61,24 @@
     text-align: center;
     align-content: center;
 }
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: none;
+        padding: 0 5%;
+    }
+    .container-grid h1 {
+        text-align: center;
+    }
+    .container-grid p {
+        text-align: center;
+        font-size: 2vmax;
+    }
+    .container-img {
+        justify-content: center;
+    }
+    .container-img img{
+        width: 20vmax;
+    }
+}
 </style>

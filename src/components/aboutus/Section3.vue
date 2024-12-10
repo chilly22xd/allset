@@ -138,4 +138,22 @@ const arrayTexts = [
         background-position: 100% 50%;
     }
 }
+
+@media (max-width: 768px) {
+    .container-grid {
+        grid-template-columns: none;
+    }
+    .cards {
+        margin-top: 1vmax;
+    }
+    .cards h2 {
+        font-size: 2.5vmax;
+    }
+    .cards p {
+        font-size: 2vmax;
+    }
+    .arrows {
+        display: none;
+    }
+}
 </style>

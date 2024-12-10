@@ -206,38 +206,48 @@ const arrayPlans = [
     .main {
         padding: 5%;
     }
-    .container h1{
+
+    .container h1 {
         font-size: 3vmax;
         text-align: center;
     }
+
     .container p {
         font-size: 2vmax;
         text-align: center;
     }
+
     .container-grid {
         grid-template-columns: none;
     }
+
     .container-img {
         display: none;
     }
+
     .container-plans {
         align-items: center;
         flex-direction: column;
         margin-top: 1vmax;
         translate: 0 0;
     }
+
     .card-plan {
         width: 40vmax;
     }
+
     .btn-plan {
         margin-bottom: 1vmax;
     }
+
     .opciones-plan {
         align-items: center;
     }
+
     .costo-plan h2 {
         font-size: 3vmax;
     }
+
     .costo-plan h1 {
         font-size: 6vmax;
     }

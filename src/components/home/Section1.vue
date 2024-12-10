@@ -208,6 +208,10 @@ const cantidades = [
         font-size: 2vmax;
     }
 
+    .container-img img {
+        width: 45vmax;
+    }
+
     .container-grid {
         padding: 0 2vmax;
     }
