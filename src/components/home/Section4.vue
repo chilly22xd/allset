@@ -303,7 +303,7 @@ a:hover .button-text {
 
     a.learn-more .button-text {
         padding: 1.2vmax 0;
-        margin: 0 0 0 2.5vmax;
+        margin: 0 0 0 3vmax;
     }
 
     a:hover .circle {
