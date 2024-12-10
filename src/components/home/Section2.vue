@@ -177,4 +177,15 @@ const arrayCardsTransparent = [
 .img-year {
     width: 75%;
 }
+
+
+
+@media screen and (max-width: 1024px) {
+  .container-flotante{}
+}
+@media (max-width: 428px) {
+  .container-flotante{
+    grid-template-columns: none;
+  }
+}
 </style>
