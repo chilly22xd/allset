@@ -190,7 +190,7 @@ const cantidades = [
 
 }
 
-@media (max-width: 428px) {
+@media (max-width: 768px) {
     .main {
         margin: 0;
         padding: 0;

@@ -22,6 +22,16 @@
 .container img {
     width: 45%;
     float: left;
-    translate: 10% -65%;
+    translate: 3vmax -20vmax;
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: 10vmax;
+    }
+
+    .container img {
+        translate: 2vmax -10vmax;
+    }
 }
 </style>

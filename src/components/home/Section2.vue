@@ -110,11 +110,13 @@ const arrayCardsTransparent = [
 
 .container {
     display: grid;
+    grid-template-areas: "der izq";
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
 .container-grid {
+    grid-area: izq;
     display: grid;
 }
 
@@ -167,6 +169,7 @@ const arrayCardsTransparent = [
 }
 
 .container-flex {
+    grid-area: der;
     display: flex;
     width: 100%;
     position: relative;
@@ -182,13 +185,39 @@ const arrayCardsTransparent = [
 
 @media screen and (max-width: 1024px) {}
 
-@media (max-width: 428px) {
+@media  (max-width: 768px) {
     .main {
         padding: 5%;
     }
 
     .container-flotante {
         grid-template-columns: none;
+    }
+
+    .container {
+        grid-template-columns: none;
+        grid-template-areas: "izq" "der";
+    }
+
+    .container-grid {
+        text-align: center;
+        padding-bottom: 1.5vmax;
+    }
+
+    .container-grid h1 {
+        font-size: 3vmax;
+    }
+
+    .container-grid p {
+        font-size: 2vmax;
+    }
+
+    .container-cards-transparentes h3 {
+        font-size: 3vmax;
+    }
+
+    .container-cards-transparentes span {
+        font-size: 1.5vmax;
     }
 
     .cards {
@@ -207,6 +236,10 @@ const arrayCardsTransparent = [
 
     .cards p {
         font-size: 2.2vmax;
+    }
+
+    .container-flex{
+        justify-content: center;
     }
 }
 </style>
