@@ -278,7 +278,7 @@ a:hover .button-text {
     }
 
     a {
-        font-size: 1.6vmax;
+        font-size: 1.8vmax;
     }
 
     a.learn-more {
@@ -293,21 +293,26 @@ a:hover .button-text {
 
     a.learn-more .circle .icon.arrow {
         left: 1vmax;
-        width: 1.3vmax;
+        width: 1.5vmax;
+        height: 0.21vmax;
     }
 
     a.learn-more .circle .icon.arrow::before {
-
+        top: -0.3vmax;
         transform: rotate(50deg);
     }
 
     a.learn-more .button-text {
-        padding: 1.2vmax 0;
+        padding: 1.6vmax 0;
         margin: 0 0 0 3vmax;
     }
 
     a:hover .circle {
         width: 25vmax;
+    }
+
+    a:hover .circle .icon.arrow {
+        transform: translate(3vmax, 0);
     }
 
 
