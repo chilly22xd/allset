@@ -299,7 +299,7 @@ a:hover .button-text {
 
     a.learn-more .circle .icon.arrow::before {
         top: -0.3vmax;
-        transform: rotate(50deg);
+        transform: rotate(45deg);
     }
 
     a.learn-more .button-text {
@@ -312,7 +312,7 @@ a:hover .button-text {
     }
 
     a:hover .circle .icon.arrow {
-        transform: translate(3vmax, 0);
+        transform: translate(1.5vmax, 0);
     }
 
 
