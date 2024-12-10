@@ -181,11 +181,23 @@ const arrayCardsTransparent = [
 
 
 @media screen and (max-width: 1024px) {
-  .container-flotante{}
 }
 @media (max-width: 428px) {
   .container-flotante{
     grid-template-columns: none;
+  }
+  .cards{
+    text-align: center;
+    translate: 0 0;
+  }
+  .cards img{
+    width: 3vmax;
+  }
+  .cards h2{
+    font-size: 1.5vmax;
+  }
+  .cards p{
+    font-size: 1.2vmax;
   }
 }
 </style>
