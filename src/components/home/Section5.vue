@@ -232,5 +232,14 @@ const arrayPlans = [
     .btn-plan {
         margin-bottom: 1vmax;
     }
+    .opciones-plan {
+        align-items: center;
+    }
+    .costo-plan h2 {
+        font-size: 3vmax;
+    }
+    .costo-plan h1 {
+        font-size: 6vmax;
+    }
 }
 </style>
