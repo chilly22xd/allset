@@ -78,7 +78,7 @@ const cantidades = [
 }
 
 .container-img img {
-    width: 100%;
+    width: 50vmax;
 }
 
 .container-grid {
@@ -173,7 +173,9 @@ const cantidades = [
 
     .btn-escoba {
         width: 20vmax;
-        gap: 2.5vmax;
+        height: 5vmax;
+        font-size: 1.5vmax;
+        gap: 2vmax;
     }
 
     .container-flex {
@@ -210,7 +212,9 @@ const cantidades = [
 
     .btn-escoba {
         width: 20vmax;
-        gap: 2.5vmax;
+        height: 5vmax;
+        gap: 2vmax;
+        font-size: 1.5vmax;
     }
 
     .container-cards {
