@@ -282,13 +282,13 @@ a:hover .button-text {
     }
 
     a.learn-more {
-        width: 20vmax;
-        height: 4vmax;
+        width: 25vmax;
+        height: 6vmax;
     }
 
     a.learn-more .circle {
-        width: 4vmax;
-        height: 5vmax;
+        width: 6vmax;
+        height: 6vmax;
     }
 
     a.learn-more .circle .icon.arrow {
@@ -307,7 +307,7 @@ a:hover .button-text {
     }
 
     a:hover .circle {
-        width: 20vmax;
+        width: 25vmax;
     }
 
 
