@@ -149,7 +149,8 @@ const cantidades = [
 
 @media screen and (max-width: 1024px) {
     .main {
-        padding-bottom: 10%;
+        margin: 0;
+        padding: 0;
     }
 
     .container {
@@ -167,7 +168,7 @@ const cantidades = [
     }
 
     .container-grid {
-        padding-right: 11%;
+        padding: 0;
         align-items: center;
     }
 
@@ -192,6 +193,7 @@ const cantidades = [
 @media (max-width: 428px) {
     .main {
         margin: 0;
+        padding: 0;
     }
 
     .container {
@@ -211,14 +213,15 @@ const cantidades = [
     }
 
     .btn-escoba {
-        width: 20vmax;
-        height: 6vmax;
+        width: 25vmax;
+        height: 8vmax;
         gap: 1.5vmax;
-        font-size: 1.5vmax;
+        font-size: 1.8vmax;
     }
+
     .btn-escoba img {
-      width: 6vmax;
-      height: 6vmax;
+        width: 8vmax;
+        height: 8vmax;
     }
 
     .container-cards {
