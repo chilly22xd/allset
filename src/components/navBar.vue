@@ -115,9 +115,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .navbar {
-    margin: 1em 2em 0 2em;
-  }
 
   .logo {
     width: 9em;
@@ -160,7 +157,7 @@
   }
 
   .opciones {
-    visibility: collapse;
+    display: none;
   }
 }
 </style>

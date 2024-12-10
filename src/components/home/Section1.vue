@@ -23,10 +23,12 @@ const cantidades = [
                 <p data-aos="fade-right">Experience the epitome of cleanliness with Allset.
                     We provide top-notch cleaning services tailored to
                     your needs, ensuring your spaces shine with perfection</p>
-                <router-link data-aos="fade-right" to="/allset/services" class="btn-escoba">
-                    <span>{{ masServicios.toUpperCase() }}</span>
-                    <img src="/escoba.png" alt="">
-                </router-link>
+                <div class="container-flex">
+                    <router-link data-aos="fade-right" to="/allset/services" class="btn-escoba">
+                        <span>{{ masServicios.toUpperCase() }}</span>
+                        <img src="/escoba.png" alt="">
+                    </router-link>
+                </div>
                 <div class="container-cards">
                     <div data-aos="fade-up" class="cards" v-for="card in cantidades">
                         <div>
@@ -139,5 +141,80 @@ const cantidades = [
 
 .cards .text {
     font-size: 1.2vmax;
+}
+
+.container-flex {
+    display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+    .main {
+        padding-bottom: 10%;
+    }
+
+    .container {
+        grid-template-columns: none;
+    }
+
+    .container h1 {
+        font-size: 2.5vmax;
+        text-align: center;
+    }
+
+    .container p {
+        font-size: 1.8vmax;
+        text-align: center;
+    }
+
+    .container-grid {
+        padding-right: 11%;
+        align-items: center;
+    }
+
+    .btn-escoba {
+        width: 20vmax;
+        gap: 2.5vmax;
+    }
+
+    .container-flex {
+        justify-content: center;
+    }
+
+    .container-cards {
+        grid-template-columns: repeat(2, 20vmax);
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 428px) {
+    .main {
+        margin: 0;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .container h1 {
+        font-size: 2.5vmax;
+    }
+
+    .container p {
+        font-size: 1.5vmax;
+    }
+
+    .container-grid {
+        padding: 0 2vmax;
+    }
+
+    .btn-escoba {
+        width: 20vmax;
+        gap: 2.5vmax;
+    }
+
+    .container-cards {
+        display: none;
+    }
 }
 </style>
