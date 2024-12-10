@@ -298,7 +298,7 @@ a:hover .button-text {
     }
 
     a.learn-more .circle .icon.arrow::before {
-        top: -0.3vmax;
+        top: -0.29vmax;
         transform: rotate(45deg);
     }
 
