@@ -157,7 +157,7 @@ const cantidades = [
     }
 
     .container h1 {
-        font-size: 2.5vmax;
+        font-size: 3vmax;
         text-align: center;
     }
 
@@ -197,11 +197,11 @@ const cantidades = [
     }
 
     .container h1 {
-        font-size: 2.5vmax;
+        font-size: 3vmax;
     }
 
     .container p {
-        font-size: 1.5vmax;
+        font-size: 2vmax;
     }
 
     .container-grid {
