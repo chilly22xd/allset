@@ -143,17 +143,33 @@ const arrayTexts = [
     .container-grid {
         grid-template-columns: none;
     }
+
     .cards {
         margin-top: 1vmax;
     }
+
     .cards h2 {
         font-size: 2.5vmax;
     }
+
     .cards p {
         font-size: 2vmax;
     }
+
     .arrows {
         display: none;
+    }
+
+    .main .titulo {
+        color: transparent;
+        background: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);
+        background-clip: text;
+        animation: color 5s linear infinite;
+        background-size: 500%;
+    }
+
+    .main:hover .titulo {
+        transform: scale(1);
     }
 }
 </style>
