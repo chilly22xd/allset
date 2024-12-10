@@ -287,7 +287,7 @@ a:hover .button-text {
     }
 
     a.learn-more .circle {
-        width: 6vmax;
+        width: 25vmax;
         height: 6vmax;
     }
 
@@ -304,6 +304,7 @@ a:hover .button-text {
 
     a.learn-more .button-text {
         padding: 1.6vmax 0;
+        color: white;
         margin: 0 0 0 3vmax;
     }
 
