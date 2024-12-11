@@ -36,12 +36,14 @@ const arrayDeep = [
                         <p data-aos="fade-left"><span>{{ list.titulo }}</span> {{ list.descripcion }}</p>
                     </div>
                 </div>
-                <router-link data-aos="fade-up-left" class="learn-more" to="">
+                <div class="btn-flex">
+                    <router-link data-aos="fade-up-left" class="learn-more" to="">
                     <span class="circle">
                         <span class="icon arrow"></span>
                     </span>
-                    <span class="button-text">HIRE</span>
-                </router-link>
+                        <span class="button-text">HIRE</span>
+                    </router-link>
+                </div>
             </div>
         </div>
     </div>
@@ -95,7 +97,6 @@ const arrayDeep = [
     display: flex;
     gap: 15px;
     justify-content: left;
-    align-items: top;
 }
 
 .list p {
@@ -121,6 +122,11 @@ const arrayDeep = [
     font-size: 16px !important;
     background-color: #DCE6ff;
     border-radius: 10px;
+}
+
+.btn-flex {
+    display: flex;
+    margin: 1vmax 0;
 }
 
 a {
@@ -214,6 +220,77 @@ a:hover .button-text {
 @media (max-width: 768px) {
     .main {
         padding: 2% 5% 2% 5%;
+    }
+    .container {
+        grid-template-columns: none;
+    }
+    .container-grid h1{
+        text-align: center;
+        font-size: 3vmax;
+    }
+    .container-grid p {
+        text-align: center;
+        font-size: 2vmax;
+    }
+    .container-img {
+        justify-content: center;
+    }
+    .container-img img{
+        width: 50%;
+    }
+    .list {
+        gap: 1vmax;
+    }
+    .list div {
+        gap: 0.5vmax;
+    }
+    .list p {
+        text-align: left;
+    }
+    .list img {
+        width: 2vmax;
+        height: 2vmax;
+    }
+    .btn-flex {
+        justify-content: center;
+    }
+    a {
+        font-size: 1.8vmax;
+    }
+
+    a.learn-more {
+        width: 25vmax;
+        height: 6vmax;
+    }
+
+    a.learn-more .circle {
+        width: 25vmax;
+        height: 6vmax;
+    }
+
+    a.learn-more .circle .icon.arrow {
+        left: 1vmax;
+        width: 1.5vmax;
+        height: 0.21vmax;
+    }
+
+    a.learn-more .circle .icon.arrow::before {
+        top: -0.29vmax;
+        transform: rotate(45deg);
+    }
+
+    a.learn-more .button-text {
+        padding: 1.6vmax 0;
+        color: white;
+        margin: 0 0 0 3vmax;
+    }
+
+    a:hover .circle {
+        width: 25vmax;
+    }
+
+    a:hover .circle .icon.arrow {
+        transform: translate(1.5vmax, 0);
     }
 }
 </style>
