@@ -36,9 +36,9 @@ const arrayPoint = [
                 </div>
                 <div class="btn-flex">
                     <router-link data-aos="fade-up-right" class="learn-more" to="">
-                    <span class="circle">
-                        <span class="icon arrow"></span>
-                    </span>
+                        <span class="circle">
+                            <span class="icon arrow"></span>
+                        </span>
                         <span class="button-text">HIRE</span>
                     </router-link>
                 </div>
@@ -227,37 +227,47 @@ a:hover .button-text {
     .main {
         padding: 2% 5% 2% 5%;
     }
+
     .container {
         grid-template-columns: none;
         grid-template-areas: "der" "izq";
     }
-    .container-grid h1{
+
+    .container-grid h1 {
         font-size: 3vmax;
         text-align: center;
     }
+
     .container-grid p {
         font-size: 2vmax;
         text-align: center;
     }
+
     .container-img {
         justify-content: center;
     }
+
     .container-img img {
         width: 50%;
     }
+
     .list {
         gap: 1vmax;
     }
+
     .list div {
         gap: 0.5vmax;
     }
+
     .list p {
         text-align: left;
     }
+
     .list img {
         width: 2vmax;
         height: 2vmax;
     }
+
     .btn-flex {
         justify-content: center;
     }

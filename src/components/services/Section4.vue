@@ -38,9 +38,9 @@ const arrayDeep = [
                 </div>
                 <div class="btn-flex">
                     <router-link data-aos="fade-up-left" class="learn-more" to="">
-                    <span class="circle">
-                        <span class="icon arrow"></span>
-                    </span>
+                        <span class="circle">
+                            <span class="icon arrow"></span>
+                        </span>
                         <span class="button-text">HIRE</span>
                     </router-link>
                 </div>
@@ -217,43 +217,55 @@ a:hover .circle .icon.arrow {
 a:hover .button-text {
     color: #fff;
 }
+
 @media (max-width: 768px) {
     .main {
         padding: 2% 5% 2% 5%;
     }
+
     .container {
         grid-template-columns: none;
     }
-    .container-grid h1{
+
+    .container-grid h1 {
         text-align: center;
         font-size: 3vmax;
     }
+
     .container-grid p {
         text-align: center;
         font-size: 2vmax;
     }
+
     .container-img {
         justify-content: center;
     }
-    .container-img img{
+
+    .container-img img {
         width: 50%;
     }
+
     .list {
         gap: 1vmax;
     }
+
     .list div {
         gap: 0.5vmax;
     }
+
     .list p {
         text-align: left;
     }
+
     .list img {
         width: 2vmax;
         height: 2vmax;
     }
+
     .btn-flex {
         justify-content: center;
     }
+
     a {
         font-size: 1.8vmax;
     }
