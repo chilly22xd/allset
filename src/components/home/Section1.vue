@@ -209,7 +209,7 @@ const cantidades = [
     }
 
     .container-img img {
-        width: 45vmax;
+        width: 50vmax;
     }
 
     .container-grid {

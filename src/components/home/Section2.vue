@@ -223,7 +223,7 @@ const arrayCardsTransparent = [
     .cards {
         text-align: center;
         translate: 0 0;
-        padding: 4vmax;
+        padding: 3vmax;
     }
 
     .cards img {
@@ -231,7 +231,7 @@ const arrayCardsTransparent = [
     }
 
     .cards h2 {
-        font-size: 3vmax;
+        font-size: 4vmax;
     }
 
     .cards p {

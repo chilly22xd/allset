@@ -71,7 +71,7 @@ const arraySolutions = [
     line-height: 1;
     margin: 0;
     font-size: 3vmax;
-    font-family: 'Arial Black';
+    font-family: 'Arial Black', serif;
     color: #3C394E;
 }
 
@@ -109,13 +109,75 @@ const arraySolutions = [
 }
 
 .secundary {
-    text-align: center;
-    width: 8em;
-    height: 1.2em;
-    padding: 10px;
-    color: #3C394E;
-    font-size: 16px !important;
     background-color: #669FF3;
+    width: 8em;
+    height: 2em;
+    color: #3C394E;
+    font-size: 1.2vmax !important;
     border-radius: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 5%;
+    }
+
+    .container {
+        grid-template-columns: none;
+    }
+
+    .secundary {
+        width: 15vmax;
+        height: 4vmax;
+        font-size: 2vmax !important;
+        text-align: center;
+        align-content: center;
+    }
+
+    .container-grid {
+        text-align: center;
+    }
+
+    .container-grid h1 {
+        font-size: 3vmax;
+    }
+
+    .container-grid p {
+        font-size: 2vmax;
+    }
+
+    .container-grid span {
+        font-size: 2.2vmax;
+    }
+
+    .container-img {
+        display: none;
+    }
+
+    .container-flex {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cards {
+        width: 90%;
+        padding: 3%;
+    }
+
+    .cards img {
+        width: 7vmax;
+        height: 7vmax;
+    }
+
+    .cards h2 {
+        font-size: 2.5vmax;
+    }
+
+    .cards p {
+        padding: 0 3vmax;
+    }
 }
 </style>

@@ -54,8 +54,5 @@ import navBar from './components/navBar.vue'
 }
 
 @media screen and (max-width: 480px) {
-  .floating {
-    visibility: visible;
-  }
 }
 </style>

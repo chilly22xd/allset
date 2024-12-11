@@ -34,12 +34,14 @@ const arrayPoint = [
                         <p data-aos="fade-left"><span>{{ list.titulo }}</span> {{ list.descripcion }}</p>
                     </div>
                 </div>
-                <router-link data-aos="fade-up-right" class="learn-more" to="">
+                <div class="btn-flex">
+                    <router-link data-aos="fade-up-right" class="learn-more" to="">
                     <span class="circle">
                         <span class="icon arrow"></span>
                     </span>
-                    <span class="button-text">HIRE</span>
-                </router-link>
+                        <span class="button-text">HIRE</span>
+                    </router-link>
+                </div>
             </div>
             <div class="container-img">
                 <img data-aos="fade-left" src="/src/assets/services1.jpg" alt="">
@@ -57,10 +59,12 @@ const arrayPoint = [
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    grid-template-areas: "izq der";
 }
 
 .container-grid {
     display: grid;
+    grid-area: izq;
 }
 
 .container-grid p {
@@ -76,14 +80,15 @@ const arrayPoint = [
 }
 
 .container-img {
+    grid-area: der;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
 }
 
 .container-img img {
     margin: 0;
-    width: 85%;
+    width: 100%;
     border-radius: 30em;
 }
 
@@ -96,7 +101,6 @@ const arrayPoint = [
     display: flex;
     gap: 15px;
     justify-content: left;
-    align-items: top;
 }
 
 .list p {
@@ -125,8 +129,13 @@ const arrayPoint = [
     border-radius: 10px;
 }
 
+.btn-flex {
+    display: flex;
+    margin: 1vmax 0;
+}
+
 a {
-    margin-top: 2vmax;
+    margin-top: 1vmax;
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -136,12 +145,12 @@ a {
     text-decoration: none;
     background: transparent;
     padding: 0;
-    font-size: inherit;
+    font-size: 1vmax;
     font-family: inherit;
 }
 
 a.learn-more {
-    width: 12vmax;
+    width: 15vmax;
     height: 3vmax;
 }
 
@@ -150,8 +159,8 @@ a.learn-more .circle {
     position: relative;
     display: block;
     margin: 0;
-    width: 3rem;
-    height: 3rem;
+    width: 3vmax;
+    height: 3vmax;
     background: #0044F1;
     border-radius: 10px;
 }
@@ -167,21 +176,21 @@ a.learn-more .circle .icon {
 
 a.learn-more .circle .icon.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    left: 0.625rem;
-    width: 1.125rem;
-    height: 0.125rem;
+    left: 0.625vmax;
+    width: 1.125vmax;
+    height: 0.125vmax;
     background: none;
 }
 
 a.learn-more .circle .icon.arrow::before {
     position: absolute;
     content: "";
-    top: -0.29rem;
-    right: 0.0625rem;
-    width: 0.625rem;
-    height: 0.625rem;
-    border-top: 0.125rem solid #fff;
-    border-right: 0.125rem solid #fff;
+    top: -0.29vmax;
+    right: 0.0625vmax;
+    width: 0.625vmax;
+    height: 0.625vmax;
+    border-top: 0.125vmax solid #fff;
+    border-right: 0.125vmax solid #fff;
     transform: rotate(45deg);
 }
 
@@ -192,8 +201,8 @@ a.learn-more .button-text {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
+    padding: 0.75vmax 0;
+    margin: 0 0 0 1.85vmax;
     color: #0044F1;
     font-weight: 700;
     line-height: 1.6;
@@ -207,10 +216,89 @@ a:hover .circle {
 
 a:hover .circle .icon.arrow {
     background: #fff;
-    transform: translate(1rem, 0);
+    transform: translate(1vmax, 0);
 }
 
 a:hover .button-text {
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 2% 5% 2% 5%;
+    }
+    .container {
+        grid-template-columns: none;
+        grid-template-areas: "der" "izq";
+    }
+    .container-grid h1{
+        font-size: 3vmax;
+        text-align: center;
+    }
+    .container-grid p {
+        font-size: 2vmax;
+        text-align: center;
+    }
+    .container-img {
+        justify-content: center;
+    }
+    .container-img img {
+        width: 50%;
+    }
+    .list {
+        gap: 1vmax;
+    }
+    .list div {
+        gap: 0.5vmax;
+    }
+    .list p {
+        text-align: left;
+    }
+    .list img {
+        width: 2vmax;
+        height: 2vmax;
+    }
+    .btn-flex {
+        justify-content: center;
+    }
+
+    a {
+        font-size: 1.8vmax;
+    }
+
+    a.learn-more {
+        width: 25vmax;
+        height: 6vmax;
+    }
+
+    a.learn-more .circle {
+        width: 25vmax;
+        height: 6vmax;
+    }
+
+    a.learn-more .circle .icon.arrow {
+        left: 1vmax;
+        width: 1.5vmax;
+        height: 0.21vmax;
+    }
+
+    a.learn-more .circle .icon.arrow::before {
+        top: -0.29vmax;
+        transform: rotate(45deg);
+    }
+
+    a.learn-more .button-text {
+        padding: 1.6vmax 0;
+        color: white;
+        margin: 0 0 0 3vmax;
+    }
+
+    a:hover .circle {
+        width: 25vmax;
+    }
+
+    a:hover .circle .icon.arrow {
+        transform: translate(1.5vmax, 0);
+    }
 }
 </style>

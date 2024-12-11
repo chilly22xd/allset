@@ -39,7 +39,7 @@
     line-height: 1;
     margin: 0;
     font-size: 3vmax;
-    font-family: 'Arial Black';
+    font-family: 'Arial Black', serif;
     color: #3C394E;
 }
 
@@ -61,5 +61,32 @@
     border-radius: 10px;
     text-align: center;
     align-content: center;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 0 5%;
+    }
+
+    .container {
+        grid-template-columns: none;
+    }
+
+    .container p {
+        font-size: 2vmax;
+    }
+
+    .container-img {
+        justify-content: center;
+    }
+
+    .container-img img {
+        width: 30vmax;
+    }
+
+    .container-grid h1 {
+        text-align: center;
+        font-size: 3vmax;
+    }
 }
 </style>

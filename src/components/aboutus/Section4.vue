@@ -131,13 +131,19 @@
 
 @media (max-width: 768px) {
     .main {
-        padding: 3% 5% 15% 5%;
+        padding: 3% 5% 5% 5%;
     }
-    .container-elements {
-        translate: 0 -15vmax;
+    .container-img img{
+        width: 20vmax;
+    }
+    .container-elements{
+        margin-top: 1vmax;
+        justify-content: center;
+        translate: 0 0;
+        height: auto;
     }
     .container-comillas {
-        translate: -40vmax -3vmax;
+        translate: -18vmax -3vmax;
     }
     .container-text{
         width: 40vmax;
@@ -161,6 +167,9 @@
     .container-va img {
         width: 15vmax;
         height: 15vmax;
+    }
+    .container-img {
+        display: none;
     }
 }
 </style>
