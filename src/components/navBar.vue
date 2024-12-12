@@ -1,163 +1,215 @@
 <script setup>
-
+import {ref} from "vue";
+const isNavOpen = ref(false);
+function openNav() {
+    isNavOpen.value = true;
+}
+function closeNav() {
+    isNavOpen.value = false;
+}
+function toggleNav() {
+    isNavOpen.value = !isNavOpen.value;
+}
 </script>
-
 <template>
 
-  <header class="navbar">
-    <div class="contlogo">
-      <img class="logo" src="/logo.png" alt="Allset">
+  <header class="header">
+    <div class="logo">
+      <img src="/logo.png" alt="logo">
     </div>
-    <div class="menu">
-      <ul>
+    <nav>
+      <ul class="nav-links">
         <li><router-link class="links-class" exact-active-class="links" to="/allset/">Home</router-link></li>
         <li><router-link class="links-class" exact-active-class="links" to="/allset/about">About Us</router-link></li>
-        <li><router-link class="links-class" exact-active-class="links" to="/allset/services">Services</router-link>
-        </li>
+        <li><router-link class="links-class" exact-active-class="links" to="/allset/services">Services</router-link></li>
         <li><router-link class="links-class" exact-active-class="links" to="/allset/blog">Blog</router-link></li>
       </ul>
-    </div>
-    <div class="opciones">
-      <button class="contact">Contact Us</button>
-    </div>
+    </nav>
+      <button class="contact-btn">Contact Us</button>
+      <button class="hamburguer" @click="toggleNav">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </button>
+      <div :class="{'nav-active': isNavOpen}" class="menu">
+          <button class="close-btn" @click="closeNav">&times;</button>
+          <div class="menu-links" @click="closeNav">
+              <router-link to="/allset/">Home</router-link>
+              <router-link to="/allset/about">About Us</router-link>
+              <router-link to="/allset/services">Services</router-link>
+              <router-link to="">Blog</router-link>
+              <button class="contact-btn">Contact Us</button>
+          </div>
+
+      </div>
+
   </header>
-
 </template>
-
 <style scoped>
-.navbar {
-  display: flex;
-  margin: 10px 10% 0% 10%;
-  align-items: center;
-}
-
-.logo {
-  width: 10em;
-  height: auto;
-  transition: 0.3s;
-}
-
-.logo:hover {
-  transform: scale(1.2);
-}
-
-.links-class {
-  color: black;
-  text-decoration: none;
-}
-
-.links-class:hover {
-  color: #669FF3;
-}
-
-.links {
-  color: #0044F1;
-}
-
-.menu {
-  flex: 1;
-}
-
-.menu ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-}
-
-.menu li {
-  padding: 2em;
-}
-
-.opciones {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-
-.btn-buscar {
-  width: 2em;
-  fill: white;
-  background-color: gray;
-  padding: 12px;
-  border-radius: 30em;
-}
-
-.contact {
-  width: 12em;
-  height: 4em;
-  margin: 5px;
-  background-color: #0044F1;
-  color: white;
-  border: none;
-  position: relative;
-  border-radius: 30em;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.contact::before {
-  content: "";
-  width: 0;
-  height: 4em;
-  border-radius: 30em;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: 0.5s ease;
-  background: #669FF3;
-  display: block;
-  z-index: -1;
-}
-
-.contact:hover::before {
-  width: 12em;
-}
-
-@media screen and (max-width: 1024px) {
-
-  .logo {
-    width: 9em;
-  }
-
-  .menu {
-    font-size: 15px;
-  }
-
-  .contact {
-    width: 10em;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .navbar {
-    flex-direction: column;
-    margin: 0;
+.header {
+    padding: 0.1vmax 0;
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-  }
+}
+.header .logo {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.header .logo img {
+    width: 10vmax;
+    height: auto;
+}
+.header .logo:hover {
+    transform: scale(1.2);
+}
+.header .nav-links {
+    list-style: none;
+}
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 1.5vmax 0 1.5vmax;
+}
+.header .nav-links a {
+    font-size: 1.1vmax;
+    color: black;
+    transition: all 0.5s;
+}
+.header .nav-links a:hover {
+    color: #0044F1;
+    transform: scale(1.1);
+}
+.header .nav-links .links {
+    color: #0044F1;
+}
+.header .contact-btn {
+    width: 10vmax;
+    height: 3.5vmax;
+    background-color: #0044F1;
+    color: white;
+    border: none;
+    position: relative;
+    border-radius: 30em;
+    overflow: hidden;
+    z-index: 1;
+}
+.header .contact-btn::before {
+    content: "";
+    width: 0;
+    height: 4em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease;
+    background: #669FF3;
+    display: block;
+    z-index: -1;
+}
+.header .contact-btn:hover::before {
+    width: 10vmax;
+}
 
-  .logo {
-    width: 6em;
-  }
-
-  .contlogo {
-    flex-basis: 100%;
-  }
-
-  .menu {
-    font-size: 15px;
-  }
-
-  .menu ul {
-    padding: 0;
-  }
-
-  .menu li {
-    padding: 10px;
-  }
-
-  .opciones {
+.hamburguer {
     display: none;
-  }
+    flex-direction: column;
+    cursor: pointer;
+    background-color: #3C394E;
+    border-radius: 5px;
+    border: none;
+    padding: 1vmax;
+}
+.hamburguer:focus .line {
+    background-color: #3C394E;
+}
+.hamburguer:focus {
+    background-color: #669FF3;
+}
+
+.hamburguer .line {
+    width: 2.5vmax;
+    height: 0.2vmax;
+    background-color: white;
+    margin: 0.3vmax 0;
+}
+
+.nav-active {
+    display: block !important;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.menu .menu-links {
+    height: 100%;
+    display: flex;
+    gap: 2vmax;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu .menu-links a {
+    font-size: 5vmax;
+    font-weight: bold;
+    color: white;
+}
+.menu .menu-links a:hover {
+    color: #669FF3;
+}
+.menu .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.menu .menu-contact{
+    display: flex;
+    background-color: #669FF3;
+    justify-content: right;
+}
+
+@media (max-width: 768px) {
+    .header {
+        margin: 0 5%;
+    }
+    .nav-links {
+        display: none;
+    }
+    .header .contact-btn {
+        display: none;
+    }
+    .hamburguer {
+        display: inherit;
+    }
+    .menu  .contact-btn{
+        margin-top: 2vmax;
+        display: inherit;
+        width: 20vmax;
+        height: 5vmax;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu .contact-btn::before{
+        width: 0;
+        height: 5vmax;
+    }
+    .menu .contact-btn:hover::before{
+        width: 20vmax;
+    }
+
 }
 </style>

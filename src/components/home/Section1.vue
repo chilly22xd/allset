@@ -192,7 +192,7 @@ const cantidades = [
 
 @media (max-width: 768px) {
     .main {
-        margin: 0;
+        margin: 1vmax 0 0 0;
         padding: 0;
     }
 
@@ -209,7 +209,7 @@ const cantidades = [
     }
 
     .container-img img {
-        width: 50vmax;
+        width: 40vmax;
     }
 
     .container-grid {
