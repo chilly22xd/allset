@@ -1,5 +1,5 @@
 <script setup>
-import {ref} from "vue";
+import {ref, watch} from "vue";
 const isNavOpen = ref(false);
 function openNav() {
     isNavOpen.value = true;
@@ -10,6 +10,14 @@ function closeNav() {
 function toggleNav() {
     isNavOpen.value = !isNavOpen.value;
 }
+
+watch(isNavOpen, (newValue) => {
+    if(newValue) {
+        document.body.style.overflow = "hidden";
+    } else {
+        document.body.style.overflow = "auto";
+    }
+})
 </script>
 <template>
 
@@ -22,10 +30,10 @@ function toggleNav() {
         <li><router-link class="links-class" exact-active-class="links" to="/allset/">Home</router-link></li>
         <li><router-link class="links-class" exact-active-class="links" to="/allset/about">About Us</router-link></li>
         <li><router-link class="links-class" exact-active-class="links" to="/allset/services">Services</router-link></li>
-        <li><router-link class="links-class" exact-active-class="links" to="/allset/blog">Blog</router-link></li>
+        <li><router-link class="links-class" exact-active-class="links" to="/allset/contact">Contact</router-link></li>
       </ul>
     </nav>
-      <button class="contact-btn">Contact Us</button>
+      <router-link class="contact-btn" to="/allset/hireus">Hire Us</router-link>
       <button class="hamburguer" @click="toggleNav">
           <div class="line"></div>
           <div class="line"></div>
@@ -37,7 +45,7 @@ function toggleNav() {
               <router-link to="/allset/">Home</router-link>
               <router-link to="/allset/about">About Us</router-link>
               <router-link to="/allset/services">Services</router-link>
-              <router-link to="">Blog</router-link>
+              <router-link to="">Contact</router-link>
               <button class="contact-btn">Contact Us</button>
           </div>
 
@@ -92,12 +100,15 @@ function toggleNav() {
     position: relative;
     border-radius: 30em;
     overflow: hidden;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
     z-index: 1;
 }
 .header .contact-btn::before {
     content: "";
     width: 0;
-    height: 4em;
+    height: 3.5vmax;
     border-radius: 30em;
     position: absolute;
     top: 0;
@@ -142,13 +153,13 @@ function toggleNav() {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100vmax;
     background-color: rgba(0, 0, 0, 0.8);
     display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 100;
+    z-index: 10;
 }
 .menu .menu-links {
     height: 100%;

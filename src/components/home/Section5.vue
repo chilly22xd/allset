@@ -72,7 +72,7 @@ const arrayPlans = [
 <style scoped>
 .main {
     background-color: transparent;
-    padding: 3vmax 11% 0 11%;
+    padding: 0.5vmax 11% 0 11%;
 }
 
 .container {
@@ -106,7 +106,7 @@ const arrayPlans = [
 }
 
 .container-img img {
-    width: 22vmax;
+    width: 20vmax;
 }
 
 
@@ -124,11 +124,10 @@ const arrayPlans = [
 
 .container-plans {
     margin: 0;
-    position: relative;
     display: flex;
     gap: 20px;
     justify-content: center;
-    z-index: 2;
+    z-index: 1;
     translate: 0 -8vmax;
 }
 
@@ -155,7 +154,6 @@ const arrayPlans = [
     display: flex;
     justify-content: center;
     align-items: baseline;
-    margin-top: 1vmax;
 }
 
 .costo-plan h2 {
@@ -176,7 +174,8 @@ const arrayPlans = [
 .opciones-plan {
     display: flex;
     justify-content: left;
-    margin-top: 0.6vmax;
+    align-items: center;
+    margin-top: 0.1vmax;
     gap: 10px;
 }
 
@@ -191,7 +190,7 @@ const arrayPlans = [
 }
 
 .btn-plan {
-    margin-top: 20%;
+    margin-top: 2vmax;
     background-color: #0044F1;
     text-align: center;
     align-content: center;
