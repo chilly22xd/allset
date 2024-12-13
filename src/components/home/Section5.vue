@@ -40,7 +40,9 @@ const arrayPlans = [
 <template>
     <div class="main">
         <div class="container">
-            <p data-aos="fade-up" class="primary">Price Package</p>
+            <div class="container-primary">
+                <p data-aos="fade-up" class="primary">Price Package</p>
+            </div>
             <div class="container-grid">
                 <h1 data-aos="fade-up">Choose Your Perfect Clean</h1>
                 <div class="container-img">
@@ -203,7 +205,7 @@ const arrayPlans = [
 
 @media (max-width: 768px) {
     .main {
-        padding: 5%;
+        padding: 8% 5%;
     }
 
     .container h1 {
@@ -232,7 +234,7 @@ const arrayPlans = [
     }
 
     .card-plan {
-        width: 40vmax;
+        width: 75%;
     }
 
     .btn-plan {

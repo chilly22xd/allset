@@ -10,7 +10,9 @@ const arrayCheck = [
     <div class="main"><!-- main -->
         <div class="container">
             <div data-aos="fade-right" class="container-grid">
-                <p class="secundary">Choose</p>
+                <div class="container-secundary">
+                    <p class="secundary">Choose</p>
+                </div>
                 <h1>Why Choose Allset Cleaning Services</h1>
                 <p>With Allset, you’re not just getting a cleaning service; you're
                     gaining a partner in cleanliness. Here’s why clients trust us:
@@ -139,7 +141,7 @@ const arrayCheck = [
 
 @media (max-width: 728px) {
     .main {
-        padding: 5%;
+        padding: 8% 5%;
     }
 
     .container {
@@ -177,7 +179,7 @@ const arrayCheck = [
     }
 
     .container-flex img {
-        width: 20vmax;
+        width: 90%;
     }
 
     .container-imgyears {

@@ -54,7 +54,9 @@ const arrayCardsTransparent = [
                 <img class="img-year" src="/src/assets/years.png" alt="">
             </div>
             <div data-aos="fade-left" class="container-grid">
-                <p class="secundary">About Us</p>
+                <div class="container-secundary">
+                    <p class="secundary">About Us</p>
+                </div>
                 <h1>We Wake Places Clean & Bright</h1>
                 <p>At Allset, we’re dedicated to transforming your living and
                     working spaces into pristine havens. With years of
@@ -201,7 +203,9 @@ const arrayCardsTransparent = [
 
     .container-grid {
         text-align: center;
+        align-items: center;
         padding-bottom: 1.5vmax;
+        gap: 2vmax;
     }
 
     .container-grid h1 {
@@ -221,7 +225,9 @@ const arrayCardsTransparent = [
     }
 
     .cards {
+        width: 70%;
         text-align: center;
+        justify-self: center;
         translate: 0 0;
         padding: 3vmax;
     }

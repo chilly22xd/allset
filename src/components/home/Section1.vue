@@ -57,6 +57,7 @@ const cantidades = [
     grid-template-columns: 40% 60%;
     align-items: center;
     margin-bottom: 1vmax;
+    gap: 2vmax;
 }
 
 .container h1 {
@@ -85,6 +86,7 @@ const cantidades = [
     position: relative;
     display: grid;
     justify-content: left;
+    gap: 2vmax;
 }
 
 .btn-escoba {

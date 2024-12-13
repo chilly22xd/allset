@@ -11,6 +11,11 @@ button{
   font-weight: bold;
 }
 
+.container-secundary,.container-primary {
+  display: flex;
+  justify-content: left;
+}
+
 a {
   margin-top: 1vmax;
   position: relative;
@@ -101,6 +106,10 @@ a:hover .button-text {
 }
 
 @media (max-width: 768px) {
+  .container-secundary,.container-primary {
+    justify-content: center;
+  }
+
   a {
     font-size: 1.8vmax;
   }

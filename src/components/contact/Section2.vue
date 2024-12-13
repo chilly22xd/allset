@@ -5,27 +5,27 @@
 <template>
     <div class="main">
         <div class="container">
-            <h1>Get in Touch</h1>
-            <p>We’re ready to answer your questions and help you choose the perfect cleaning service for your
+            <h1 data-aos="fade-down">Get in Touch</h1>
+            <p data-aos="fade-down">We’re ready to answer your questions and help you choose the perfect cleaning service for your
                 needs. Reach out to us, and we’ll get back to you as soon as possible.</p>
             <form class="forms" action="" method="post">
                 <div class="container-flex">
                     <div class="formField">
                         <input class="input" type="text"  name="name">
-                        <span>Your Name</span>
+                        <span data-aos="fade-up">Your Name</span>
                     </div>
                     <div class="formField">
                         <input type="email" name="email">
-                        <span>Your Email</span>
+                        <span data-aos="fade-up">Your Email</span>
                     </div>
                 </div>
                 <div class="formField">
                     <input type="text" name="tittle">
-                    <span>Tittle</span>
+                    <span data-aos="fade-up">Tittle</span>
                 </div>
                 <div class="formField">
                     <textarea name="message" id="" cols="30" rows="10"></textarea>
-                    <span>Comment</span>
+                    <span data-aos="fade-up">Comment</span>
                 </div>
                 <div class="container-flex">
                     <input class="btn-submit" type="submit" value="Send">
