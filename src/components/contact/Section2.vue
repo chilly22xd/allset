@@ -101,7 +101,7 @@
 
 @media (max-width: 768px) {
     .main {
-        padding: 0 5%;
+        padding: 8% 5%;
     }
     .container {
         gap: 2vmax;
