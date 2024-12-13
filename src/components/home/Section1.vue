@@ -149,87 +149,43 @@ const cantidades = [
     display: flex;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 768px) {
     .main {
+        padding: 3% 0 3% 5%;
         margin: 0;
-        padding: 0;
     }
-
+    .container-img {
+    }
+    .container-img img {
+        width: 100%;
+    }
     .container {
         grid-template-columns: none;
     }
-
-    .container h1 {
+    .container-grid {
+        padding-right: 3%;
+        gap: 3vmax;
+    }
+    .container-grid h1 {
         font-size: 3vmax;
         text-align: center;
     }
-
-    .container p {
-        font-size: 1.8vmax;
+    .container-grid p {
+        font-size: 2vmax;
         text-align: center;
     }
-
-    .container-grid {
-        padding: 0;
-        align-items: center;
-    }
-
-    .btn-escoba {
-        width: 20vmax;
-        height: 5vmax;
-        font-size: 1.5vmax;
-        gap: 2vmax;
-    }
-
     .container-flex {
         justify-content: center;
     }
-
-    .container-cards {
-        grid-template-columns: repeat(2, 20vmax);
-        justify-content: center;
-    }
-
-}
-
-@media (max-width: 768px) {
-    .main {
-        margin: 1vmax 0 0 0;
-        padding: 0;
-    }
-
-    .container {
-        text-align: center;
-    }
-
-    .container h1 {
-        font-size: 3vmax;
-    }
-
-    .container p {
-        font-size: 2vmax;
-    }
-
-    .container-img img {
-        width: 85%;
-    }
-
-    .container-grid {
-        padding: 0 2vmax;
-    }
-
     .btn-escoba {
         width: 25vmax;
         height: 8vmax;
-        gap: 1.5vmax;
-        font-size: 1.8vmax;
+        font-size: 2vmax;
+        gap: 0;
     }
-
     .btn-escoba img {
         width: 8vmax;
-        height: 8vmax;
     }
-
     .container-cards {
         display: none;
     }
