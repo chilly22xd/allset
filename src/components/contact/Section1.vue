@@ -1,14 +1,4 @@
 <script setup>
-const arrayData = [
-    {
-        icon: '../allset/src/assets/telefono.png',
-        detalles: '1-800-ALLSET'
-    },
-    {
-        icon: '../allset/src/assets/correo.png',
-        detalles: 'hello@allset-clean.com'
-    }
-]
 </script>
 
 <template>
@@ -23,9 +13,13 @@ const arrayData = [
                     help keep your home spotless. Your satisfaction is our
                     priority!</p>
                 <div>
-                    <div class="container-flex" v-for="item in arrayData">
-                        <img data-aos="fade-up" :src="item.icon" alt="">
-                        <p>{{item.detalles}}</p>
+                    <div class="container-flex">
+                        <img data-aos="fade-up" src="/src/assets/telefono.png" alt="telefono">
+                        <p>1-800-ALLSET</p>
+                    </div>
+                    <div class="container-flex">
+                        <img data-aos="fade-up" src="/src/assets/correo.png" alt="correo">
+                        <p>hello@allset-clean.com</p>
                     </div>
                 </div>
             </div>

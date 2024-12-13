@@ -1,29 +1,4 @@
 <script setup>
-
-const arrayTexts = [
-    {
-        icon: "/src/assets/2.png",
-        titulo: "Call or Message Us",
-        text: "Let us know the service you need and choose a convenient time for you."
-    },
-    {
-        icon: "/src/assets/flecha.png"
-    },
-    {
-        icon: "/src/assets/3.png",
-        titulo: "Relax While We Work",
-        text: "Our team will arrive on time, equipped with everything needed to make your space shine"
-    },
-    {
-        icon: "/src/assets/flecha.png"
-    },
-    {
-        icon: "/src/assets/4.png",
-        titulo: "Enjoy Your Clean Home",
-        text: "Come back to a sparkling space you'll love"
-    }
-];
-
 </script>
 <template>
     <div class="main">
