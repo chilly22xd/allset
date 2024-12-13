@@ -149,5 +149,29 @@
     color: #669FF3;
 }
 
+@media (max-width: 768px) {
+    .main {
+        padding: 8% 5%;
+    }
+    .container {
+        gap: 2vmax;
+    }
+    .container h1 {
+        font-size: 3vmax;
+    }
+    .container p {
+        font-size: 2vmax;
+    }
+    .container-flex{
+        grid-template-columns: none;
+    }
+    .forms {
+        align-items: center;
+        justify-content: center;
+    }
+    .formField input {
+        width: 100%;
+    }
 
+}
 </style>

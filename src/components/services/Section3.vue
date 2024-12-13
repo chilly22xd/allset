@@ -21,7 +21,9 @@ const arrayPoint = [
     <div class="main">
         <div class="container">
             <div class="container-grid">
-                <p data-aos="fade-right" class="secundary">General Cleaning</p>
+                <div class="container-primary">
+                    <p data-aos="fade-right" class="secundary">General Cleaning</p>
+                </div>
                 <h1 data-aos="fade-right">20-Point Service</h1>
                 <p data-aos="fade-right">Perfect for regular maintenance or light to moderate cleaning
                     needs. Our team will handle essential tasks to keep your home
@@ -144,6 +146,10 @@ const arrayPoint = [
         grid-template-areas: "der" "izq";
     }
 
+    .container-grid {
+        gap: 2vmax;
+    }
+
     .container-grid h1 {
         font-size: 3vmax;
         text-align: center;
@@ -163,7 +169,7 @@ const arrayPoint = [
     }
 
     .list {
-        gap: 1vmax;
+        gap: 2vmax;
     }
 
     .list div {

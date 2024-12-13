@@ -22,9 +22,11 @@ const arrayData = [
                 <p>We're here for you. Contact us and discover how we can
                     help keep your home spotless. Your satisfaction is our
                     priority!</p>
-                <div class="container-flex" v-for="item in arrayData">
-                    <img data-aos="fade-up" :src="item.icon" alt="">
-                    <p>{{item.detalles}}</p>
+                <div>
+                    <div class="container-flex" v-for="item in arrayData">
+                        <img data-aos="fade-up" :src="item.icon" alt="">
+                        <p>{{item.detalles}}</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -39,16 +41,19 @@ const arrayData = [
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
+    grid-template-areas: "izq der";
 }
 .container-img {
     display: flex;
     justify-content: left;
+    grid-area: izq;
 }
 .container-img img {
     width: 65%;
 }
 .container-grid {
     display: grid;
+    grid-area: der;
 }
 .container-grid h1 {
     line-height: 1;
@@ -71,5 +76,40 @@ const arrayData = [
 }
 .container-flex p {
     font-size: 1.2vmax;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 3% 5% 0 5%;
+    }
+    .container {
+        grid-template-columns: none;
+        grid-template-areas: "der" "izq";
+    }
+
+    .container-img {
+        justify-content: center;
+    }
+    .container-img img {
+        width: 50%;
+    }
+    .container-grid {
+        gap: 2vmax;
+    }
+    .container-grid h1 {
+        text-align: center;
+        font-size: 3vmax;
+    }
+    .container-grid p {
+        text-align: center;
+        font-size: 2vmax;
+    }
+    .container-flex {
+        gap: 1vmax;
+    }
+    .container-flex img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 }
 </style>

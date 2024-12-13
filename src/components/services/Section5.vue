@@ -21,7 +21,9 @@ const arrayPoint = [
     <div class="main">
         <div class="container">
             <div class="container-grid">
-                <p data-aos="fade-right" class="secundary">General Cleaning</p>
+                <div class="container-primary">
+                    <p data-aos="fade-right" class="secundary">General Cleaning</p>
+                </div>
                 <h1 data-aos="fade-right">Move-In/Move-Out</h1>
                 <p data-aos="fade-right">Moving has never been easier. Our Move-In/Move-Out Cleaning
                     service is tailored for those transitioning into or out of a property.
@@ -150,6 +152,10 @@ const arrayPoint = [
         width: 50%;
     }
 
+    .container-grid {
+        gap: 2vmax;
+    }
+
     .container-grid h1 {
         font-size: 3vmax;
         text-align: center;
@@ -161,7 +167,7 @@ const arrayPoint = [
     }
 
     .list {
-        gap: 1vmax;
+        gap: 2vmax;
     }
 
     .list div {

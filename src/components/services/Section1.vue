@@ -4,7 +4,9 @@
     <div class="main">
         <div class="container">
             <div data-aos="fade-right" class="container-grid">
-                <p class="secundary">Services</p>
+                <div class="container-secundary">
+                    <p class="secundary">Services</p>
+                </div>
                 <h1>We Transform Your Space, Simplifying Your Life.</h1>
             </div>
             <div class="container-img">
@@ -70,6 +72,7 @@
 
     .container {
         grid-template-columns: none;
+        gap: 2vmax;
     }
 
     .container p {

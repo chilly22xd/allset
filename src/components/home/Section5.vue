@@ -220,6 +220,7 @@ const arrayPlans = [
 
     .container-grid {
         grid-template-columns: none;
+        gap: 2vmax;
     }
 
     .container-img {

@@ -25,7 +25,9 @@ const arrayDeep = [
                 <img data-aos="fade-right" src="/src/assets/services2.jpg" alt="">
             </div>
             <div class="container-grid">
-                <p data-aos="fade-left" class="secundary">General Cleaning</p>
+                <div class="container-primary">
+                    <p data-aos="fade-left" class="secundary">General Cleaning</p>
+                </div>
                 <h1 data-aos="fade-left">Deep Cleaning</h1>
                 <p data-aos="fade-left">For homes requiring more detailed attention, our Deep Cleaning
                     service covers all essential areas, along with additional tasks to
@@ -138,6 +140,10 @@ const arrayDeep = [
         grid-template-columns: none;
     }
 
+    .container-grid {
+        gap: 2vmax;
+    }
+
     .container-grid h1 {
         text-align: center;
         font-size: 3vmax;
@@ -157,7 +163,7 @@ const arrayDeep = [
     }
 
     .list {
-        gap: 1vmax;
+        gap: 2vmax;
     }
 
     .list div {

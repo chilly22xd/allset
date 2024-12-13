@@ -19,7 +19,9 @@ const arraySolutions = [
                 <img data-aos="fade-right" src="/src/assets/years4.png" alt="">
             </div>
             <div data-aos="fade-left" class="container-grid">
-                <p class="secundary">Services</p>
+                <div class="container-secundary">
+                    <p class="secundary">Services</p>
+                </div>
                 <h1>The Cleaning Your Home Deserves</h1>
                 <p>At AllSet!, we specialize in giving you a spotless home
                     with services tailored to fit your lifestyle. Our
@@ -138,6 +140,7 @@ const arraySolutions = [
 
     .container-grid {
         text-align: center;
+        gap: 2vmax;
     }
 
     .container-grid h1 {
@@ -163,8 +166,8 @@ const arraySolutions = [
     }
 
     .cards {
-        width: 90%;
-        padding: 3%;
+        width: 70%;
+        padding: 5% 8%;
     }
 
     .cards img {
