@@ -54,7 +54,7 @@ const cantidades = [
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 0.5fr;
+    grid-template-columns: 0.7fr 1fr;
     align-items: center;
     margin-bottom: 1vmax;
     gap: 2vmax;
@@ -79,7 +79,7 @@ const cantidades = [
 }
 
 .container-img img {
-    width: 50vmax;
+    width: 120%;
 }
 
 .container-grid {
@@ -155,9 +155,10 @@ const cantidades = [
         margin: 0;
     }
     .container-img {
+        justify-content: right;
     }
     .container-img img {
-        width: 100%;
+        width: 80%;
     }
     .container {
         grid-template-columns: none;
@@ -187,7 +188,11 @@ const cantidades = [
         width: 8vmax;
     }
     .container-cards {
+        overflow: hidden;
         display: none;
+    }
+    .cant-front {
+        position: inherit;
     }
 }
 </style>
