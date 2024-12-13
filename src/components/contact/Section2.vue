@@ -10,22 +10,22 @@
                 needs. Reach out to us, and we’ll get back to you as soon as possible.</p>
             <form class="forms" action="" method="post">
                 <div class="container-flex">
-                    <div class="formField">
+                    <div class="containers-inputs">
                         <input class="input" type="text"  name="name">
-                        <span data-aos="fade-up">Your Name</span>
+                        <span class="name" data-aos="fade-up">Your Name</span>
                     </div>
-                    <div class="formField">
-                        <input type="email" name="email">
-                        <span data-aos="fade-up">Your Email</span>
+                    <div class="containers-inputs">
+                        <input class="input" type="email" name="email">
+                        <span class="name" data-aos="fade-up">Your Email</span>
                     </div>
                 </div>
-                <div class="formField">
-                    <input type="text" name="tittle">
-                    <span data-aos="fade-up">Tittle</span>
+                <div class="containers-inputs">
+                    <input class="input" type="text" name="tittle">
+                    <span class="name" data-aos="fade-up">Tittle</span>
                 </div>
-                <div class="formField">
-                    <textarea name="message" id="" cols="30" rows="10"></textarea>
-                    <span data-aos="fade-up">Comment</span>
+                <div class="containers-inputs">
+                    <textarea  name="message" cols="30" rows="10"></textarea>
+                    <span class="name" data-aos="fade-up">Comment</span>
                 </div>
                 <div class="container-flex">
                     <input class="btn-submit" type="submit" value="Send">
@@ -65,7 +65,47 @@
     display: grid;
     gap: 2vmax;
 }
+.containers-inputs {
+    position: relative;
+}
+.containers-inputs .input {
+    width: 100%;
+    position: relative;
+    font-weight: normal;
+    font-family: "Century Gothic", serif;
+    font-size: 1.5rem;
+    background-color: #f1f1f1;
+    outline: none;
+    border: solid 1.5px grey;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 0 5px transparent;
+}
+.containers-inputs .input:hover,.containers-inputs .input:focus {
+    box-shadow: 0 0 0 2px #669FF3;
+    border-color: #669FF3;
+}
 
+.containers-inputs .input:focus + .name {
+    color: #669FF3;
+}
+.containers-inputs .name {
+    position: absolute;
+    color: #3C394E;
+    font-family: "Century Gothic", serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    left: 0;
+    top: 0;
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+ .containers-inputs .input:focus + .name,.containers-inputs .input:valid + .name {
+    transform: translateY(-1.3rem) translateX(0.8rem) scale(0.90);
+    transition: 0.3s ease-in-out;
+}
 .btn-submit {
     width: 15vmax;
     height: 4.5vmax;
@@ -79,75 +119,7 @@
     background-color: #3C394E;
 }
 
-.formField {
-    margin: 10px;
-    position: relative;
-}
 
-.formField textarea {
-    width: 100%;
-    margin: 0;
-    border-radius: 1vmax;
-    padding: 1.1vmax;
-    outline: none;
-    border: solid 1.5px grey;
-    background-color: #f1f1f1;
-    color: #333;
-    font-size: 1.6vmax;
-    transition: 0.3s ease-in-out;
-    box-shadow: 0 0 0 5px transparent;
-}
-.formField textarea:hover,
-.formField textarea:focus {
-    box-shadow: 0 0 0 2px #669FF3;
-}
-
-.formField textarea:focus + span,
-.formField textarea:valid + span {
-    transform: translateY(-2.2vmax) translateX(0.8vmax) scale(0.90);
-}
-.formField textarea:focus + span {
-    color: #669FF3;
-}
-
-.formField input {
-    width: 100%;
-    padding: 10px 15px;
-    outline: none;
-    border: solid 1.5px grey;
-    border-radius: 1.2vmax;
-    background-color: #f1f1f1;
-    color: #333;
-    font-size: 1.6vmax;
-    transition: 0.3s ease-in-out;
-    box-shadow: 0 0 0 5px transparent;
-}
-
-.formField input:hover,
-.formField input:focus {
-    box-shadow: 0 0 0 2px #669FF3;
-}
-
-.formField span {
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 8px 15px;
-    color: #3C394E;
-    font-size: 1.4vmax;
-    font-weight: bold;
-    transition: 0.3s ease-in-out;
-    pointer-events: none;
-}
-
-.formField input:focus + span,
-.formField input:valid + span {
-    transform: translateY(-2.2vmax) translateX(0.8vmax) scale(0.90);
-    transition: 0.3s ease-in-out;
-}
-.formField input:focus + span {
-    color: #669FF3;
-}
 
 @media (max-width: 768px) {
     .main {
@@ -169,9 +141,8 @@
         align-items: center;
         justify-content: center;
     }
-    .formField input {
-        width: 100%;
+    .containers-inputs .input {
+        width: 85%;
     }
-
 }
 </style>
