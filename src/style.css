@@ -1,4 +1,7 @@
-
+@font-face {
+  font-family: "Arial Black";
+  src: url('/src/assets/fonts/Arial-Black.ttf');
+}
 body{
   background: linear-gradient(90deg, rgba(203,201,230,1) 0%, rgba(255,255,255,1) 50%, rgba(176,223,229,1) 100%);
   box-sizing: border-box;

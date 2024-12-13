@@ -42,10 +42,11 @@ watch(isNavOpen, (newValue) => {
       <div :class="{'nav-active': isNavOpen}" class="menu">
           <button class="close-btn" @click="closeNav">&times;</button>
           <div class="menu-links" @click="closeNav">
-              <router-link to="/allset/">Home</router-link>
-              <router-link to="/allset/about">About Us</router-link>
-              <router-link to="/allset/services">Services</router-link>
-              <router-link to="">Contact</router-link>
+              <router-link class="linksa" to="/allset/">Home</router-link>
+              <router-link class="linksa" to="/allset/about">About Us</router-link>
+              <router-link class="linksa" to="/allset/services">Services</router-link>
+              <router-link class="linksa" to="/allset/contact">Contact</router-link>
+              <router-link class="contact-btn" to="/allset/hireus">Hire Us</router-link>
               <button class="contact-btn">Contact Us</button>
           </div>
 
@@ -169,12 +170,12 @@ watch(isNavOpen, (newValue) => {
     justify-content: center;
     align-items: center;
 }
-.menu .menu-links a {
+.menu .menu-links .linksa {
     font-size: 5vmax;
     font-weight: bold;
     color: white;
 }
-.menu .menu-links a:hover {
+.menu .menu-links .linksa:hover {
     color: #669FF3;
 }
 .menu .close-btn {
