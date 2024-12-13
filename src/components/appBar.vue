@@ -107,7 +107,7 @@ onBeforeMount(() => {
 .links {
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    gap: 2px;
 }
 .icons {
     font-size: 2rem;
