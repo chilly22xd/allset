@@ -116,7 +116,12 @@
         flex-wrap: wrap;
     }
     .input {
-        font-size: 1.5vmax;
+        font-size: 2.2vmax;
+    }
+    .btn-submit {
+        width: 20vmax;
+        height: 6vmax;
+        font-size: 2.2vmax;
     }
 
 }
