@@ -1,11 +1,11 @@
 <script setup>
 const arrayData = [
     {
-        icon: '/allset/src/assets/telefono.png',
+        icon: '../allset/src/assets/telefono.png',
         detalles: '1-800-ALLSET'
     },
     {
-        icon: '/allset/src/assets/correo.png',
+        icon: '../allset/src/assets/correo.png',
         detalles: 'hello@allset-clean.com'
     }
 ]
