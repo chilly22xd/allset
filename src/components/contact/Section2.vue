@@ -114,6 +114,7 @@
     }
     .container-flex {
         flex-wrap: wrap;
+        justify-content: center;
     }
     .input {
         font-size: 2.2vmax;
