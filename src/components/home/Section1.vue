@@ -54,7 +54,7 @@ const cantidades = [
 
 .container {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 1fr 0.5fr;
     align-items: center;
     margin-bottom: 1vmax;
     gap: 2vmax;
@@ -163,7 +163,7 @@ const cantidades = [
         grid-template-columns: none;
     }
     .container-grid {
-        padding-right: 3%;
+        padding-right: 5%;
         gap: 3vmax;
     }
     .container-grid h1 {
