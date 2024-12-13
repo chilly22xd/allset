@@ -5,6 +5,12 @@
 @font-face {
   font-family: "Century Gothic";
   src: url('/src/assets/fonts/Century-Gothic.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Century Gothic";
+  src: url('/src/assets/fonts/Century-Gothic-Bold.ttf');
+  font-weight: bold;
 }
 body{
   background: linear-gradient(90deg, rgba(203,201,230,1) 0%, rgba(255,255,255,1) 50%, rgba(176,223,229,1) 100%);
