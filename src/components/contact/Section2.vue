@@ -9,27 +9,24 @@
             <p data-aos="fade-down">We’re ready to answer your questions and help you choose the perfect cleaning service for your
                 needs. Reach out to us, and we’ll get back to you as soon as possible.</p>
             <form class="forms" action="" method="post">
+
                 <div class="container-flex">
-                    <div class="containers-inputs">
-                        <input class="input" type="text"  name="name">
-                        <span class="name" data-aos="fade-up">Your Name</span>
-                    </div>
-                    <div class="containers-inputs">
-                        <input class="input" type="email" name="email">
-                        <span class="name" data-aos="fade-up">Your Email</span>
-                    </div>
+                    <input class="input" type="text" placeholder="Your Name"  name="name">
+                    <input class="input" type="email" placeholder="Your Email" name="email">
                 </div>
-                <div class="containers-inputs">
-                    <input class="input" type="text" name="tittle">
-                    <span class="name" data-aos="fade-up">Tittle</span>
+
+                <div class="container-flex">
+                    <input class="input" type="text" placeholder="Tittle" name="tittle">
                 </div>
-                <div class="containers-inputs">
-                    <textarea  name="message" cols="30" rows="10"></textarea>
-                    <span class="name" data-aos="fade-up">Comment</span>
+
+                <div class="container-flex">
+                    <textarea class="input" placeholder="Your Comment" name="message" rows="10"/>
                 </div>
+
                 <div class="container-flex">
                     <input class="btn-submit" type="submit" value="Send">
                 </div>
+
             </form>
         </div>
     </div>
@@ -42,6 +39,8 @@
 }
 .container {
     display: grid;
+    align-content: center;
+    align-items: center;
 }
 .container h1 {
     font-size: 3vmax;
@@ -55,22 +54,16 @@
     text-align: center;
 }
 .container-flex {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 2vmax;
 }
-
 .forms {
-    margin-top: 3vmax;
+    margin-top: 1vmax;
     display: grid;
-    gap: 2vmax;
+    gap: 1.5vmax;
 }
-.containers-inputs {
-    position: relative;
-}
-.containers-inputs .input {
-    width: 100%;
-    position: relative;
+ .input {
+     width: 100%;
     font-weight: normal;
     font-family: "Century Gothic", serif;
     font-size: 1.5rem;
@@ -82,30 +75,15 @@
     transition: 0.3s ease-in-out;
     box-shadow: 0 0 0 5px transparent;
 }
-.containers-inputs .input:hover,.containers-inputs .input:focus {
+ .input:hover, .input:focus {
     box-shadow: 0 0 0 2px #669FF3;
     border-color: #669FF3;
 }
 
-.containers-inputs .input:focus + .name {
+ .input:focus + .name {
     color: #669FF3;
 }
-.containers-inputs .name {
-    position: absolute;
-    color: #3C394E;
-    font-family: "Century Gothic", serif;
-    font-size: 1.2rem;
-    font-weight: bold;
-    left: 0;
-    top: 0;
-    transition: 0.3s ease-in-out;
-    pointer-events: none;
-}
 
- .containers-inputs .input:focus + .name,.containers-inputs .input:valid + .name {
-    transform: translateY(-1.3rem) translateX(0.8rem) scale(0.90);
-    transition: 0.3s ease-in-out;
-}
 .btn-submit {
     width: 15vmax;
     height: 4.5vmax;
@@ -123,7 +101,7 @@
 
 @media (max-width: 768px) {
     .main {
-        padding: 8% 5%;
+        padding: 0 5%;
     }
     .container {
         gap: 2vmax;
@@ -134,15 +112,12 @@
     .container p {
         font-size: 2vmax;
     }
-    .container-flex{
-        grid-template-columns: none;
+    .container-flex {
+        flex-wrap: wrap;
     }
-    .forms {
-        align-items: center;
-        justify-content: center;
+    .input {
+        font-size: 1.5vmax;
     }
-    .containers-inputs .input {
-        width: 85%;
-    }
+
 }
 </style>
