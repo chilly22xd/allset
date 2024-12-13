@@ -211,7 +211,7 @@ const cantidades = [
     }
 
     .container-img img {
-        width: 40vmax;
+        width: 85%;
     }
 
     .container-grid {

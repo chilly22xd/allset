@@ -84,12 +84,16 @@
     }
     .container {
         grid-template-columns: none;
+        gap: 1vmax;
     }
     .container-img {
         justify-content: center;
     }
     .container-img img{
         width: 25vmax;
+    }
+    .container-grid {
+        gap: 2vmax;
     }
     .container-grid h1 {
         margin-top: 1vmax;

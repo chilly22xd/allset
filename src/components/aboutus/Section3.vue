@@ -140,8 +140,15 @@ const arrayTexts = [
 }
 
 @media (max-width: 768px) {
+    .main {
+        padding: 8% 12%;
+    }
+    .container {
+        gap: 1vmax;
+    }
     .container-grid {
         grid-template-columns: none;
+        gap: 1.5vmax;
     }
 
     .cards {

@@ -1,9 +1,12 @@
-<script setup></script>
+<script setup>
+</script>
 <template>
     <div class="main">
         <div class="container">
             <div data-aos="fade-right" class="container-grid">
-                <p class="secundary">About Us</p>
+                <div class="container-secundary">
+                    <p class="secundary">About Us</p>
+                </div>
                 <h1>Making Your house Clean For Looks As a New</h1>
                 <p>Fresh,spotless, and ready to impress</p>
             </div>
@@ -67,6 +70,7 @@
         grid-template-columns: none;
         padding: 0 5%;
     }
+
     .container-grid h1 {
         text-align: center;
     }
