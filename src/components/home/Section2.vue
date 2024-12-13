@@ -229,19 +229,19 @@ const arrayCardsTransparent = [
         text-align: center;
         justify-self: center;
         translate: 0 0;
-        padding: 3vmax;
+        padding: 5% 8%;
     }
 
     .cards img {
-        width: 6vmax;
+        width: 20%;
     }
 
     .cards h2 {
-        font-size: 4vmax;
+        font-size: 1.5rem;
     }
 
     .cards p {
-        font-size: 2.2vmax;
+        font-size: 0.9rem;
     }
 
     .container-flex{
