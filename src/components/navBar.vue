@@ -197,6 +197,7 @@ watch(isNavOpen, (newValue) => {
 @media (max-width: 768px) {
     .header {
         margin: 0 5%;
+        display: none;
     }
     .nav-links {
         display: none;

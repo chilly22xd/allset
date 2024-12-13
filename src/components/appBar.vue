@@ -26,37 +26,39 @@ onBeforeMount(() => {
 
 <template>
     <div class="main">
-        <div class="container-img" ref="logo">
-            <img class="logo" src="/logo.png" alt="">
+        <div class="container-logo" ref="logo">
+            <h1>Allset</h1>
+            <p>cleaning services</p>
         </div>
-        <div class="container-flex">
-            <div>
-                <router-link to="/allset/hireus">
-                    Plans
+        <div class="container-grid">
+            <div class="container-flex">
+                <router-link class="links" to="/allset/" exact-active-class="active">
+                    <i class="fa-solid fa-house icons"></i>
+                    <div class="line"></div>
                 </router-link>
             </div>
-            <div>
-                <router-link to="/allset/about">
-                    About Us
+            <div class="container-flex">
+                <router-link class="links" to="/allset/about" exact-active-class="active">
+                    <i class="fa-solid fa-circle-info icons"></i>
+                    <div class="line"></div>
                 </router-link>
             </div>
-                <router-link class="links" exact-active-class="links-active" to="/allset/">
-                    <i class="fa-solid fa-house"></i>
-                    <div class="names">
-                        <span>Home</span>
-                    </div>
-                </router-link>
-            <div>
-                <router-link class="links" exact-active-class="links-active" to="/allset/contact">
-                    <i class="fa-solid fa-comment"></i>
-                    <div class="names">
-                        <span>Contact</span>
-                    </div>
+            <div class="container-flex">
+                <router-link class="links" to="/allset/services" exact-active-class="active">
+                    <i class="fa-solid fa-screwdriver-wrench icons"></i>
+                    <div class="line"></div>
                 </router-link>
             </div>
-            <div>
-                <router-link to="/allset/services">
-                    Services
+            <div class="container-flex">
+                <router-link class="links" to="/allset/contact" exact-active-class="active">
+                    <i class="fa-solid fa-comments icons"></i>
+                    <div class="line"></div>
+                </router-link>
+            </div>
+            <div class="container-flex">
+                <router-link class="links" to="/allset/hireus" exact-active-class="active">
+                    <i class="fa-solid fa-tags icons"></i>
+                    <div class="line"></div>
                 </router-link>
             </div>
         </div>
@@ -66,48 +68,73 @@ onBeforeMount(() => {
 <style scoped>
 .main {
     display: none;
-    padding: 0 0 1% 0;
     position: sticky;
     top: 0;
     left: 0;
     background-color: white;
     z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-.logo {
-    width: 20%;
-}
-.container-img {
+
+.container-logo {
+    padding: 1%;
     display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+.container-logo h1 {
+    margin: 0;
+    font-family: 'Century Gothic', serif;
+    color: #0044F1;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.container-logo p {
+    margin: 0;
+    font-size: 0.6rem;
+}
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
 }
 .container-flex {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.container-flex .links {
+.links {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #669FF3;
+    gap: 1px;
 }
-.container-flex .links .names {
-    display: none;
-}
-
-.links-active {
+.icons {
+    font-size: 2rem;
     color: #3C394E;
 }
-.links-active .names {
+.icons:hover {
+    transform: scale(1.1);
+}
+.line {
+    display: none;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: #669FF3;
+}
+
+.active{
+    color: #669FF3;
+}
+.active .icons {
+    color: #669FF3;
+}
+.active .line {
     display: inherit;
 }
-
-.links i {
-    font-size: 1.5rem;
-}
-
 @media (max-width: 768px) {
     .main {
-        display: none;
+        display: flex;
         flex-direction: column;
     }
 }
