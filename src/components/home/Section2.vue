@@ -44,20 +44,10 @@ const arrayCardsTransparent = [
     <div class="main"><!-- main -->
         <div class="container">
             <div class="container-flotante"><!-- cards flotantes -->
-                <div class="cards">
-                    <img src="/icono-team.png" alt="">
-                    <h2>Expert Team</h2>
-                    <p>Our highly trained professionals bring a wealth of experience</p>
-                </div>
-                <div class="cards">
-                    <img src="/icono-aspiradora.png" alt=""></img>
-                    <h2>Quality Service</h2>
-                    <p>We guarantee a spotless finish that exceeds your expectations.</p>
-                </div>
-                <div class="cards">
-                    <img src="/icono-sticker.png" alt=""></img>
-                    <h2>Affordable Price</h2>
-                    <p>We offer exceptional services at prices that are affordable for everyone.</p>
+                <div data-aos="flip-up" class="cards" v-for="card in arrayCards">
+                    <img :src="card.img" alt="">
+                    <h2>{{ card.titulo }}</h2>
+                    <p>{{ card.descripcion }}</p>
                 </div>
             </div>
             <div data-aos="fade-right" class="container-flex">

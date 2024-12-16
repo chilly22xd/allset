@@ -153,10 +153,7 @@ const cantidades = [
 @media screen and (max-width: 768px) {
     .main {
         width: 100%;
-        left: 0;
-        right: 0;
-        padding: 0;
-        margin: 0;
+
     }
     .container-img {
         justify-content: right;
