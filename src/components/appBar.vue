@@ -96,7 +96,7 @@ onBeforeMount(() => {
 }
 .container-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
     align-items: center;
 }
 .container-flex {
@@ -111,7 +111,7 @@ onBeforeMount(() => {
     gap: 2px;
 }
 .icons {
-    font-size: 2rem;
+    font-size: 4.5vmax;
     color: #3C394E;
 }
 .icons:hover {
@@ -135,7 +135,7 @@ onBeforeMount(() => {
 }
 @media screen and (max-width: 768px) {
     .main {
-        display: flex;
+        display: none;
         flex-direction: column;
     }
 }
