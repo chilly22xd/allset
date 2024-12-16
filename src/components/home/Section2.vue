@@ -15,7 +15,7 @@ const arrayCards = [
 
     },
     {
-        img: '/allset/icono-sticker.png',
+        img: '../allset/icono-sticker.png',
         titulo: 'Affordable Price',
         descripcion: 'We offer exceptional services at\n' +
             'prices that are affordable for\n' +

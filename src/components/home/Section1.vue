@@ -159,7 +159,7 @@ const cantidades = [
         justify-content: right;
     }
     .container-img img {
-        width: 20rem;
+        width: 85%;
     }
     .container {
         grid-template-columns: none;
