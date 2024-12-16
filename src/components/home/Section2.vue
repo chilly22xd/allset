@@ -93,12 +93,12 @@ const arrayCardsTransparent = [
     opacity: 0.8;
     border-radius: 20px;
     padding: 10%;
-    position: relative;
     translate: 0 -6vmax;
 }
 
 .cards img {
     width: 50px;
+    height: 50px;
 }
 
 .cards h2 {
@@ -225,15 +225,16 @@ const arrayCardsTransparent = [
     }
 
     .cards {
-        width: 70%;
+        width: 16rem;
+        padding: 1rem;
         text-align: center;
         justify-self: center;
-        translate: 0 0;
-        padding: 5% 8%;
+        translate: none;
     }
 
     .cards img {
-        width: 20%;
+        width: 50px;
+        height: 50px;
     }
 
     .cards h2 {

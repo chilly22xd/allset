@@ -40,7 +40,7 @@ const cantidades = [
                 </div>
             </div>
             <div data-aos="fade-up-left" class="container-img">
-                <img src="/header.png" alt="allClean">
+                <img id="header-pc" src="/header.png" alt="allClean">
             </div>
         </div>
     </div>
@@ -79,7 +79,7 @@ const cantidades = [
 }
 
 .container-img img {
-    width: 120%;
+    width: 100%;
 }
 
 .container-grid {
@@ -123,6 +123,7 @@ const cantidades = [
     opacity: 0.8;
     border-radius: 20px;
     padding: 1vmax;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .cant-front {
@@ -151,20 +152,21 @@ const cantidades = [
 
 @media (max-width: 768px) {
     .main {
-        padding: 3% 0 3% 5%;
+        padding: 0;
         margin: 0;
     }
     .container-img {
         justify-content: right;
     }
     .container-img img {
-        width: 80%;
+        width: 20rem;
     }
     .container {
         grid-template-columns: none;
+        grid-template-rows: auto auto;
     }
     .container-grid {
-        padding-right: 5%;
+        padding: 0;
         gap: 3vmax;
     }
     .container-grid h1 {
