@@ -71,6 +71,7 @@ onBeforeMount(() => {
     position: sticky;
     top: 0;
     left: 0;
+    right: 0;
     background-color: white;
     z-index: 10;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -134,7 +135,7 @@ onBeforeMount(() => {
 }
 @media (max-width: 768px) {
     .main {
-        display: flex;
+        display: inherit;
         flex-direction: column;
     }
 }

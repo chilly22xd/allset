@@ -51,14 +51,12 @@
     width: 55%;
 }
 
-.secundary {
-
-}
-
 @media (max-width: 768px) {
+    .main {
+        padding: 0 5%;
+    }
     .container {
         grid-template-columns: none;
-        padding: 0 5%;
     }
 
     .container-grid h1 {
@@ -72,7 +70,7 @@
         justify-content: center;
     }
     .container-img img{
-        width: 20vmax;
+        width: 45%;
     }
 }
 </style>
