@@ -5,7 +5,7 @@
         <div class="container">
             <div data-aos="fade-right" class="container-grid">
                 <div class="container-secundary">
-                    <p class="secundary">Services</p>
+                    <p class="secundary-title">Services</p>
                 </div>
                 <h1>We Transform Your Space, Simplifying Your Life.</h1>
             </div>
@@ -53,16 +53,6 @@
 
 .container-img img {
     width: 85%;
-}
-
-.secundary {
-    background-color: #669FF3;
-    width: 8em;
-    height: 2em;
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-    align-content: center;
 }
 
 @media (max-width: 768px) {

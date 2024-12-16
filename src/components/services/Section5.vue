@@ -22,7 +22,7 @@ const arrayPoint = [
         <div class="container">
             <div class="container-grid">
                 <div class="container-primary">
-                    <p data-aos="fade-right" class="secundary">General Cleaning</p>
+                    <p data-aos="fade-right" class="secundary-principal">General Cleaning</p>
                 </div>
                 <h1 data-aos="fade-right">Move-In/Move-Out</h1>
                 <p data-aos="fade-right">Moving has never been easier. Our Move-In/Move-Out Cleaning
@@ -115,18 +115,6 @@ const arrayPoint = [
 .list img {
     width: 25px;
     height: 25px;
-}
-
-
-.secundary {
-    text-align: center;
-    width: 12em;
-    height: 1.2em;
-    padding: 10px;
-    color: #3C394E;
-    font-size: 16px !important;
-    background-color: #DCE6ff;
-    border-radius: 10px;
 }
 
 .btn-flex {

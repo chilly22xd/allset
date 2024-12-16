@@ -112,8 +112,7 @@ const arraySolutions = [
 
 .secundary {
     background-color: #669FF3;
-    width: 8em;
-    height: 2em;
+    width: 8vmax;
     color: #3C394E;
     font-size: 1.2vmax !important;
     border-radius: 10px;

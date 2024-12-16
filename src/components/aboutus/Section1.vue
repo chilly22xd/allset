@@ -5,10 +5,10 @@
         <div class="container">
             <div data-aos="fade-right" class="container-grid">
                 <div class="container-secundary">
-                    <p class="secundary">About Us</p>
+                    <p class="secundary-title">About Us</p>
                 </div>
                 <h1>Making Your house Clean For Looks As a New</h1>
-                <p>Fresh,spotless, and ready to impress</p>
+                <p style="font-size: 1.5vmax">Fresh,spotless, and ready to impress</p>
             </div>
             <div class="container-img">
                 <img data-aos="fade-up-left" src="/src/assets/TRAPEAR.png" alt="">
@@ -41,10 +41,6 @@
     margin: 0;
 }
 
-.container-grid p {
-    font-size: 1.5vmax;
-}
-
 .container-img {
     display: flex;
     align-items: center;
@@ -56,13 +52,7 @@
 }
 
 .secundary {
-    background-color: #669FF3;
-    width: 8em;
-    height: 2em;
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-    align-content: center;
+
 }
 
 @media (max-width: 768px) {

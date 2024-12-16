@@ -112,13 +112,13 @@ const cantidades = [
 .container-cards {
     display: grid;
     padding: 0;
+    gap: 2vmax;
     grid-template-columns: repeat(2, 1fr);
     justify-content: left;
     margin-top: 2.5vmax;
 }
 
 .cards {
-    width: 14vmax;
     background-color: white;
     opacity: 0.8;
     border-radius: 20px;
@@ -196,5 +196,6 @@ const cantidades = [
     .cant-front {
         position: inherit;
     }
+
 }
 </style>

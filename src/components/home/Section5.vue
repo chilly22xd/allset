@@ -125,21 +125,18 @@ const arrayPlans = [
 }
 
 .container-plans {
-    margin: 0;
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    z-index: 1;
-    translate: 0 -8vmax;
+    gap: 2vmax;
+    translate: 0 -7vmax;
 }
 
 .card-plan {
-    width: 15vmax;
+    width: 100%;
     display: grid;
-    padding: 1vmax 5% 1vmax 5%;
     justify-content: center;
     background-color: white;
     border-radius: 20px;
+    padding: 2vmax;
 }
 
 .borde-azul {
@@ -178,7 +175,7 @@ const arrayPlans = [
     justify-content: left;
     align-items: center;
     margin-top: 0.1vmax;
-    gap: 10px;
+    gap: 8px;
 }
 
 .opciones-plan p {
@@ -205,7 +202,7 @@ const arrayPlans = [
 
 @media (max-width: 768px) {
     .main {
-        padding: 8% 5%;
+        padding: 5%;
     }
 
     .container h1 {
@@ -227,15 +224,11 @@ const arrayPlans = [
         display: none;
     }
 
-    .container-plans {
-        align-items: center;
+    .container-plans{
+        padding: 0 2%;
+        justify-content: center;
         flex-direction: column;
-        margin-top: 1vmax;
-        translate: 0 0;
-    }
-
-    .card-plan {
-        width: 75%;
+        translate: none;
     }
 
     .btn-plan {

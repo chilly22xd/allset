@@ -158,18 +158,6 @@ const arrayCardsTransparent = [
     font-size: 1.1vmax;
 }
 
-.secundary {
-    display: flex;
-    text-decoration: none;
-    width: 8em;
-    height: 1.2em;
-    padding: 10px;
-    color: #3C394E;
-    font-size: 16px !important;
-    background-color: #DCE6ff;
-    border-radius: 10px;
-    justify-content: center;
-}
 
 .container-flex {
     grid-area: der;
