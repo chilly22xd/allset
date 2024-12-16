@@ -78,6 +78,7 @@ const cantidades = [
 }
 .btn-escoba p {
     color: white;
+    font-weight: bold;
 }
 .btn-escoba img{
     width: 8vmax;
