@@ -82,23 +82,23 @@ const arrayCardsTransparent = [
 }
 
 .container-flotante {
-    display: none;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1vmax;
     grid-area: arr;
 }
 
 .cards{
-    padding: 2%;
+    padding: 10%;
     background-color: white;
     opacity: 0.8;
     border-radius: 20px;
-    translate: 0 -5vmax;
+    translate: 0 -5.5vmax;
 }
 
 .cards img {
-    width: 5vmax;
-    height: 5vmax;
+    width: 3.5vmax;
+    height: 3.5vmax;
 }
 
 .cards h2 {
@@ -194,8 +194,8 @@ const arrayCardsTransparent = [
     }
 
     .container-flotante {
-        padding: 0 5% 0 5%;
         grid-template-columns: none;
+        gap: 2vmax;
     }
 
     .container {
@@ -230,6 +230,7 @@ const arrayCardsTransparent = [
     }
 
     .cards {
+        width: 75%;
         text-align: center;
         justify-self: center;
         translate: none;
