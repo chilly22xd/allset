@@ -135,7 +135,7 @@ onBeforeMount(() => {
 }
 @media screen and (max-width: 768px) {
     .main {
-        display: none;
+        display: flex;
         flex-direction: column;
     }
 }
