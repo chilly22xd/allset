@@ -166,7 +166,7 @@ const cantidades = [
         grid-template-rows: auto auto;
     }
     .container-grid {
-        padding: 0;
+        padding: 5%;
         gap: 3vmax;
     }
     .container-grid h1 {
