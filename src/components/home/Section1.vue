@@ -18,29 +18,17 @@ const cantidades = [
 <template>
     <div class="main"><!-- main -->
         <div class="container">
+            <div class="container-img">
+                <img src="/header.png">
+            </div>
             <div class="container-grid">
-                <h1 data-aos="fade-right">Feel Your Way For Freshness</h1>
-                <p data-aos="fade-right">Experience the epitome of cleanliness with Allset.
-                    We provide top-notch cleaning services tailored to
-                    your needs, ensuring your spaces shine with perfection</p>
-                <div class="container-flex">
-                    <router-link data-aos="fade-right" to="/allset/services" class="btn-escoba">
-                        <span>{{ masServicios.toUpperCase() }}</span>
-                        <img src="/escoba.png" alt="">
+                <h1>Feel Your Way For Freshness</h1>
+                <p>Experience the epitome of cleanliness with Allset. We provide top-notch cleaning services tailored to your needs, ensuring your spaces shine with perfection</p>
+                <div class="container-justify">
+                    <router-link class="btn-escoba" to="/allset/services">
+                        <p>OUR SERVICES</p><img src="/escoba.png">
                     </router-link>
                 </div>
-                <div class="container-cards">
-                    <div data-aos="fade-up" class="cards" v-for="card in cantidades">
-                        <div>
-                            <span class="cant-front">{{ card.cant }}+</span>
-                            <span class="cant-back">{{ card.cant }}+</span>
-                        </div>
-                        <span class="text">{{ card.descripcion }}</span>
-                    </div>
-                </div>
-            </div>
-            <div data-aos="fade-up-left" class="container-img">
-                <img id="header-pc" src="/header.png" alt="allClean">
             </div>
         </div>
     </div>
@@ -48,154 +36,63 @@ const cantidades = [
 
 <style scoped>
 .main {
-    padding-bottom: 8%;
-    margin-left: 11%;
-}
 
+}
+.container-justify {
+    justify-content: center;
+}
 .container {
     display: grid;
-    grid-template-columns: 0.7fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-areas: "izq der";
     align-items: center;
-    margin-bottom: 1vmax;
-    gap: 2vmax;
 }
-
-.container h1 {
-    line-height: 1;
-    font-size: 3vmax;
-    font-family: 'Arial Black', serif;
-    color: #3C394E;
-    margin: 0;
-}
-
-.container p {
-    font-size: 1.5vmax;
-    margin: 1vmax 0 0 0;
-}
-
 .container-img {
-    display: flex;
+    grid-area: der;
     justify-content: right;
 }
-
 .container-img img {
-    width: 95%;
+    max-width: 100%;
 }
-
 .container-grid {
-    position: relative;
     display: grid;
-    justify-content: left;
-    gap: 2vmax;
+    grid-area: izq;
 }
-
+.container-grid h1 {
+    font-size: 3vmax;
+    color: #3C394E;
+    font-family: "Arial Black",serif;
+    line-height: 1;
+}
+.container-grid p {
+    font-size: 2vmax;
+}
 .btn-escoba {
-    width: 15vmax;
-    height: 4.2vmax;
-    margin-top: 2vmax;
-    display: flex;
-    gap: 10px;
+    width: 50%;
     background-color: #669FF3;
-    border-radius: 30em;
-    justify-content: right;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1vmax;
-}
-
-.btn-escoba img {
-    width: 4.5vmax;
-}
-
-.container-cards {
-    display: grid;
-    padding: 0;
-    gap: 2vmax;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: left;
-    margin-top: 2.5vmax;
-}
-
-.cards {
-    background-color: white;
-    opacity: 0.8;
-    border-radius: 20px;
-    padding: 1vmax;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.cant-front {
-    position: absolute;
-    font-size: 4vmax;
-    font-weight: bold;
-    color: #669FF3;
-    translate: 0.5vmax 2vmax;
-}
-
-.cant-back {
-    position: relative;
-    font-size: 6vmax;
-    font-weight: bold;
-    color: #669FF3;
-    opacity: 0.2;
-}
-
-.cards .text {
-    font-size: 1.2vmax;
-}
-
-.container-flex {
     display: flex;
+    align-items: center;
+    justify-content: right;
+    border-radius: 30px;
+    gap: 1.5vmax;
 }
-
+.btn-escoba p {
+    color: white;
+}
+.btn-escoba img{
+    width: 8vmax;
+    height: 8vmax;
+}
 @media (max-width: 768px) {
-    .main {
-        padding: 0;
-        margin: 0;
-    }
-    .container-img {
-        justify-content: right;
-    }
-    .container-img img {
-        width: 85%;
-    }
     .container {
         grid-template-columns: none;
-        grid-template-rows: auto auto;
+        grid-template-areas: "izq" "der";
+        text-align: center;
     }
     .container-grid {
         padding: 5%;
-        gap: 3vmax;
     }
-    .container-grid h1 {
-        font-size: 3vmax;
-        text-align: center;
-    }
-    .container-grid p {
-        font-size: 2vmax;
-        text-align: center;
-    }
-    .container-flex {
-        justify-content: center;
-    }
-    .btn-escoba {
-        width: 25vmax;
-        height: 8vmax;
-        font-size: 2vmax;
-        gap: 0;
-    }
-    .btn-escoba img {
-        width: 8vmax;
-    }
-    .container-cards {
-        overflow: hidden;
-        display: none;
-    }
-    .cant-front {
-        position: inherit;
-    }
+
 
 }
 </style>

@@ -67,11 +67,9 @@ onBeforeMount(() => {
 
 <style scoped>
 .main {
+    top: 0;
     display: none;
     position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
     background-color: white;
     z-index: 10;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);

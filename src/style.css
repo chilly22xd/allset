@@ -26,6 +26,10 @@ button{
   font-weight: bold;
 }
 
+.container-justify{
+  display: flex;
+}
+
 .container-secundary,.container-primary {
   display: flex;
   justify-content: left;
@@ -143,6 +147,10 @@ a:hover .circle .icon.arrow {
 
 a:hover .button-text {
   color: #fff;
+}
+
+.container-img{
+  display: flex;
 }
 
 @media (max-width: 768px) {
