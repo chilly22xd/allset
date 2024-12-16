@@ -126,7 +126,7 @@ const arrayPoint = [
 
 @media (max-width: 768px) {
     .main {
-        padding: 2% 5% 2% 5%;
+        padding: 2% 5%;
     }
 
     .container {
@@ -169,8 +169,8 @@ const arrayPoint = [
     }
 
     .list img {
-        width: 2vmax;
-        height: 2vmax;
+        width: 2.5vmax;
+        height: 2.5vmax;
     }
 
     .btn-flex {

@@ -133,9 +133,9 @@ onBeforeMount(() => {
 .active .line {
     display: inherit;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .main {
-        display: inherit;
+        display: flex;
         flex-direction: column;
     }
 }

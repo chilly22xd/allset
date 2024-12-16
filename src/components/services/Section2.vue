@@ -148,6 +148,7 @@ const arraySolutions = [
     }
 
     .container-flex {
+        display: none;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -155,20 +156,17 @@ const arraySolutions = [
     }
 
     .cards {
-        padding: 5% 8%;
+        padding: 5%;
     }
 
     .cards img {
-        width: 7vmax;
-        height: 7vmax;
+        width: 8vmax;
+        height: 8vmax;
     }
 
     .cards h2 {
         font-size: 2.5vmax;
     }
 
-    .cards p {
-        padding: 0 3vmax;
-    }
 }
 </style>

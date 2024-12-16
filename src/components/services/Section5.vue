@@ -167,8 +167,8 @@ const arrayPoint = [
     }
 
     .list img {
-        width: 2vmax;
-        height: 2vmax;
+        width: 2.5vmax;
+        height: 2.5vmax;
     }
 
     .btn-flex {

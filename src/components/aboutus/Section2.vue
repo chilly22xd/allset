@@ -90,7 +90,7 @@
         justify-content: center;
     }
     .container-img img{
-        width: 25vmax;
+        width: 50%;
     }
     .container-grid {
         gap: 2vmax;

@@ -79,7 +79,7 @@ const cantidades = [
 }
 
 .container-img img {
-    width: 100%;
+    width: 95%;
 }
 
 .container-grid {

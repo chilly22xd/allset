@@ -26,7 +26,7 @@
 .container {
     display: grid;
     align-items: center;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .container-grid {
@@ -55,7 +55,7 @@
     width: 85%;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .main {
         padding: 0 5%;
     }
@@ -74,7 +74,7 @@
     }
 
     .container-img img {
-        width: 30vmax;
+        width: 55%;
     }
 
     .container-grid h1 {

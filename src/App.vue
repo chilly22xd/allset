@@ -10,4 +10,5 @@ import appBar from './components/appBar.vue'
 </template>
 
 <style scoped>
+
 </style>
