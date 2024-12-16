@@ -42,14 +42,14 @@ const arrayCardsTransparent = [
 </script>
 <template>
     <div class="main"><!-- main -->
-        <div class="container-flotante"><!-- cards flotantes -->
-            <div data-aos="flip-up" class="cards" v-for="card in arrayCards">
-                <img :src="card.img" alt="">
-                <h2>{{ card.titulo }}</h2>
-                <p>{{ card.descripcion }}</p>
-            </div>
-        </div>
         <div class="container">
+            <div class="container-flotante"><!-- cards flotantes -->
+                <div data-aos="flip-up" class="cards" v-for="card in arrayCards">
+                    <img :src="card.img" alt="">
+                    <h2>{{ card.titulo }}</h2>
+                    <p>{{ card.descripcion }}</p>
+                </div>
+            </div>
             <div data-aos="fade-right" class="container-flex">
                 <img class="img-year" src="/src/assets/years.png" alt="">
             </div>
@@ -82,23 +82,23 @@ const arrayCardsTransparent = [
 }
 
 .container-flotante {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    justify-content: center;
-    gap: 20px;
+    display: none;
+    flex-direction: column;
+    gap: 1vmax;
+    grid-area: arr;
 }
 
-.cards {
+.cards{
+    padding: 2%;
     background-color: white;
     opacity: 0.8;
     border-radius: 20px;
-    padding: 10%;
     translate: 0 -5vmax;
 }
 
 .cards img {
-    width: 50px;
-    height: 50px;
+    width: 5vmax;
+    height: 5vmax;
 }
 
 .cards h2 {
@@ -112,7 +112,8 @@ const arrayCardsTransparent = [
 
 .container {
     display: grid;
-    grid-template-areas: "der izq";
+    grid-template-areas: "arr arr" "der izq";
+    grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
@@ -193,13 +194,13 @@ const arrayCardsTransparent = [
     }
 
     .container-flotante {
+        padding: 0 5% 0 5%;
         grid-template-columns: none;
-        grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     }
 
     .container {
         grid-template-columns: none;
-        grid-template-areas: "izq" "der";
+        grid-template-areas: "arr" "izq" "der";
     }
 
     .container-grid {
@@ -229,11 +230,10 @@ const arrayCardsTransparent = [
     }
 
     .cards {
-        width: 16rem;
-        padding: 1rem;
         text-align: center;
         justify-self: center;
         translate: none;
+        padding: 5%;
     }
 
     .cards img {
