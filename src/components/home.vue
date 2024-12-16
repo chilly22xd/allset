@@ -9,7 +9,6 @@ import Section5 from './home/Section5.vue';
 
 <template>
   <section1 />
-  <section2 />
   <section3 />
   <section4 />
   <section5 />

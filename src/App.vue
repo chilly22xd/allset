@@ -4,7 +4,7 @@ import appBar from './components/appBar.vue'
 </script>
 
 <template>
-    <appBar />
+    <!--<appBar />-->
     <navBar />
     <router-view></router-view>
 </template>
