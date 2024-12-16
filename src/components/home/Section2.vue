@@ -193,6 +193,7 @@ const arrayCardsTransparent = [
     }
 
     .container-flotante {
+        display: none;
         grid-template-columns: none;
     }
 
