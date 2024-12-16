@@ -30,7 +30,7 @@ const cantidades = [
                     </router-link>
                 </div>
                 <div class="container-cards">
-                    <div data-aos="fade-up" class="cards" v-for="card in cantidades">
+                    <div data-aos="fade-up" class="cards" v-for="(card,index) in cantidades" >
                         <div>
                             <span class="cant-front">{{ card.cant }}+</span>
                             <span class="cant-back">{{ card.cant }}+</span>
@@ -85,7 +85,7 @@ const cantidades = [
 .container-grid {
     position: relative;
     display: grid;
-    justify-content: left;
+    align-items: center;
     gap: 2vmax;
 }
 
@@ -115,7 +115,7 @@ const cantidades = [
     gap: 2vmax;
     grid-template-columns: repeat(2, 1fr);
     justify-content: left;
-    margin-top: 2.5vmax;
+    margin-top: 1vmax;
 }
 
 .cards {
@@ -150,8 +150,11 @@ const cantidades = [
     display: flex;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .main {
+        width: 100%;
+        left: 0;
+        right: 0;
         padding: 0;
         margin: 0;
     }
@@ -159,14 +162,13 @@ const cantidades = [
         justify-content: right;
     }
     .container-img img {
-        width: 85%;
+        width: 75%;
     }
     .container {
         grid-template-columns: none;
         grid-template-rows: auto auto;
     }
     .container-grid {
-        padding: 5%;
         gap: 3vmax;
     }
     .container-grid h1 {
@@ -190,12 +192,9 @@ const cantidades = [
         width: 8vmax;
     }
     .container-cards {
-        overflow: hidden;
         display: none;
     }
-    .cant-front {
-        position: inherit;
-    }
+
 
 }
 </style>

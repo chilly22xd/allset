@@ -25,7 +25,7 @@
     translate: 3vmax -20vmax;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .container {
         height: 10vmax;
     }

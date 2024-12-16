@@ -128,7 +128,7 @@ const arrayCheck = [
     display: flex;
 }
 
-@media (max-width: 728px) {
+@media screen and (max-width: 728px) {
     .main {
         padding: 8% 5%;
     }

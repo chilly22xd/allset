@@ -200,7 +200,7 @@ const arrayPlans = [
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .main {
         padding: 5%;
     }

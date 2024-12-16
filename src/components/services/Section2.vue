@@ -41,6 +41,8 @@ const arraySolutions = [
 </template>
 <style scoped>
 .main {
+    left: 0;
+    right: 0;
     padding: 2% 11% 2% 11%;
     background-color: rgb(212, 229, 252);
 }

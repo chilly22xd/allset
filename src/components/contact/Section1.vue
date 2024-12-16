@@ -72,7 +72,7 @@
     font-size: 1.2vmax;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .main {
         padding: 3% 5% 0 5%;
     }

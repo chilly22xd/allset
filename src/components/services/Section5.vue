@@ -125,6 +125,7 @@ const arrayPoint = [
 @media (max-width: 768px) {
     .main {
         padding: 2% 5%;
+        right: 0;
     }
 
     .container {
