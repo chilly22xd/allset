@@ -139,6 +139,7 @@ const arrayCheck = [
 
     .container-grid {
         text-align: center;
+        gap: 2vmax;
     }
 
     .container-grid h1 {

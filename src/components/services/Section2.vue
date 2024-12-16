@@ -90,7 +90,6 @@ const arraySolutions = [
 }
 
 .cards {
-    width: 16vmax;
     padding: 1.5vmax;
     background-color: white;
     border-radius: 20px;
@@ -111,13 +110,11 @@ const arraySolutions = [
 }
 
 .secundary {
-    background-color: #669FF3;
-    width: 8vmax;
-    color: #3C394E;
-    font-size: 1.2vmax !important;
+    background: #669FF3;
+    padding: 8px 1.5vmax;
     border-radius: 10px;
-    text-align: center;
-    align-content: center;
+    color: #3C394E;
+    font-size: 1.5vmax;
 }
 
 @media (max-width: 768px) {
@@ -127,14 +124,6 @@ const arraySolutions = [
 
     .container {
         grid-template-columns: none;
-    }
-
-    .secundary {
-        width: 15vmax;
-        height: 4vmax;
-        font-size: 2vmax !important;
-        text-align: center;
-        align-content: center;
     }
 
     .container-grid {
@@ -162,10 +151,10 @@ const arraySolutions = [
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding: 0 5%;
     }
 
     .cards {
-        width: 70%;
         padding: 5% 8%;
     }
 

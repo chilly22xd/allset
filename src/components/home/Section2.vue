@@ -182,6 +182,7 @@ const arrayCardsTransparent = [
     }
 
     .container-flotante {
+        padding: 0 4%;
         grid-template-columns: none;
         gap: 2vmax;
     }
@@ -218,7 +219,6 @@ const arrayCardsTransparent = [
     }
 
     .cards {
-        width: 75%;
         text-align: center;
         justify-self: center;
         translate: none;

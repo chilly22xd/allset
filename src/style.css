@@ -39,6 +39,7 @@ button{
 }
 .secundary-title {
   background: #669FF3;
+  text-align: center;
   padding: 6px 1.5vmax;
   border-radius: 10px;
   color: white;
@@ -150,7 +151,15 @@ a:hover .button-text {
   }
 
   .secundary {
-    padding: 8px 2vmax;
+    width: 18vmax;
+    font-size: 2.2vmax !important;
+  }
+  .secundary-principal {
+    width: 28vmax;
+  }
+  .secundary-title {
+    width: 18vmax;
+    font-size: 2.2vmax !important;
   }
 
   a {
