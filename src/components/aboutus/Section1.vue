@@ -53,6 +53,7 @@
 
 @media (max-width: 768px) {
     .main {
+        background: transparent;
         padding: 0 5%;
     }
     .container {
