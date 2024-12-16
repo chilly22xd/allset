@@ -80,7 +80,7 @@
 
 .container-text {
     width: 45vmax;
-    height: 8vmax;
+    height: 15vmax;
     padding: 3vmax;
     background-color: #cde1ff;
     border-top-left-radius: 30vmax;
@@ -113,20 +113,20 @@
     height: 5vmax;
     z-index: 2;
     background-color: #669FF3;
-    translate: -45vmax -2vmax;
+    translate: -38vmax -2vmax;
 }
 
 .container-va {
     position: absolute;
     display: flex;
     justify-content: right;
-    translate: 55vmax 27vmax;
+    translate: 60vmax 28.5vmax;
     z-index: 2;
 }
 
 .container-va img {
-    width: 20vmax;
-    height: 20vmax;
+    width: 18vmax;
+    height: 18vmax;
 }
 
 @media (max-width: 768px) {
@@ -142,16 +142,16 @@
     .container-elements{
         margin-top: 1vmax;
         justify-content: center;
-        translate: 0 0;
+        translate: none;
         height: auto;
     }
     .container-comillas {
-        translate: -18vmax -3vmax;
+        translate: -15vmax -3vmax;
     }
     .container-text{
         width: 40vmax;
-        height: 10vmax;
-        padding: 2.5vmax;
+        height: 17vmax;
+        padding: 3vmax;
         border-top-left-radius: 5vmax;
         border-bottom-left-radius: 5vmax;
         border-top-right-radius: 5vmax;
