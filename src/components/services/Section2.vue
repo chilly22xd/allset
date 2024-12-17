@@ -43,7 +43,6 @@ const arraySolutions = [
 .main {
     padding: 2rem 11.5%;
     background-color: rgb(212, 229, 252);
-    overflow-x: hidden;
 }
 
 .container {

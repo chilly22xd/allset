@@ -54,7 +54,6 @@ const arrayPoint = [
 .main {
     background-color: whitesmoke;
     padding: 1rem 11.5%;
-    overflow-x: hidden;
 }
 .list {
     gap: 0;

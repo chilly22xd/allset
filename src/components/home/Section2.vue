@@ -77,7 +77,6 @@ const arrayCardsTransparent = [
 .main {
     background-color: whitesmoke;
     padding: 0 11.5% 8rem 11.5%;
-    overflow-x: hidden;
 }
 
 .cards {

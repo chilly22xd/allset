@@ -54,7 +54,6 @@ const arrayDeep = [
 .main {
     background-color: whitesmoke;
     padding: 2rem 11.5%;
-    overflow-x: hidden;
 }
 
 .container {
