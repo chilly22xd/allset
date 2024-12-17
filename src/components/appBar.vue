@@ -74,7 +74,7 @@ onBeforeMount(() => {
 
 <style scoped>
 .main {
-    padding: 0;
+    padding: 0 1vmax;
     margin: 0;
     display: none;
     background-color: white;
