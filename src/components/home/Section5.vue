@@ -151,6 +151,7 @@ const arrayPlans = [
     .container-flotante {
         flex-direction: column;
         translate: none;
+        padding: 1vmax;
 
     }
 
