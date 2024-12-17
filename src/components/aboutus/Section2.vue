@@ -27,28 +27,12 @@
 <style scoped>
 .main {
   background-color: whitesmoke;
-  padding: 2% 11%;
+    padding: 2rem 11.5%;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    grid-template-areas: "container-img container-grid";
 }
-
-.container-grid {
-    display: grid;
-    align-items: center;
-}
-
-.container-grid h1 {
-  line-height: 1;
-    margin: 0;
-    color: #3C394E;
-    font-size: 3vmax;
-    font-family: 'Arial Black', serif;
-}
-
 .container-grid .quest {
     margin: 0;
     color: #669FF3;
@@ -56,12 +40,8 @@
     font-size: 20px;
 }
 
-.container-grid p {
-    font-size: 1.5vmax;
-}
-
 .container-grid ul {
-    font-size: 1.2vmax;
+    font-size: 1.3vmax;
 }
 
 .container-grid ul span {
@@ -80,35 +60,30 @@
 
 @media (max-width: 768px) {
     .main {
-        padding: 2% 5%;
+        padding: 1rem 5%;
     }
     .container {
         grid-template-columns: none;
-        gap: 1vmax;
+        grid-template-areas: "container-img" "container-grid";
     }
     .container-img {
         justify-content: center;
     }
-    .container-img img{
-        width: 50%;
+    .container-img img {
+        width: 60%;
     }
     .container-grid {
-        gap: 2vmax;
     }
-    .container-grid h1 {
-        margin-top: 1vmax;
-        font-size: 3vmax;
-        text-align: center;
+    .container-grid span {
+        font-size: 1.5vmax;
     }
-    .container-grid p {
-        text-align: center;
-        font-size: 2vmax;
+    .container-grid  ul{
+        font-size: 0.8rem;
+        margin: 0;
+        text-align: left;
     }
-    .container-grid .quest {
-        font-size: 2vmax;
-    }
-    .container-grid ul {
-        font-size: 1.8vmax;
+    .container-grid ul span {
+        font-size: 0.8rem;
     }
 }
 </style>

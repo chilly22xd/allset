@@ -8,7 +8,7 @@
                     <p class="secundary-title">About Us</p>
                 </div>
                 <h1>Making Your house Clean For Looks As a New</h1>
-                <p style="font-size: 1.5vmax">Fresh,spotless, and ready to impress</p>
+                <p>Fresh,spotless, and ready to impress</p>
             </div>
             <div class="container-img">
                 <img data-aos="fade-up-left" src="/src/assets/TRAPEAR.png" alt="">
@@ -19,26 +19,10 @@
 <style scoped>
 .main {
     background-color: transparent;
+    padding: 1rem 11.5%;
 }
-
 .container {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(2, 1fr);
-    padding-left: 11%;
-    padding-right: 11%;
-}
-
-.container-grid {
-    display: grid;
-}
-
-.container-grid h1 {
-    line-height: 1;
-    font-size: 3vmax;
-    font-family: 'Arial Black', serif;
-    color: #3C394E;
-    margin: 0;
+    grid-template-areas: "container-grid container-img";
 }
 
 .container-img {
@@ -52,26 +36,15 @@
 }
 
 @media (max-width: 768px) {
-    .main {
-        background: transparent;
-        padding: 0 5%;
-    }
+   .main {
+       padding: 1rem 5%;
+   }
     .container {
         grid-template-columns: none;
-    }
-
-    .container-grid h1 {
-        text-align: center;
-    }
-    .container-grid p {
-        text-align: center;
-        font-size: 2vmax;
+        grid-template-areas: "container-grid" "container-img";
     }
     .container-img {
         justify-content: center;
-    }
-    .container-img img{
-        width: 45%;
     }
 }
 </style>
