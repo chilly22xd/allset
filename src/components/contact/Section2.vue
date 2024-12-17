@@ -5,29 +5,31 @@
 <template>
     <div class="main">
         <div class="container">
-            <h1 data-aos="fade-down">Get in Touch</h1>
-            <p data-aos="fade-down">We’re ready to answer your questions and help you choose the perfect cleaning service for your
-                needs. Reach out to us, and we’ll get back to you as soon as possible.</p>
-            <form class="forms" action="" method="post">
+            <div class="container-grid">
+                <h1 data-aos="fade-down">Get in Touch</h1>
+                <p data-aos="fade-down">We’re ready to answer your questions and help you choose the perfect cleaning service for your
+                    needs. Reach out to us, and we’ll get back to you as soon as possible.</p>
+                <form class="forms" action="" method="post">
 
-                <div class="container-flex">
-                    <input class="input" type="text" placeholder="Your Name"  name="name">
-                    <input class="input" type="email" placeholder="Your Email" name="email">
-                </div>
+                    <div class="container-flex">
+                        <input class="input" type="text" placeholder="Your Name"  name="name">
+                        <input class="input" type="email" placeholder="Your Email" name="email">
+                    </div>
 
-                <div class="container-flex">
-                    <input class="input" type="text" placeholder="Tittle" name="tittle">
-                </div>
+                    <div class="container-flex">
+                        <input class="input" type="text" placeholder="Tittle" name="tittle">
+                    </div>
 
-                <div class="container-flex">
-                    <textarea class="input" placeholder="Your Comment" name="message" rows="10"/>
-                </div>
+                    <div class="container-flex">
+                        <textarea class="input" placeholder="Your Comment" name="message" rows="10"/>
+                    </div>
 
-                <div class="container-flex">
-                    <input class="btn-submit" type="submit" value="Send">
-                </div>
+                    <div class="container-flex">
+                        <input class="btn-submit" type="submit" value="Send">
+                    </div>
 
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 </template>
@@ -38,21 +40,16 @@
     padding: 3vmax 11% 3vmax 11%;
 }
 .container {
-    display: grid;
-    align-content: center;
-    align-items: center;
+    grid-template-columns: none;
+    grid-template-areas: "container-grid";
 }
-.container h1 {
-    font-size: 3vmax;
-    text-align: center;
-    margin: 0;
-    font-family: 'Arial Black', serif;
-    color: #3C394E;
-}
-.container p {
-    font-size: 1.5vmax;
+.container-grid > h1 {
     text-align: center;
 }
+.container-grid > p {
+    text-align: center;
+}
+
 .container-flex {
     display: flex;
     gap: 2vmax;
@@ -103,15 +100,7 @@
     .main {
         padding: 8% 5%;
     }
-    .container {
-        gap: 2vmax;
-    }
-    .container h1 {
-        font-size: 3vmax;
-    }
-    .container p {
-        font-size: 2vmax;
-    }
+
     .container-flex {
         flex-wrap: wrap;
         justify-content: center;

@@ -159,6 +159,8 @@ button{
   font-size: 16px !important;
   background-color: #DCE6ff;
   border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 .primary {
@@ -263,7 +265,6 @@ a:hover .button-text {
 
 @media (max-width: 768px) {
   html,body {
-    overflow-x: hidden;
   }
   .container-secundary,.container-primary {
     justify-content: center;

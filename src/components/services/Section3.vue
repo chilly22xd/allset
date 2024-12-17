@@ -33,7 +33,7 @@ const arrayPoint = [
                 <div class="list">
                     <div v-for="list in arrayPoint">
                         <img data-aos="fade-right" src="/src/assets/checklist.png" alt="">
-                        <p data-aos="fade-left"><span>{{ list.titulo }}</span> {{ list.descripcion }}</p>
+                        <p data-aos="fade-left"><b>{{list.titulo}}</b> {{ list.descripcion }}</p>
                     </div>
                 </div>
                 <div class="btn-flex">
@@ -54,71 +54,23 @@ const arrayPoint = [
 <style scoped>
 .main {
     background-color: whitesmoke;
-    padding: 2% 11% 2% 11%;
+    padding: 1rem 11.5%;
 }
-
 .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    grid-template-areas: "izq der";
-}
-
-.container-grid {
-    display: grid;
-    grid-area: izq;
-}
-
-.container-grid p {
-    font-size: 1.5vmax;
-}
-
-.container-grid h1 {
-    line-height: 1;
-    margin: 0;
-    color: #3C394E;
-    font-family: 'Arial Black', serif;
-    font-size: 3vmax;
-}
-
-.container-img {
-    grid-area: der;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    grid-template-areas: "container-grid container-img";
+    gap: 1rem;
 }
 
 .container-img img {
-    margin: 0;
     width: 100%;
     border-radius: 30em;
 }
-
 .list {
-    display: grid;
-    gap: 25px;
+    gap: 0;
 }
-
-.list div {
-    display: flex;
-    gap: 15px;
-    justify-content: left;
+.list > div > p {
+    font-size: 1.2rem;
 }
-
-.list p {
-    margin: 0;
-    font-size: 1.3vmax;
-}
-
-.list span {
-    font-weight: bold;
-}
-
-.list img {
-    width: 25px;
-    height: 25px;
-}
-
 .btn-flex {
     display: flex;
     margin: 1vmax 0;
@@ -126,28 +78,12 @@ const arrayPoint = [
 
 @media (max-width: 768px) {
     .main {
-        padding: 2% 5%;
-        left: 0;
-        right: 0;
+        padding: 1rem 5%;
     }
 
     .container {
         grid-template-columns: none;
-        grid-template-areas: "der" "izq";
-    }
-
-    .container-grid {
-        gap: 2vmax;
-    }
-
-    .container-grid h1 {
-        font-size: 3vmax;
-        text-align: center;
-    }
-
-    .container-grid p {
-        font-size: 2vmax;
-        text-align: center;
+        grid-template-areas: "container-img" "container-grid";
     }
 
     .container-img {
@@ -159,20 +95,14 @@ const arrayPoint = [
     }
 
     .list {
-        gap: 2vmax;
+        gap: 0;
     }
-
-    .list div {
-        gap: 0.5vmax;
+    .list > div > p {
+        font-size: 2vmax;
     }
 
     .list p {
         text-align: left;
-    }
-
-    .list img {
-        width: 2.5vmax;
-        height: 2.5vmax;
     }
 
     .btn-flex {

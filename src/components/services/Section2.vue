@@ -41,18 +41,13 @@ const arraySolutions = [
 </template>
 <style scoped>
 .main {
-    left: 0;
-    right: 0;
-    padding: 2% 11% 2% 11%;
+    padding: 2rem 11.5%;
     background-color: rgb(212, 229, 252);
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    grid-template-areas: "container-img container-grid" ;
 }
-
 .container-img {
     display: flex;
     justify-content: left;
@@ -63,21 +58,6 @@ const arraySolutions = [
     width: 90%;
 }
 
-.container-grid {
-    display: grid;
-}
-
-.container-grid p {
-    font-size: 1.5vmax;
-}
-
-.container-grid h1 {
-    line-height: 1;
-    margin: 0;
-    font-size: 3vmax;
-    font-family: 'Arial Black', serif;
-    color: #3C394E;
-}
 
 .container-grid span {
     font-size: 1.4vmax;
@@ -85,32 +65,23 @@ const arraySolutions = [
     color: #669FF3;
 }
 
-.container-flex {
-    margin-top: 4vmax;
-    display: flex;
-    gap: 10px;
-}
-
 .cards {
-    padding: 1.5vmax;
-    background-color: white;
-    border-radius: 20px;
+    padding: 1rem;
+}
+.cards > h2 {
+    font-size: 1.5rem;
+}
+.cards > p {
+    text-align: center;
+}
+.container-flex {
+    display: flex;
+    gap: 1vmax;
 }
 
-.cards img {
-    width: 50px;
-}
-
-.cards h2 {
+.cards > p {
     margin: 0;
-    font-size: 1.3vmax;
 }
-
-.cards p {
-    margin: 0;
-    font-size: 1vmax;
-}
-
 .secundary {
     background: #669FF3;
     padding: 8px 1.5vmax;
@@ -126,13 +97,11 @@ const arraySolutions = [
 
     .container {
         grid-template-columns: none;
+        grid-template-areas: "container-grid";
     }
-
-    .container-grid {
-        text-align: center;
-        gap: 2vmax;
+    .cards {
+        align-items: center;
     }
-
     .container-grid h1 {
         font-size: 3vmax;
     }
@@ -150,8 +119,6 @@ const arraySolutions = [
     }
 
     .container-flex {
-        display: none;
-        justify-content: center;
         align-items: center;
         flex-direction: column;
         padding: 0 5%;

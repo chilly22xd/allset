@@ -18,39 +18,15 @@
 <style scoped>
 .main {
     background-color: transparent;
-    padding-bottom: 2%;
-    padding-left: 11%;
-    padding-right: 11%;
+    padding: 1rem 11.5%;
 }
 
 .container {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-areas: "container-grid container-img";
 }
-
-.container-grid {
-    display: grid;
-}
-
-.container-grid p {
-    font-size: 1.2vmax;
-}
-
-.container-grid h1 {
-    line-height: 1;
-    margin: 0;
-    font-size: 3vmax;
-    font-family: 'Arial Black', serif;
-    color: #3C394E;
-}
-
 .container-img {
-    display: flex;
-    align-items: center;
     justify-content: right;
 }
-
 .container-img img {
     width: 85%;
 }
@@ -59,20 +35,13 @@
     .main {
         padding: 0 5%;
     }
-
     .container {
         grid-template-columns: none;
-        gap: 2vmax;
+        grid-template-areas: "container-grid" "container-img";
     }
-
-    .container p {
-        font-size: 2vmax;
-    }
-
     .container-img {
         justify-content: center;
     }
-
     .container-img img {
         width: 55%;
     }

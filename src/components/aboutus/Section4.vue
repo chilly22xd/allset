@@ -1,8 +1,11 @@
-<script setup></script>
+<script setup>
+</script>
 <template>
     <div class="main">
         <div class="container">
-            <h1 data-aos="fade-down">What Clients Say</h1>
+            <div class="container-justify">
+                <h1 data-aos="fade-down">What Clients Say</h1>
+            </div>
             <div>
                 <div class="container-img">
                     <img data-aos="fade-right" src="/src/assets/about.jpg" alt="">
@@ -31,20 +34,20 @@
 <style scoped>
 .main {
     background-color: whitesmoke;
-    padding: 3% 11% 2% 11%;
+    padding: 1rem 11.5%;
 }
-
-.container {
-    display: grid;
-    gap: 2vmax;
+.container-justify {
+    justify-content: center;
 }
-
-.container h1 {
+h1 {
     text-align: center;
+    font-family: "Arial Black",serif;
+    line-height: 1.1;
     font-size: 3vmax;
-    font-family: 'Arial Black', serif;
     color: #3C394E;
-    margin: 0;
+}
+.container {
+    grid-template-columns: none;
 }
 
 .container-dialog p {
@@ -120,7 +123,7 @@
     position: absolute;
     display: flex;
     justify-content: right;
-    translate: 60vmax 28.5vmax;
+    translate: 60vmax 15vmax;
     z-index: 2;
 }
 
