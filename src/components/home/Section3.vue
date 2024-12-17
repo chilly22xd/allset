@@ -11,6 +11,7 @@
 <style scoped>
 .main {
     background-color: rgb(212, 229, 252);
+
 }
 
 .container {
