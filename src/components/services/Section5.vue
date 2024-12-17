@@ -54,6 +54,7 @@ const arrayPoint = [
 .main {
     background-color: whitesmoke;
     padding: 1rem 11.5%;
+    overflow-x: hidden;
 }
 .list {
     gap: 0;
@@ -79,7 +80,7 @@ const arrayPoint = [
 
 @media (max-width: 768px) {
     .main {
-        padding: 2% 5%;
+        padding: 1rem 5%;
         right: 0;
     }
 

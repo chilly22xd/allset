@@ -76,6 +76,8 @@ onBeforeMount(() => {
 .main {
     padding: 0 1vmax;
     margin: 0;
+    left: 0;
+    right: 0;
     display: none;
     background-color: white;
     z-index: 10;

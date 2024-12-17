@@ -55,6 +55,7 @@ const arrayPoint = [
 .main {
     background-color: whitesmoke;
     padding: 1rem 11.5%;
+    overflow-x: hidden;
 }
 .container {
     grid-template-areas: "container-grid container-img";
@@ -62,8 +63,8 @@ const arrayPoint = [
 }
 
 .container-img img {
-    width: 100%;
-    border-radius: 30em;
+    max-width: 100%;
+    border-radius: 30vmax;
 }
 .list {
     gap: 0;

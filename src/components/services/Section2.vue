@@ -72,7 +72,9 @@ const arraySolutions = [
     font-size: 1.5rem;
 }
 .cards > p {
-    text-align: center;
+    text-align: center
+
+;
 }
 .container-flex {
     display: flex;
