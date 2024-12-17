@@ -4,11 +4,10 @@ import appBar from './components/appBar.vue'
 </script>
 
 <template>
-    <appBar />
-    <navBar />
+    <nav-bar />
+    <app-bar />
     <router-view></router-view>
 </template>
 
 <style scoped>
-
 </style>

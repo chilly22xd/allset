@@ -8,11 +8,11 @@ import Section5 from './home/Section5.vue';
 </script>
 
 <template>
-  <section1 />
-  <section2 />
-  <section3 />
-  <section4 />
-  <section5 />
+    <section1 />
+    <section2 />
+    <section3 />
+    <section4 />
+    <section5 />
 </template>
 
 <style scoped></style>

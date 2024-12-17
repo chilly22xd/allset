@@ -3,14 +3,21 @@ import {onMounted, onBeforeMount,ref} from "vue";
 
 const lastScrollTop = ref(0);
 const logo = ref(null);
+const bar = ref(null);
 
 const handleScroll = () => {
     const cs = window.scrollY;
     if (logo.value) {
         if (!(cs === 0)) {
             logo.value.style.display = 'none';
+            if (bar.value){
+                bar.value.style.position = 'fixed';
+            }
         } else {
             logo.value.style.display = 'inherit';
+            if (bar.value){
+                bar.value.style.position = '';
+            }
         }
     }
     lastScrollTop.value = cs;
@@ -25,7 +32,7 @@ onBeforeMount(() => {
 </script>
 
 <template>
-    <div class="main">
+    <div ref="bar" class="main">
         <div class="container-logo" ref="logo">
             <h1>Allset</h1>
             <p>cleaning services</p>
@@ -67,9 +74,9 @@ onBeforeMount(() => {
 
 <style scoped>
 .main {
-    top: 0;
+    padding: 0;
+    margin: 0;
     display: none;
-    position: sticky;
     background-color: white;
     z-index: 10;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -109,7 +116,7 @@ onBeforeMount(() => {
     gap: 2px;
 }
 .icons {
-    font-size: 4.5vmax;
+    font-size: 4vmax;
     color: #3C394E;
 }
 .icons:hover {
@@ -131,7 +138,7 @@ onBeforeMount(() => {
 .active .line {
     display: inherit;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .main {
         display: flex;
         flex-direction: column;

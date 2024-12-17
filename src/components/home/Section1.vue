@@ -1,5 +1,4 @@
 <script setup>
-const masServicios = "our services";
 const cantidadHappy = 800;
 const cantidadAwards = 180;
 
@@ -19,9 +18,9 @@ const cantidades = [
     <div class="main"><!-- main -->
         <div class="container">
             <div class="container-img">
-                <img src="/header.png">
+                <img data-aos="fade-up-left" src="/header.png">
             </div>
-            <div class="container-grid">
+            <div data-aos="fade-right" class="container-grid">
                 <h1>Feel Your Way For Freshness</h1>
                 <p>Experience the epitome of cleanliness with Allset. We provide top-notch cleaning services tailored to your needs, ensuring your spaces shine with perfection</p>
                 <div class="container-justify">
@@ -29,71 +28,106 @@ const cantidades = [
                         <p>OUR SERVICES</p><img src="/escoba.png">
                     </router-link>
                 </div>
+                <div class="container-cards">
+                    <div data-aos="fade-up" class="cards" v-for="cards in cantidades">
+                        <div>
+                            <span class="front">{{ cards.cant }}+</span>
+                            <span class="back">{{ cards.cant }}+</span>
+                        </div>
+                        <p>{{ cards.descripcion }}</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </template>
 
 <style scoped>
-.main {
-
-}
-.container-justify {
-    justify-content: center;
+.main{
+    padding-left: 11.5%;
+    padding-bottom: 7rem;
 }
 .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-areas: "izq der";
-    align-items: center;
+    grid-template-columns: 0.7fr 1fr;
+    grid-template-areas: "container-grid container-img";
 }
-.container-img {
-    grid-area: der;
-    justify-content: right;
+.container-cards {
+    display: flex;
+    gap: 1rem;
 }
-.container-img img {
-    max-width: 100%;
+.cards {
+    position: relative;
+    padding: 0.5rem 3rem;
+    border-radius: 20px;
+    background-color: white;
 }
-.container-grid {
-    display: grid;
-    grid-area: izq;
+.cards .front {
+    color: #669FF3;
+    position: absolute;
+    font-size: 3.5rem;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    translate: 3rem 3rem;
 }
-.container-grid h1 {
-    font-size: 3vmax;
-    color: #3C394E;
-    font-family: "Arial Black",serif;
-    line-height: 1;
-}
-.container-grid p {
-    font-size: 2vmax;
+.back {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #669FF3;
+    opacity: 0.4;
 }
 .btn-escoba {
-    width: 50%;
+    margin: 0;
+    width: 16rem;
+    height: 4rem;
+    border-radius: 30rem;
     background-color: #669FF3;
     display: flex;
     align-items: center;
     justify-content: right;
-    border-radius: 30px;
-    gap: 1.5vmax;
+    gap: 1rem;
 }
-.btn-escoba p {
+.btn-escoba > p {
+    font-size: 1rem;
     color: white;
     font-weight: bold;
 }
-.btn-escoba img{
-    width: 8vmax;
-    height: 8vmax;
+.btn-escoba > img {
+    width: 4rem;
 }
+.container-img {
+    align-items: baseline;
+}
+.container-img > img {
+    width: 100%;
+}
+
 @media (max-width: 768px) {
+    .main {
+        padding: 1.5rem 0;
+    }
     .container {
         grid-template-columns: none;
-        grid-template-areas: "izq" "der";
-        text-align: center;
+        grid-template-areas: "container-grid" "container-img";
     }
-    .container-grid {
-        padding: 5%;
+    .container-grid > h1 {
+        padding: 0 5%;
     }
-
+    .container-grid > p {
+        padding: 0 5%;
+    }
+    .container-justify{
+        justify-content: center;
+    }
+    .container-cards {
+        display: none;
+    }
+    .container-img {
+        justify-content: right;
+    }
+    .container-img > img {
+        width: 85%;
+    }
 
 }
 </style>

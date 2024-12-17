@@ -10,7 +10,7 @@ const arrayCheck = [
     <div class="main"><!-- main -->
         <div class="container">
             <div data-aos="fade-right" class="container-grid">
-                <div class="container-secundary">
+                <div data-aos="fade-right" class="container-secundary">
                     <p class="secundary">Choose</p>
                 </div>
                 <h1>Why Choose Allset Cleaning Services</h1>
@@ -31,72 +31,40 @@ const arrayCheck = [
                         hygiene.
                     </p>
                 </div>
-                <div class="btn-flex">
-                    <router-link class="learn-more" to="">
+            </div>
+            <div data-aos="fade-left" class="container-img">
+                <img src="/src/assets/years2.png" alt="">
+            </div>
+        </div>
+        <div class="btn-flex">
+            <router-link data-aos="fade-right" class="learn-more" to="">
                         <span class="circle">
                             <span class="icon arrow"></span>
                         </span>
-                        <span class="button-text">FIND OUT MORE</span>
-                    </router-link>
-                </div>
-            </div>
-            <div data-aos="fade-left" class="container-imgyears">
-                <img class="img-years" src="/src/assets/years2.png" alt="">
-            </div>
+                <span class="button-text">FIND OUT MORE</span>
+            </router-link>
         </div>
     </div>
 </template>
 <style scoped>
 .main {
-    padding: 3% 11% 3% 11%;
     background-color: whitesmoke;
+    padding: 1rem 11.5%;
 }
-
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-areas: "container-grid container-img";
+}
+.secundary {
+    font-size: 1.2rem;
 }
 
-.container-grid {
-    display: grid;
+.container-img {
+    justify-content: right;
 }
-
-.container-grid h1 {
-    line-height: 1;
-    font-size: 3vmax;
-    font-family: 'Arial Black', serif;
-    color: #3C394E;
-    margin: 0;
+.container-img > img {
+    width: 100%;
 }
-
-.container-grid p {
-    font-size: 1.5vmax;
-}
-
-
-
-.list {
-    display: grid;
-    margin: 0;
-    padding: 0;
-}
-
-.list div {
-    height: 2.5em;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.list img {
-    width: 25px;
-    height: 25px;
-}
-
-.list p {
-    font-size: 1.2vmax;
-}
-
 .container-flex {
     display: flex;
     align-items: center;
@@ -113,68 +81,34 @@ const arrayCheck = [
     font-size: 1.2vmax;
 }
 
-.container-imgyears {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-.img-years {
-    width: 100%;
-}
-
 .btn-flex {
     display: flex;
 }
 
 @media screen and (max-width: 728px) {
     .main {
-        padding: 8% 5%;
+        padding: 1rem 5%;
     }
-
+    .container-img {
+        display: none;
+    }
     .container {
         grid-template-columns: none;
-    }
-
-    .container-grid {
-        text-align: center;
-        gap: 2vmax;
-    }
-
-    .container-grid h1 {
-        font-size: 3vmax;
-    }
-
-    .container-grid p {
-        font-size: 2vmax;
-    }
-
-    .list div {
-        align-items: center;
-    }
-
-    .list img {
-        width: 2vmax;
-        height: 2vmax;
-    }
-
-    .list p {
-        text-align: left;
+        grid-template-areas: "container-grid";
     }
 
     .container-flex {
         flex-direction: column;
         gap: 0;
     }
+    .container-flex p {
+        font-size: 1.8vmax;
+    }
 
     .container-flex img {
         width: 90%;
     }
 
-    .container-imgyears {
-        display: none;
-    }
 
     .btn-flex {
         justify-content: center;

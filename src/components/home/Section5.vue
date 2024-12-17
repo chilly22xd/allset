@@ -41,31 +41,34 @@ const arrayPlans = [
     <div class="main">
         <div class="container">
             <div class="container-primary">
-                <p data-aos="fade-up" class="primary">Price Package</p>
+                <p data-aos="fade-right" class="primary">Price Package</p>
             </div>
             <div class="container-grid">
-                <h1 data-aos="fade-up">Choose Your Perfect Clean</h1>
-                <div class="container-img">
-                    <img data-aos="fade-down" src="/src/assets/REGALO.png" alt="">
+                <h1 data-aos="fade-down">Choose Your Perfect Clean</h1>
+                <div >
+                    <img data-aos="fade-up" src="/src/assets/REGALO.png">
                 </div>
-                <p data-aos="fade-up">Explore our range of meticulously curated cleaning
-                    packages designed to meet your unique needs.
-                </p>
+                <p data-aos="fade-down">Explore our range of meticulously curated cleaning packages designed to meet your unique needs. </p>
             </div>
-            <div class="container-plans">
-                <div data-aos="fade-up" v-for="plan in arrayPlans"
-                    :class="['card-plan', { 'borde-azul': plan.plan === 'Standard Plan' }]">
-                    <p>{{ plan.plan }}</p>
-                    <div class="costo-plan">
+            <div class="container-flotante">
+                <div data-aos="fade-up" class="cards" v-for="plan in arrayPlans" :class="[{'border-azul': plan.plan === 'Standard Plan' }]">
+                    <div class="container-justify">
+                        <p>{{plan.plan}}</p>
+                    </div>
+                    <div class="costo">
                         <h2>$</h2>
-                        <h1 data-aos="fade-right">{{ plan.costo }}</h1>
+                        <h1 data-aos="fade-right">{{plan.costo}}</h1>
                         <p>monthly</p>
                     </div>
-                    <div v-for="opciones in plan.opciones" class="opciones-plan">
-                        <img src="/src/assets/checklist.png" alt="">
-                        <p>{{ opciones }}</p>
+                    <div class="list" v-for="opciones in plan.opciones">
+                        <div>
+                            <img src="../../assets/checklist.png">
+                            <p>{{opciones}}</p>
+                        </div>
                     </div>
-                    <router-link class="btn-plan" to="">Hire</router-link>
+                    <div class="container-justify">
+                        <router-link class="btn-card" to=""> Hire </router-link>
+                    </div>
                 </div>
             </div>
         </div>
@@ -73,178 +76,90 @@ const arrayPlans = [
 </template>
 <style scoped>
 .main {
-    background-color: transparent;
-    padding: 0.5vmax 11% 0 11%;
+    padding: 1rem 11.5%;
 }
-
 .container {
-    display: grid;
+    grid-template-columns: none;
+    grid-template-areas: "container-primary" "container-grid" "container-flotante";
+    position: relative;
 }
-
-.container h1 {
-    line-height: 1;
-    font-size: 2.5vmax;
-    font-family: 'Arial Black', serif;
-    color: #3C394E;
-    margin: 0;
+.container-primary {
+    grid-area: container-primary;
 }
-
-.container p {
-    font-size: 1.2vmax;
+.container-justify {
+    justify-content: center;
 }
-
+ .container-flotante {
+     display: flex;
+     translate: 0 -8vmax;
+ }
 .container-grid {
-    margin-top: 10px;
-    margin-bottom: 0;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.container-grid > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-grid > div > img {
+    width: 90%;
+}
+.list {
+    margin-left: 2vmax;
+}
+.cards {
     width: 100%;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 0.8rem;
 }
-
-.container-img {
+.costo {
+    margin: 0;
     display: flex;
-    justify-content: center;
-}
-
-.container-img img {
-    width: 20vmax;
-}
-
-
-
-.primary {
-    background-color: #0044F1;
-    color: white;
-    font-weight: bold;
-    width: 12em;
-    height: 2em;
-    border-radius: 10px;
-    text-align: center;
-    align-content: center;
-}
-
-.container-plans {
-    display: flex;
-    gap: 2vmax;
-    translate: 0 -7vmax;
-}
-
-.card-plan {
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    background-color: white;
-    border-radius: 20px;
-    padding: 2vmax;
-}
-
-.borde-azul {
-    border-radius: 20px;
-    border: solid 15px #0044F1;
-}
-
-.card-plan p {
-    font-size: 16px;
-    text-align: center;
-}
-
-.costo-plan {
-    display: flex;
-    justify-content: center;
     align-items: baseline;
+    justify-content: center;
+    padding: 0;
 }
-
-.costo-plan h2 {
+.costo > h2 {
     font-size: 2vmax;
     color: #669FF3;
 }
-
-.costo-plan h1 {
+.costo > h1 {
+    margin: 0;
+    padding: 0;
     font-size: 3.5vmax;
+    font-family: "Arial Black",serif;
     color: #669FF3;
 }
-
-.costo-plan p {
-    font-size: 1vmax;
-    margin-left: 5px;
+.border-azul {
+    border: 12px solid #0044F1;
 }
 
-.opciones-plan {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-top: 0.1vmax;
-    gap: 8px;
-}
-
-.opciones-plan p {
-    text-align: left;
-    font-size: 1vmax;
-}
-
-.opciones-plan img {
-    width: 25px;
-    height: 25px;
-}
-
-.btn-plan {
-    margin-top: 2vmax;
-    background-color: #0044F1;
-    text-align: center;
-    align-content: center;
-    color: white;
-    height: 2.5em;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
 
 @media screen and (max-width: 768px) {
     .main {
         padding: 5%;
     }
-
-    .container h1 {
-        font-size: 3vmax;
-        text-align: center;
+    .container {
+        grid-template-columns: none;
+        grid-template-areas: "container-primary" "container-grid" "container-flotante";
     }
-
-    .container p {
-        font-size: 2vmax;
-        text-align: center;
-    }
-
     .container-grid {
         grid-template-columns: none;
-        gap: 2vmax;
     }
-
-    .container-img {
+    .container-grid > div {
         display: none;
     }
-
-    .container-plans{
-        padding: 0 2%;
-        justify-content: center;
+    .container-flotante {
         flex-direction: column;
         translate: none;
+        padding: 4vmax;
     }
 
-    .btn-plan {
-        margin-bottom: 1vmax;
-    }
-
-    .opciones-plan {
-        align-items: center;
-    }
-
-    .costo-plan h2 {
+    .costo > h2 {
         font-size: 3vmax;
     }
-
-    .costo-plan h1 {
+    .costo > h1 {
         font-size: 6vmax;
     }
+
 }
 </style>

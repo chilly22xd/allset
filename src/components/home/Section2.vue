@@ -50,7 +50,7 @@ const arrayCardsTransparent = [
                     <p>{{ card.descripcion }}</p>
                 </div>
             </div>
-            <div data-aos="fade-right" class="container-flex">
+            <div data-aos="fade-right" class="container-img">
                 <img class="img-year" src="/src/assets/years.png" alt="">
             </div>
             <div data-aos="fade-left" class="container-grid">
@@ -76,63 +76,27 @@ const arrayCardsTransparent = [
 <style scoped>
 .main {
     background-color: whitesmoke;
-    padding-bottom: 12%;
-    padding-left: 11%;
-    padding-right: 11%;
+    padding: 0 11.5% 8rem 11.5%;
 }
 
-.container-flotante {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1vmax;
-    grid-area: arr;
-}
-
-.cards{
-    padding: 10%;
-    background-color: white;
-    opacity: 0.8;
+.cards {
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
-    translate: 0 -5.5vmax;
-}
-
-.cards img {
-    width: 3.5vmax;
-    height: 3.5vmax;
-}
-
-.cards h2 {
-    font-size: 1.6vmax;
-    margin: 0;
-}
-
-.cards p {
-    font-size: 1.1vmax;
+    padding: 2rem;
+    translate: 0 -4rem;
 }
 
 .container {
-    display: grid;
-    grid-template-areas: "arr arr" "der izq";
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas:"container-flotante container-flotante" "container-img container-grid";
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.secundary {
+    font-size: 1.2rem;
+}
+
+.container-img {
     align-items: center;
-}
-
-.container-grid {
-    grid-area: izq;
-    display: grid;
-}
-
-.container-grid h1 {
-    line-height: 1;
-    font-size: 3vmax;
-    font-family: 'Arial Black', serif;
-    color: #3C394E;
-    margin: 0;
-}
-
-.container-grid p {
-    font-size: 1.5vmax;
 }
 
 .container-cards-transparentes {
@@ -158,55 +122,28 @@ const arrayCardsTransparent = [
     font-size: 1.1vmax;
 }
 
-
-.container-flex {
-    grid-area: der;
-    display: flex;
-    width: 100%;
-    position: relative;
-    justify-content: left;
-    align-items: center;
-}
-
 .img-year {
     width: 75%;
 }
 
 
-
-@media screen and (max-width: 1024px) {}
-
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .main {
-        padding: 8% 5% 3% 5%;
+        padding: 1rem 5%;
     }
-
     .container-flotante {
-        display: none;
-        padding: 0 4%;
-        grid-template-columns: none;
-        gap: 2vmax;
+        padding: 0 6%;
     }
-
     .container {
         grid-template-columns: none;
-        grid-template-areas: "arr" "izq" "der";
+        grid-template-areas: "container-flotante" "container-grid" "container-img";
     }
 
-    .container-grid {
-        text-align: center;
-        align-items: center;
-        padding-bottom: 1.5vmax;
-        gap: 2vmax;
+
+    .container-img {
+        justify-content: center;
     }
 
-    .container-grid h1 {
-        font-size: 3vmax;
-    }
-
-    .container-grid p {
-        font-size: 2vmax;
-    }
     .container-cards-transparentes {
         align-items: start;
     }
@@ -220,10 +157,10 @@ const arrayCardsTransparent = [
     }
 
     .cards {
+        align-items: center;
         text-align: center;
-        justify-self: center;
         translate: none;
-        padding: 5%;
+        padding: 1rem;
     }
 
     .cards img {
