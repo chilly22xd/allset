@@ -19,7 +19,7 @@ const arrayDeep = [
 ];
 </script>
 <template>
-    <div class="main">
+    <div class="main hidden">
         <div class="container">
             <div class="container-img">
                 <img data-aos="fade-right" src="/src/assets/services2.jpg" alt="">

@@ -18,7 +18,7 @@ const arrayPoint = [
 
 </script>
 <template>
-    <div class="main">
+    <div class="main hidden">
         <div class="container">
             <div class="container-grid">
                 <div class="container-primary">
