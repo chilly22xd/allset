@@ -72,8 +72,7 @@
     .container-img img {
         width: 60%;
     }
-    .container-grid {
-    }
+
     .container-grid span {
         font-size: 1.5vmax;
     }
