@@ -35,16 +35,18 @@
 </template>
 <style scoped>
 .main {
-    padding: 8% 15% 8% 15%;
+    padding: 7rem 15%;
     background-color: rgb(212, 229, 252);
 }
 
 .container {
-    display: grid;
-    align-items: center;
+    grid-template-columns: none;
+    grid-template-areas: "titulo" "subtitulo" "container-grid";
+
 }
 
 .container .titulo {
+    grid-area: titulo;
     font-size: 3vmax;
     font-family: 'Arial Black', serif;
     color: #3C394E;
@@ -53,6 +55,7 @@
 }
 
 .container .subtitulo {
+    grid-area: subtitulo;
     font-size: 2vmax;
     font-family: 'Arial Black', serif;
     color: #3C394E;
@@ -76,6 +79,8 @@
 
 .cards {
     margin-top: 5vmax;
+    background-color: transparent;
+    box-shadow: none;
 }
 
 .cards div {
@@ -141,8 +146,11 @@
     .arrows {
         display: none;
     }
-
+    .container .subtitulo {
+        font-size: 1.2rem;
+    }
     .main .titulo {
+        font-size: 1.8rem;
         color: transparent;
         background: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);
         background-clip: text;

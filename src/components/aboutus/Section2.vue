@@ -41,6 +41,8 @@
 }
 
 .container-grid ul {
+    padding-top: 0;
+    margin-top: 0;
     font-size: 1.3vmax;
 }
 
