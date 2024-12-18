@@ -100,6 +100,7 @@
     }
     .container-flex {
         gap: 1vmax;
+        justify-content: center;
     }
     .container-flex img {
         width: 1.5rem;

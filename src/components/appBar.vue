@@ -119,6 +119,7 @@ onBeforeMount(() => {
     margin: 0.5rem;
     padding: 0.5rem;
     display: none;
+    align-items: center;
     flex-direction: column;
     background-color: whitesmoke;
     border-radius: 10px;
@@ -130,7 +131,6 @@ onBeforeMount(() => {
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    padding-left: 1rem;
     color: #3C394E;
 }
 
