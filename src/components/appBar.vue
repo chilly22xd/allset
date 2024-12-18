@@ -58,7 +58,7 @@ onBeforeMount(() => {
 <template>
     <div class="main">
         <div ref="app_bar" class="app-bar">
-            <img data-aos="fade-down" src="/logo.png">
+            <img data-aos="fade-down" data-aos-once="true" src="/logo.png">
             <button data-aos="fade-down" class="bars" @click="menuDesplegable">
                 <i class="fa-solid fa-bars ham"></i>
                 <i class="fa-solid fa-xmark close"></i>
