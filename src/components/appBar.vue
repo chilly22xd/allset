@@ -97,7 +97,7 @@ onBeforeMount(() => {
 .app-bar {
     display: flex;
     justify-content: space-between;
-    padding: 0 5px;
+    padding: 0 1vmax;
 }
 
 .app-bar img {
