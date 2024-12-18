@@ -58,8 +58,8 @@ onBeforeMount(() => {
 <template>
     <div class="main">
         <div ref="app_bar" class="app-bar">
-            <img src="/logo.png">
-            <button class="bars" @click="menuDesplegable">
+            <img data-aos="fade-down" src="/logo.png">
+            <button data-aos="fade-down" class="bars" @click="menuDesplegable">
                 <i class="fa-solid fa-bars ham"></i>
                 <i class="fa-solid fa-xmark close"></i>
             </button>
@@ -69,24 +69,19 @@ onBeforeMount(() => {
                 <i class="fa-solid fa-circle-info icons"></i>
                 <p>About Us</p>
             </router-link>
-            <div>
-                <router-link class="opciones" to="/allset/services" exact-active-class="active" @click="closeMenu">
-                    <i class="fa-solid fa-screwdriver-wrench icons"></i>
-                    <p>Services</p>
-                </router-link>
-            </div>
-            <div>
-                <router-link class="opciones" to="/allset/contact" exact-active-class="active" @click="closeMenu">
-                    <i class="fa-solid fa-comment icons"></i>
-                    <p>Contact</p>
-                </router-link>
-            </div>
-            <div>
-                <router-link class="opciones" to="/allset/hireus" exact-active-class="active" @click="closeMenu">
-                    <i class="fa-solid fa-tags icons"></i>
-                    <p>Hire Us</p>
-                </router-link>
-            </div>
+
+            <router-link class="opciones" to="/allset/services" exact-active-class="active" @click="closeMenu">
+                <i class="fa-solid fa-screwdriver-wrench icons"></i>
+                <p>Services</p>
+            </router-link>
+            <router-link class="opciones" to="/allset/contact" exact-active-class="active" @click="closeMenu">
+                <i class="fa-solid fa-comment icons"></i>
+                <p>Contact</p>
+            </router-link>
+            <router-link class="opciones" to="/allset/hireus" exact-active-class="active" @click="closeMenu">
+                <i class="fa-solid fa-tags icons"></i>
+                <p>Hire Us</p>
+            </router-link>
         </div>
     </div>
 </template>
