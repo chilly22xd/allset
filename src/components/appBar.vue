@@ -16,15 +16,31 @@ const handleScroll = () => {
     lastScrollTop.value = cs;
 }
 
-function menuDesplegable (){
+function menuDesplegable() {
+    const menu = document.querySelector(".menu-desplegable");
+    const ham = document.querySelector(".ham");
+    const close = document.querySelector(".close");
+
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+        ham.style.display = "inherit";
+        close.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+        ham.style.display = "none";
+        close.style.display = "inherit";
+        close.classList.add("animate-in"); // Añadir animación
+        setTimeout(() => {
+            close.classList.remove("animate-in"); // Remover animación después
+        }, 300); // Debe coincidir con la duración de la animación
+    }
+}
+function closeMenu(){
     const menu = document.querySelector(".menu-desplegable");
     if (menu.style.display === "flex") {
         menu.style.display = "none";
-    } else {
-        menu.style.display = "flex";
     }
 }
-
 onMounted(() => {
     window.addEventListener("scroll", handleScroll);
 })
@@ -39,29 +55,30 @@ onBeforeMount(() => {
     <div class="main">
         <div ref="app_bar" class="app-bar">
             <img src="/logo.png">
-            <button class="bars" @click="menuDesplegable()">
-                <i class="fa-solid fa-bars"></i>
+            <button class="bars" @click="menuDesplegable">
+                <i class="fa-solid fa-bars ham"></i>
+                <i class="fa-solid fa-xmark close"></i>
             </button>
         </div>
         <div class="menu-desplegable">
-                <router-link class="opciones" to="/allset/about" exact-active-class="active">
+                <router-link class="opciones" to="/allset/about" exact-active-class="active" @click="closeMenu">
                     <i class="fa-solid fa-circle-info icons"></i>
                     <p>About Us</p>
                 </router-link>
             <div>
-                <router-link class="opciones" to="/allset/services" exact-active-class="active">
+                <router-link class="opciones" to="/allset/services" exact-active-class="active" @click="closeMenu">
                     <i class="fa-solid fa-screwdriver-wrench icons"></i>
                     <p>Services</p>
                 </router-link>
             </div>
             <div>
-                <router-link class="opciones" to="/allset/contact" exact-active-class="active">
+                <router-link class="opciones" to="/allset/contact" exact-active-class="active" @click="closeMenu">
                     <i class="fa-solid fa-comment icons"></i>
                     <p>Contact</p>
                 </router-link>
             </div>
             <div>
-                <router-link  class="opciones" to="/allset/hireus" exact-active-class="active">
+                <router-link  class="opciones" to="/allset/hireus" exact-active-class="active" @click="closeMenu">
                     <i class="fa-solid fa-tags icons"></i>
                     <p>Hire Us</p>
                 </router-link>
@@ -118,7 +135,14 @@ onBeforeMount(() => {
 .opciones i {
     font-size: 1.5rem;
 }
+.ham {
+    display: inherit;
+}
+.close {
 
+}
+.close.animate-in {
+}
 .active {
     color: #669FF3;
 }
