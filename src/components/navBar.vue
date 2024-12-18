@@ -1,39 +1,4 @@
 <script setup>
-import {onMounted, onBeforeMount, ref} from "vue";
-const arrayStyles = [
-    'position: fixed;',
-    'background-color: #fff;',
-    'box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);',
-    'margin-top: 5px;',
-    'top: 0;',
-    'left: 0;',
-    'right: 0;',
-    'z-index: 10;',
-    'border-radius: 0 0 10px 10px;',
-    'padding: 0.2%;'
-]
-const lastScrollTop = ref(0);
-const navbar = ref(null);
-const handleScroll = () => {
-    /*const cs = window.scrollY;
-    if (navbar.value) {
-        if (!(cs === 0)) {
-            document.querySelector('.header .logo img').style.width = '5vmax';
-            navbar.value.style = arrayStyles.join(' ');
-        } else {
-            navbar.value.style = null;
-            document.querySelector('.header .logo img').style.width = '';
-        }
-    }
-    lastScrollTop.value = cs;*/
-}
-
-onMounted(() => {
-    window.addEventListener("scroll", handleScroll);
-})
-onBeforeMount(() => {
-    window.removeEventListener("scroll", handleScroll);
-})
 
 </script>
 <template>

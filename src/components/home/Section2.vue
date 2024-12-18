@@ -94,7 +94,9 @@ const arrayCardsTransparent = [
 .secundary {
     font-size: 1.2rem;
 }
-
+.static {
+    overflow: inherit;
+}
 .container-img {
     align-items: center;
 }
@@ -130,6 +132,7 @@ const arrayCardsTransparent = [
 @media (max-width: 768px) {
     .main {
         padding: 1rem 5%;
+        overflow-x: hidden;
     }
     .container-flotante {
         padding: 0 6%;
@@ -138,7 +141,6 @@ const arrayCardsTransparent = [
         grid-template-columns: none;
         grid-template-areas: "container-flotante" "container-grid" "container-img";
     }
-
 
     .container-img {
         justify-content: center;
