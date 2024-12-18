@@ -1,5 +1,5 @@
 <script setup>
-import {ref,onMounted,onBeforeMount} from "vue";
+import { ref, onMounted, onBeforeMount } from "vue";
 
 const lastScrollTop = ref(0);
 const app_bar = ref(null);
@@ -8,9 +8,11 @@ const handleScroll = () => {
     const cs = window.scrollY;
     if (app_bar.value) {
         if (!(cs === 0)) {
-
+            app_bar.value.style.boxShadow = "0 4px 10px rgba(0, 0, 0, 0.2)"
+            app_bar.value.style.backgroundColor = "whitesmoke";
         } else {
-
+            app_bar.value.style.boxShadow = "none"
+            app_bar.value.style.backgroundColor = "transparent"
         }
     }
     lastScrollTop.value = cs;
@@ -29,16 +31,18 @@ function menuDesplegable() {
         menu.style.display = "flex";
         ham.style.display = "none";
         close.style.display = "inherit";
-        close.classList.add("animate-in"); // Añadir animación
-        setTimeout(() => {
-            close.classList.remove("animate-in"); // Remover animación después
-        }, 300); // Debe coincidir con la duración de la animación
+        // Debe coincidir con la duración de la animación
     }
 }
-function closeMenu(){
+function closeMenu() {
     const menu = document.querySelector(".menu-desplegable");
+    const ham = document.querySelector(".ham");
+    const close = document.querySelector(".close");
+
     if (menu.style.display === "flex") {
         menu.style.display = "none";
+        ham.style.display = "inherit";
+        close.style.display = "none";
     }
 }
 onMounted(() => {
@@ -61,10 +65,10 @@ onBeforeMount(() => {
             </button>
         </div>
         <div class="menu-desplegable">
-                <router-link class="opciones" to="/allset/about" exact-active-class="active" @click="closeMenu">
-                    <i class="fa-solid fa-circle-info icons"></i>
-                    <p>About Us</p>
-                </router-link>
+            <router-link class="opciones" to="/allset/about" exact-active-class="active" @click="closeMenu">
+                <i class="fa-solid fa-circle-info icons"></i>
+                <p>About Us</p>
+            </router-link>
             <div>
                 <router-link class="opciones" to="/allset/services" exact-active-class="active" @click="closeMenu">
                     <i class="fa-solid fa-screwdriver-wrench icons"></i>
@@ -78,7 +82,7 @@ onBeforeMount(() => {
                 </router-link>
             </div>
             <div>
-                <router-link  class="opciones" to="/allset/hireus" exact-active-class="active" @click="closeMenu">
+                <router-link class="opciones" to="/allset/hireus" exact-active-class="active" @click="closeMenu">
                     <i class="fa-solid fa-tags icons"></i>
                     <p>Hire Us</p>
                 </router-link>
@@ -94,11 +98,13 @@ onBeforeMount(() => {
     display: none;
     z-index: 10;
 }
+
 .app-bar {
     display: flex;
     justify-content: space-between;
     padding: 0 5px;
 }
+
 .app-bar img {
     max-width: 10vmax;
 }
@@ -115,7 +121,7 @@ onBeforeMount(() => {
     padding: 0.5rem;
     display: none;
     flex-direction: column;
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
@@ -128,21 +134,24 @@ onBeforeMount(() => {
     padding-left: 1rem;
     color: #3C394E;
 }
+
 .opciones p {
     font-size: 1rem;
     font-weight: bold;
 }
+
 .opciones i {
     font-size: 1.5rem;
 }
+
 .ham {
     display: inherit;
 }
-.close {
 
+.close {
+    display: none;
 }
-.close.animate-in {
-}
+
 .active {
     color: #669FF3;
 }
