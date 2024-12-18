@@ -92,7 +92,7 @@ onBeforeMount(() => {
 
 <style scoped>
 .main {
-    padding: 0;
+    padding: 1vmax 1vmax;
     position: sticky;
     display: none;
     z-index: 10;
@@ -101,7 +101,8 @@ onBeforeMount(() => {
 .app-bar {
     display: flex;
     justify-content: space-between;
-    padding: 0 1vmax;
+    border-radius: 10px;
+    padding: 0 5px;
 }
 
 .app-bar img {
