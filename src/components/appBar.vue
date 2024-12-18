@@ -65,6 +65,10 @@ onBeforeMount(() => {
             </button>
         </div>
         <div class="menu-desplegable">
+            <router-link class="opciones" to="/allset/" exact-active-class="active" @click="closeMenu">
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+            </router-link>
             <router-link class="opciones" to="/allset/about" exact-active-class="active" @click="closeMenu">
                 <i class="fa-solid fa-circle-info icons"></i>
                 <p>About Us</p>

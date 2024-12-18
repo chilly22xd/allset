@@ -41,7 +41,7 @@ const arrayCardsTransparent = [
 
 </script>
 <template>
-    <div class="main hidden"><!-- main -->
+    <div class="main"><!-- main -->
         <div class="container">
             <div class="container-flotante"><!-- cards flotantes -->
                 <div data-aos="flip-up" class="cards" v-for="card in arrayCards">
