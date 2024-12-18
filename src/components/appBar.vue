@@ -1,26 +1,28 @@
 <script setup>
-import {onMounted, onBeforeMount,ref} from "vue";
+import {ref,onMounted,onBeforeMount} from "vue";
 
 const lastScrollTop = ref(0);
-const logo = ref(null);
-const bar = ref(null);
+const app_bar = ref(null);
 
 const handleScroll = () => {
     const cs = window.scrollY;
-    if (logo.value) {
+    if (app_bar.value) {
         if (!(cs === 0)) {
-            logo.value.style.display = 'none';
-            if (bar.value){
-                bar.value.style.position = 'fixed';
-            }
+
         } else {
-            logo.value.style.display = 'inherit';
-            if (bar.value){
-                bar.value.style.position = '';
-            }
+
         }
     }
     lastScrollTop.value = cs;
+}
+
+function menuDesplegable (){
+    const menu = document.querySelector(".menu-desplegable");
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
 }
 
 onMounted(() => {
@@ -29,43 +31,39 @@ onMounted(() => {
 onBeforeMount(() => {
     window.removeEventListener("scroll", handleScroll);
 })
+
+
 </script>
 
 <template>
-    <div ref="bar" class="main">
-        <div class="container-logo" ref="logo">
-            <h1>Allset</h1>
-            <p>cleaning services</p>
+    <div class="main">
+        <div ref="app_bar" class="app-bar">
+            <img src="/logo.png">
+            <button class="bars" @click="menuDesplegable()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
-        <div class="container-grid">
-            <div class="container-flex">
-                <router-link class="links" to="/allset/" exact-active-class="active">
-                    <i class="fa-solid fa-house icons"></i>
-                    <div class="line"></div>
-                </router-link>
-            </div>
-            <div class="container-flex">
-                <router-link class="links" to="/allset/about" exact-active-class="active">
+        <div class="menu-desplegable">
+                <router-link class="opciones" to="/allset/about" exact-active-class="active">
                     <i class="fa-solid fa-circle-info icons"></i>
-                    <div class="line"></div>
+                    <p>About Us</p>
                 </router-link>
-            </div>
-            <div class="container-flex">
-                <router-link class="links" to="/allset/services" exact-active-class="active">
+            <div>
+                <router-link class="opciones" to="/allset/services" exact-active-class="active">
                     <i class="fa-solid fa-screwdriver-wrench icons"></i>
-                    <div class="line"></div>
+                    <p>Services</p>
                 </router-link>
             </div>
-            <div class="container-flex">
-                <router-link class="links" to="/allset/contact" exact-active-class="active">
-                    <i class="fa-solid fa-comments icons"></i>
-                    <div class="line"></div>
+            <div>
+                <router-link class="opciones" to="/allset/contact" exact-active-class="active">
+                    <i class="fa-solid fa-comment icons"></i>
+                    <p>Contact</p>
                 </router-link>
             </div>
-            <div class="container-flex">
-                <router-link class="links" to="/allset/hireus" exact-active-class="active">
+            <div>
+                <router-link  class="opciones" to="/allset/hireus" exact-active-class="active">
                     <i class="fa-solid fa-tags icons"></i>
-                    <div class="line"></div>
+                    <p>Hire Us</p>
                 </router-link>
             </div>
         </div>
@@ -74,76 +72,60 @@ onBeforeMount(() => {
 
 <style scoped>
 .main {
-    padding: 0 1vmax;
-    margin: 0;
-    left: 0;
-    right: 0;
+    padding: 0;
+    position: sticky;
     display: none;
-    background-color: white;
     z-index: 10;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.app-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+.app-bar img {
+    max-width: 10vmax;
 }
 
-.container-logo {
-    padding: 1%;
-    display: flex;
-    align-items: baseline;
-    gap: 5px;
+.bars {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
 }
-.container-logo h1 {
-    margin: 0;
-    font-family: 'Century Gothic', serif;
-    color: #0044F1;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-.container-logo p {
-    margin: 0;
-    font-size: 0.6rem;
-}
-.container-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
-    align-items: center;
-}
-.container-flex {
-    display: flex;
+
+.menu-desplegable {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: none;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
 }
-.links {
+
+.opciones {
     display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-.icons {
-    font-size: 4vmax;
+    align-items: center;
+    gap: 0.8rem;
+    padding-left: 1rem;
     color: #3C394E;
 }
-.icons:hover {
-    transform: scale(1.1);
+.opciones p {
+    font-size: 1rem;
+    font-weight: bold;
 }
-.line {
-    display: none;
-    padding: 2px;
-    border-radius: 10px;
-    background-color: #669FF3;
+.opciones i {
+    font-size: 1.5rem;
 }
 
-.active{
+.active {
     color: #669FF3;
 }
-.active .icons {
-    color: #669FF3;
-}
-.active .line {
-    display: inherit;
-}
-@media (max-width: 768px) {
+
+@media (max-width: 728px) {
     .main {
-        display: flex;
-        flex-direction: column;
+        display: inherit;
     }
 }
 </style>
